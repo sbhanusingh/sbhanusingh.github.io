@@ -1,5 +1,6 @@
 const tg = new tourguide.TourGuideClient({
-  exitOnClickOutside: false
+  exitOnClickOutside: false,
+  dialogPlacement: 'bottom'
 })
 
 
