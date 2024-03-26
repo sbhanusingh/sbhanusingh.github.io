@@ -3,4 +3,10 @@ const tg = new tourguide.TourGuideClient({
 })
 
 
-tg.start()
+
+
+
+ setTimeout(()=> {
+   tg.start()
+}
+,3000);
