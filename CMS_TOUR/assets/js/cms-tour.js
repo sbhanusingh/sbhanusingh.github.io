@@ -9,4 +9,4 @@ const tg = new tourguide.TourGuideClient({
  setTimeout(()=> {
    tg.start()
 }
-,3000);
+,1000);
