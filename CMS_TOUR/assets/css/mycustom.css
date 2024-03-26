@@ -1332,12 +1332,7 @@ div#exitModel.client-modal a#yesExit,a#goDraft,a#goNew {
     padding-top:0 !important;
     padding-bottom: 80px !important;
 }
-.nk-sidebar {
-    transform: translateX(0);
-    width: 230px;
-    position: sticky;
-    float: left;
-}
+
 .nk-sidebar+.nk-wrap,.nk-sidebar-overlay+.nk-wrap {
     padding-left: 0;
     position: relative;
@@ -1379,10 +1374,7 @@ div#exitModel.client-modal a#yesExit,a#goDraft,a#goNew {
     .nk-footer-wrap {
         display: block;
     }
-    .nk-sidebar {
-        width: 0;
-        left: -1px;
-    }
+  
     .nk-sidebar+.nk-wrap, .nk-sidebar-overlay+.nk-wrap {
         padding-left: 0;
     }
@@ -2007,19 +1999,11 @@ a.btn.btn-primary.mg-r {
 /*END 25 feb*/
 
 @media (max-width: 991.98px) {
-    .nk-sidebar{
-        position: fixed;
-        width: 0;
-        top: 0 !important;
-        left: -1px;
-        height: 100%;
-    }
+  
     /*mobile Responsive Code */ .as-mobile .simplebar-mask {
                                     border-top: 1px solid #203247;
                                 }
-    .as-mobile .nk-sidebar.nk-sidebar-mobile {
-        width: 0px;
-    }
+
 
     .as-mobile .nk-sidebar.nk-sidebar-mobile+.nk-wrap, .nk-sidebar-overlay+.nk-wrap {
         padding-left: 0px;
