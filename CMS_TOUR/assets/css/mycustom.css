@@ -908,25 +908,7 @@ div#exitModel.client-modal a#yesExit,a#goDraft,a#goNew {
     .head_profbtn a.btn{
         min-width: initial;
     }
-    body .guided-tour-step.active .guided-tour-step-tooltip{
-        left: 0 !important;
-        width: calc(100% - 30px) !important;
-        max-width: calc(100% - 30px) !important;
-        margin: 15px !important;
-    }
-    svg#GuidedTourIconSet + .guided-tour-step.active .guided-tour-step-highlight {
-        min-width:230px;
-    }
-    .guided-tour-arrow{
-        display:none;
-    }
-    body.guided-tour .nk-header{
-        z-index:999;
-        position: fixed !important;
-    }
-    body.guided-tour .nk-sidebar-head{
-        min-height:65px;
-    }
+   
     .alert_top.alert-icon > .icon{
         margin-right: 2px;
         font-size: 15px;
