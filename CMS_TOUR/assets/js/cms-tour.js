@@ -1,7 +1,6 @@
+const tg = new tourguide.TourGuideClient({
+  exitOnClickOutside: false
+})
 
 
-var tourguide = new Tourguide();
-tourguide.start();
-
-var tourbutton = document.getElementById("clc");
-tourbutton.addEventListener("click", nextStep);
+tg.start()
