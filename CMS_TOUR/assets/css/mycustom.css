@@ -5,103 +5,6 @@
     --secondary-btn-color: #364A63;
     --secondary-btn-bg: #EAECEF;
 }
-.head_profbtn {
-    padding: 0;
-    margin-left: -30px;
-}
-.head_profbtn a.btn{
-    background: #fff !important;
-    border: 1.5px solid #f4f4f4 !important;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    border-radius: 100px;
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    color: #030303;
-    line-height: initial;
-    padding: 10px 15px;
-    gap: 5px;
-}
-body .head_profbtn a.btn:hover,
-body .head_profbtn a.btn:focus{
-    background: #fff !important;
-    color: #030303 !important;
-    border-color: var(--primary-color-2) !important;
-}
-.head_profbtn a.btn .blinker{
-    height: 10px;
-    width: 10px;
-    border-radius: 100%;
-    background: #ccc;
-    position: relative;
-    transition: .5s ease-in-out;
-    z-index: 1;
-}
-.head_profbtn a.btn .blinker::before {
-    left: 50%;
-    top: 50%;
-    content: '';
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    border-radius: 100%;
-    z-index: -1;
-    opacity: .1;
-    background: #ccc;
-    transform: translate(-50%, -50%);
-    animation: ripple 1.2s ease-out infinite;
-    animation-delay: 1s;
-}
-@keyframes ripple {
-    0% {
-        height: 10px;
-        width: 10px;
-        opacity: .1;
-    }
-    35% {
-        height: 15px;
-        width: 15px;
-        opacity: .1;
-    }
-
-    50% {
-        height: 20px;
-        width: 20px;
-        opacity: 0.1;
-    }
-
-    100% {
-        height: 25px;
-        width: 25px;
-        opacity: 0.05;
-    }
-}
-.head_profbtn a.danger .blinker,
-.head_profbtn a.danger .blinker::before{
-    background: #dc3545;
-}
-.head_profbtn a.success .blinker,
-.head_profbtn a.success .blinker::before{
-    background: #28A745;
-}
-.grad_progress{
-    margin-top: 5px;
-    height: 5px;
-    background: linear-gradient(to right, #FFC107 0, #B9DC23 50%,  #28A745 100%);
-}
-.grad_progress .progress-bar{
-    background: transparent;
-}
-.grad_progress .progress-bar-not-progress{
-    flex-grow: 1;
-    /* flex-shrink: 1; */
-    height: inherit;
-    background: #EFF0F4;
-}
-.head_profbtn a.btn p{
-    line-height: initial;
-}
-
 .menu_style2 .nk-sidebar-profile-fixed .nk-menu li + li{
     margin-top: 0;
 }
@@ -132,7 +35,7 @@ body .head_profbtn a.btn:focus{
     text-align: center;
 }
 .alert_top.alert-icon > .icon{
-    color: #E6AE07;
+    color: #E6AE07 ;
     position: relative;
     top: 2px;
     left: initial;
@@ -352,7 +255,7 @@ body .meeting_close .btn:not(.btn1):hover{
     color:#fff !important;
 }
 .meeting_close .menu .drop_down ul{
-    width: 200px;
+    width:150px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -878,9 +781,6 @@ div#exitModel.client-modal a#yesExit,a#goDraft,a#goNew {
     width: 40px;
 }
 @media (max-width: 991.98px) {
-    .head_profbtn{
-        margin-left: 0;
-    }
     .hide-logo{
         display:none;
     }
@@ -905,20 +805,11 @@ div#exitModel.client-modal a#yesExit,a#goDraft,a#goNew {
     }
 }
 @media (max-width: 575.5px) {
-    .head_profbtn a.btn{
-        min-width: initial;
-    }
-   
-    .alert_top.alert-icon > .icon{
-        margin-right: 2px;
-        font-size: 15px;
-    }
     .alert_top{
-        padding: 10px 0;
-        padding-left: 48px !important;
+        padding-left: 68px !important;
         padding-right: 50px;
         font-size: 12px;
-        line-height: 18px;
+        line-height: 16px;
     }
     .clnt_navtab .nav-tabs>li a {
         padding: 10px 0
@@ -1314,7 +1205,12 @@ div#exitModel.client-modal a#yesExit,a#goDraft,a#goNew {
     padding-top:0 !important;
     padding-bottom: 80px !important;
 }
-
+.nk-sidebar {
+    transform: translateX(0);
+    width: 230px;
+    position: sticky;
+    float: left;
+}
 .nk-sidebar+.nk-wrap,.nk-sidebar-overlay+.nk-wrap {
     padding-left: 0;
     position: relative;
@@ -1347,16 +1243,16 @@ div#exitModel.client-modal a#yesExit,a#goDraft,a#goNew {
     flex: 0 0 12px;
 }
 @media (max-width: 767px) {
-    .head_profbtn{
-        margin-left: 20px;
-    }
     .nk-footer-copyright {
         margin-left: 0;
     }
     .nk-footer-wrap {
         display: block;
     }
-  
+    .nk-sidebar {
+        width: 0;
+        left: -1px;
+    }
     .nk-sidebar+.nk-wrap, .nk-sidebar-overlay+.nk-wrap {
         padding-left: 0;
     }
@@ -1981,11 +1877,19 @@ a.btn.btn-primary.mg-r {
 /*END 25 feb*/
 
 @media (max-width: 991.98px) {
-  
+    .nk-sidebar{
+        position: fixed;
+        width: 0;
+        top: 0 !important;
+        left: -1px;
+        height: 100%;
+    }
     /*mobile Responsive Code */ .as-mobile .simplebar-mask {
                                     border-top: 1px solid #203247;
                                 }
-
+    .as-mobile .nk-sidebar.nk-sidebar-mobile {
+        width: 0px;
+    }
 
     .as-mobile .nk-sidebar.nk-sidebar-mobile+.nk-wrap, .nk-sidebar-overlay+.nk-wrap {
         padding-left: 0px;
@@ -2079,7 +1983,6 @@ a.btn.btn-primary.mg-r {
     }
 }
 @media (min-width: 575.5px) {
-
     .add_qual_modal .modal-dialog {
         min-width: 600px !important;
     }
@@ -2099,7 +2002,6 @@ body .nk-header-tools .dropdown .dropdown-menu .user-card-wrap {
     border: 0 !important;
     padding: 16px 12px !important;
     background: rgba(var(--primary-color-rgb), .1) !important;
-    display: block !important;
 }
 .nk-header-tools .dropdown .dropdown-menu .user-card-wrap .user-avatar {
     border-radius: 50%;
@@ -2395,7 +2297,7 @@ div#meeting_modal_content p.textarea-text {
 }
 /*END 25 feb*/
 .modal-backdrop~.modal-backdrop {
-    z-index: 1049;
+    z-index: 1051;
 }
 .modal~.modal {
     z-index: 1052;
@@ -2538,9 +2440,6 @@ div#Create-meeting .col-sm-8.mag-auto {
     }
 }
 @media (max-width: 575.5px) {
-    .head_profbtn{
-        margin-left: 40px;
-    }
     .meeting-box:not(.mt-3) .col-sm-4>.row {
         grid-template-columns: 120px 1fr;
     }
@@ -2790,7 +2689,9 @@ div#Create-meeting .col-sm-8.mag-auto {
 }
 
 @media (max-width: 575.5px) {
-
+    .nk-sidebar:not(.show) .nk-menu li a.active {
+        padding-left: 40px;
+    }
     .as-mobile .simplebar-mask {
         border-top: 1px solid #ddd !important;
     }
@@ -2838,7 +2739,32 @@ div#Create-meeting .col-sm-8.mag-auto {
     top: 0px;
     left: 0px;
 }
-
+.menu_style2 .ni-menu-right:before {
+    background: url(https://cms1.mevolife.com/dash_board/img/menu-left.png) no-repeat center center;
+    cursor: pointer;
+    content: '';
+    width: 20px;
+    display: block;
+    height: 20px;
+    margin: 0 auto;
+    background-size: contain;
+    position: relative;
+    top: 4%;
+    left: 1px;
+}
+.menu_style2 .menu-open.ni-menu-right:before {
+    background: url(https://cms1.mevolife.com/dash_board/img/menu-right.png) no-repeat center center;
+    cursor: pointer;
+    content: '';
+    width: 20px;
+    display: block;
+    height: 20px;
+    margin: 0 auto;
+    background-size: contain;
+    position: relative;
+    top: 4%;
+    left: 1px;
+}
 .custom_tooltip_box {
     position: relative;
 }
@@ -4148,35 +4074,13 @@ span.notifiCnt {
     }
 }
 @media(max-width: 575px) {
-    .nk-header-tools .dropdown .dropdown-menu::before{
-        display:none;
-    }
-    body .nk-header-tools .dropdown .dropdown-menu, .nk-header-tools .dropdown.noti_drop_style .dropdown-menu, body .nk-header-tools .dropdown.vd-sty .dropdown-menu, .nk-header-tools .dropdown.share_drop_style .dropdown-menu{
-        transform: initial !important;
-        top: 40px !important;
-        left: -190px !important;
-    }
-    body .nk-header-tools .dropdown.vd-sty .dropdown-menu{
-        left:-90px !important;
-    }
-    .nk-header-tools .dropdown.share_drop_style .dropdown-menu{
-        left:-120px !important;
-    }
-    .nk-header-tools .dropdown.noti_drop_style .dropdown-menu{
-        width: 280px !important;
-        min-width: 300px;
-    }
-    body .nk-header-tools .user-dropdown .dropdown-menu {
-        left: initial !important;
-        right: 0;
-    }
     .nk-header-tools .nk-quick-nav>li.user-dropdown{
         margin-left:10px !important;
     }
     .nk-header .container-fluid{
         padding:0;
     }
-
+   
     .nk-header-tools .nk-quick-nav>li.setup_btn,
     .prog_bar_trail{
         display:none;
