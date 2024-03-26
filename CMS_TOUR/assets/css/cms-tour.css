@@ -1,0 +1,72 @@
+/*cms Tour css*/
+.guided-tour-step{
+  font-family: 'Inter', sans-serif  !important;
+}
+.guided-tour-step.active .guided-tour-step-tooltip.guided-tour-arrow-top .guided-tour-arrow,
+.guided-tour-step.active .guided-tour-step-tooltip.guided-tour-arrow-left .guided-tour-arrow,
+.guided-tour-step.active .guided-tour-step-tooltip.guided-tour-arrow-right .guided-tour-arrow,
+.guided-tour-step.active .guided-tour-step-tooltip.guided-tour-arrow-bottom .guided-tour-arrow{
+border-bottom-color: #FFF0E9;
+}
+.guided-tour-step.active .guided-tour-step-tooltip.guided-tour-arrow-bottom .guided-tour-arrow{
+  border-bottom: 0;
+  margin-bottom: -8px;
+}
+.guided-tour-step.active .guided-tour-step-tooltip{
+  background: #FFF0E9;
+  box-shadow: initial;
+  padding: 15px;
+  max-width: 220px;
+  margin: 15px;
+}
+.guided-tour-step.active .guided-tour-step-tooltip .guided-tour-step-title{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #030303;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+}
+.guided-tour-step-content{font-size: 12px;text-align: left;color: #364a63;line-height: 18px;font-family: 'Inter', sans-serif;}
+.guided-tour-step.active .guided-tour-step-tooltip .guided-tour-step-title > .icon{width: 40px;flex: 0 0 40px;height: 40px;border-radius: 12px;font-size: 16px;display: flex;align-items: center;margin-right: 10px;justify-content: center;color: #fff;background: linear-gradient(124deg, rgba(255, 112, 47, 1) 0%, rgba(255, 163, 6, 1) 100%);}
+.guided-tour-step-footer{display: flex;justify-content: center;flex-wrap: wrap;margin-top: 10px;}
+.guided-tour-step-footer-bullets{
+flex: 0 0 100%;
+max-width: 100%;
+}
+.guided-tour-step.active .guided-tour-step-tooltip .guided-tour-step-button-close.skipbtn,
+.guided-tour-step.active .guided-tour-step-tooltip .guided-tour-step-button-next, .guided-tour-step.active .guided-tour-step-tooltip .guided-tour-step-button-complete{
+  position: initial;
+  margin: 0;
+  font-size: 12px;
+  margin: 0 10px;
+  background: var(--primary-color);
+  color: #fff;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: initial;
+  border-radius: 5px;
+  height: initial;
+  width: initial;
+  padding: 4px 10px;
+  min-width: 60px;
+  text-align: center;
+}
+.guided-tour-step.active .guided-tour-step-tooltip .guided-tour-step-button-close.skipbtn{
+  background: #fff;
+  color: #030303;
+}
+.guided-tour-step.active .guided-tour-step-tooltip .guided-tour-step-footer-bullets ul{
+  margin: 0;
+  margin-top: 10px;
+}
+.guided-tour-step.active .guided-tour-step-tooltip .guided-tour-step-footer-bullets ul li{
+  border: 0;
+  background: #b6b6b6;
+  margin: 0 3px;
+}
+.guided-tour-step.active .guided-tour-step-tooltip .guided-tour-step-footer-bullets ul li.current{
+  background: var(--primary-color);
+}
