@@ -1,3 +1,6 @@
+.tg-backdrop{
+    z-index:999 !important;
+}
 :root {
     --primary-color: #FF702F;
     --primary-color-rgb: 255, 112, 47;
