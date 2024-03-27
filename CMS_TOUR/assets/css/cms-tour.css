@@ -1,0 +1,104 @@
+@media screen and (max-width:575px) {
+  body.TourStarted .nk-header{
+    z-index:999;
+    position: fixed !important;
+  }
+  body.TourStarted .nk-sidebar-head{
+    min-height:65px;
+  }
+}
+.tg-backdrop{
+  z-index: 999;
+}
+.MyTourBox {
+  background: #FFF0E9;
+}
+.MyTourBox .tg-arrow{
+  background: #FFF0E9;
+}
+.MyTourBox .tg-dialog-header .tg-dialog-title{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #030303;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+.MyTourBox .tg-dialog-header{
+  padding: 15px 15px 0 15px;
+  position: relative;
+}
+.MyTourBox .tg-dialog-header .tg-dialog-close-btn{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.MyTourBox .tg-dialog-body{
+  padding: 15px;
+  font-size: 12px;
+  text-align: left;
+  color: #364a63;
+  line-height: 18px;
+  font-family: 'Inter', sans-serif;
+}
+.MyTourBox .tg-dialog-header .tg-dialog-title > .icon {
+  width: 40px;
+  flex: 0 0 40px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(124deg, rgba(255, 112, 47, 1) 0%, rgba(255, 163, 6, 1) 100%);
+}
+.MyTourBox .tg-dialog-footer{
+  flex-wrap: wrap;
+  padding: 15px;
+  padding-top: 0;
+  row-gap: 10px;
+  justify-content: center;
+}
+.MyTourBox .tg-dialog-footer .tg-dialog-footer-sup{
+  order: 3;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.MyTourBox .tg-dialog-footer .tg-step-progress{
+  display: none !important;
+}
+.MyTourBox .tg-dialog-footer button.tg-dialog-btn{
+  position: initial;
+  margin: 0;
+  font-size: 12px;
+  margin: 0 10px;
+  background: var(--primary-color);
+  color: #fff;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: initial;
+  border-radius: 100px;
+  height: initial;
+  width: initial;
+  padding: 5px 10px;
+  min-width: 60px;
+  text-align: center;
+}
+.MyTourBox .tg-dialog-footer button.tg-dialog-btn:not(:first-child){
+  background: var(--btn-gradiet);
+}
+.MyTourBox .tg-dialog-footer button.tg-dialog-btn:first-child{
+  background: #fff;
+  color: #030303;
+}
+.MyTourBox .tg-dialog-footer button.tg-dialog-btn:not(.disabled):hover{
+  background: var(--primary-color-2);
+  color: #fff;
+  border: 0;
+}
+.MyTourBox .tg-dialog-dots>span.tg-dot.tg-dot-active{
+  background: var(--primary-color);
+}
