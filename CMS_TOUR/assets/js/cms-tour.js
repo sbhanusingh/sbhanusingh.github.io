@@ -1,13 +1,23 @@
 const tg = new tourguide.TourGuideClient({
   exitOnClickOutside: false,
-  dialogPlacement: 'bottom'
-})
+  dialogPlacement: 'bottom',
+  isVisible: true,
+  dialogClass: "MyTourBox"
+});
 
 
 
-
-
- setTimeout(()=> {
-   tg.start()
+setTimeout(()=> {
+   tg.start().then(()=>{
+      $('body').addClass('TourStarted');  
+    });
+   
 }
-,1000);
+,800);
+
+
+tg.onAfterExit(()=>{
+  $('body').removeClass('TourStarted');  
+});
+
+
