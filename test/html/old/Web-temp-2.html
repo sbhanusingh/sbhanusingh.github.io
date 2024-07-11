@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+   <base href="../">
+   <meta charset="utf-8">
+   <meta name="author" content="Softnio">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description"
+      content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+   <!-- Fav Icon  -->
+   <link rel="shortcut icon" href="./images/favicon.png">
+   <!-- Page Title  -->
+   <title>Digital</title>
+
+   <!-- StyleSheets  -->
+   <link rel="stylesheet" href="https://mevolife.com/coach-crm/css/dashlite.css">
+   <link id="skin-default" rel="stylesheet" href="https://mevolife.com/coach-crm/css/theme.css">
+   <link id="skin-default" rel="stylesheet" href="https://mevolife.com/coach-crm/css/mycustom.css">
+   <link rel="stylesheet" href="./assets/css/plugins.css">
+   <link rel="stylesheet" href="./assets/css/intlTelInput.css" />
+   <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+   <link href="./assets/css/digital.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="red">
+    <div class="web_boxc web_temp3 laptop" id="sortable">
+      <header class="" style="--header-primary-color:#fff; --header-text-color:#1f1f1f; --header-text-hover-color:#FF702F;">
+         <style>
+             header .container-fluid {
+                 padding-right: 15px;
+                 padding-left: 15px;
+                 margin-right: auto;
+                 margin-left: auto;
+             }
+     
+             header ul {
+                 padding: 0;
+                 margin: 0;
+                 list-style: none;
+             }
+     
+             header a {
+                 text-decoration: none;
+             }
+     
+             header .row {
+                 margin: 0 -15px !important;
+                 padding: 0 !important;
+             }
+     
+             header .col-md-12 {
+                 position: relative;
+                 width: 100%;
+                 padding-right: 15px;
+                 padding-left: 15px;
+             }
+     
+             header.fixed-header {
+                 position: fixed;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 animation: translateX .4s;
+             }
+     
+             header {
+                 background:var(--header-primary-color);
+                 z-index: 992;
+                 font-family: var(--theme-font);
+                 height: 75px;
+                 padding: 0 45px;
+                 position: relative;
+                 box-shadow: 0 3px 5px rgb(57 57 57 / 10%) !important;
+             }
+     
+             @keyframes translateX {
+                 0% {
+                     t-webkit-transform: translate3d(0, -80px, 0);
+                     transform: translate3d(0, -80px, 0);
+                     background: #fff;
+                     box-shadow: rgba(0, 0, 0, 0.09804) 0px 2px 4px;
+                 }
+     
+                 100% {
+                     -webkit-transform: translate3d(0, 0, 0);
+                     transform: translate3d(0, 0, 0);
+                 }
+             }
+     
+             header .h_flex {
+                 display: flex;
+                 align-items: center;
+                 position: relative;
+                 justify-content: space-between;
+             }
+     
+             header .h_flex>ul {
+                 margin-left: auto;
+                 margin-bottom: 0;
+                 display: flex;
+                 list-style: none;
+             }
+     
+             header .h_logo {
+                 height: 75px;
+             }
+     
+             header .h_logo a {
+                 display: block;
+             }
+     
+             header .h_logo a img {
+                 height: 75px;
+                 width: 190px;
+                 object-fit: cover;
+             }
+     
+             header .position-relative {
+                 position: relative;
+             }
+     
+             header .h_flex>ul>li+li {
+                 margin-left: 12px;
+             }
+     
+             header .h_flex>ul>li>a,
+             header .h_flex>ul>li>span>a {
+                 font-weight: 600;
+                 position: relative;
+                 text-transform: uppercase;
+                 font-size: 14px;
+                 padding: 26px 10px;
+                 display: block;
+                 z-index: 1;
+                 color: var(--header-text-color);
+                 font-family: var(--theme-font);
+                 transition: .3s ease-in-out;
+                 z-index: 99;
+             }
+             header .h_flex>ul>li.btn_li{
+                 display: flex;
+                 align-items: center;
+             }
+             header .h_flex>ul>li.btn_li >a{
+                 background: var(--primary-color);
+                 color: #fff;
+                 border-radius: 5px;
+                 border: 0;
+                 padding: 12px 15px;
+                 font-size: 15px;
+                 font-family: var(--theme-font);
+                 font-weight: 500;
+                 cursor: pointer;
+                 transition: .3s ease-in-out;
+                 display: block;
+                 text-align: center;
+                 overflow: hidden;
+                 min-width: 140px;
+             }
+             header .h_flex>ul>li .downArr {
+                 position: absolute;
+                 font-weight: 900;
+                 right: 0px;
+                 top: 28px;
+                 height: 18px;
+                 width: 18px;
+                 transition: .3s ease-in-out;
+             }
+             header .h_flex>ul>li .downArr path{
+               fill: var(--header-text-color);
+             }
+     
+             header .h_flex>ul>li:hover>a>.downArr,
+             header .h_flex>ul>li>a.active .downArr,
+             header .mega_menu a.activetitle .downArr {
+                 transform: rotate(180deg);
+             }
+     
+             header .h_flex>ul>li:not(.no_dropdown)>a {
+                 padding-right: 20px;
+             }
+     
+             header .h_flex>ul>li:hover>a {
+                 color: var(--header-text-hover-color);
+             }
+     
+             header .drop_down {
+                 background: var(--header-primary-color);
+                 z-index: 9;
+                 position: absolute;
+                 top: 110px;
+                 left: 0;
+                 box-shadow: 0px 0px 20px rgba(190, 190, 190, 0.2);
+                 gap: 0 30px;
+                 padding: 20px;
+                 width: 250px;
+                 max-height: 450px;
+                 overflow-y: auto;
+                 scroll-behavior: smooth;
+             }
+     
+             header .drop_down.mega_menu {
+                 left: 50%;
+                 transform: translateX(-50%);
+                 width: 90%;
+                 display: grid;
+                 grid-template-columns: repeat(5, 1fr);
+                 gap: 20px;
+                 padding-bottom: 0;
+             }
+     
+             header ul .drop_down a {
+                 display: flex;
+                 align-items: center;
+                 font-weight: 500;
+                 font-family: var(--theme-font);
+                 text-transform: initial;
+                 transition: .3s ease-in-out;
+                 color: var(--header-text-color);
+                 font-size: 14px;
+             }
+     
+             header ul .drop_down a.with_desc {
+                 align-items: flex-start;
+             }
+     
+             header ul .drop_down a img {
+                 height: 25px;
+                 flex: 0 0 25px;
+                 width: 25px;
+                 margin-right: 10px;
+             }
+     
+             header ul .drop_down li+li {
+                 padding-top: 20px;
+             }
+     
+             header ul .mega_menu li+li {
+                 padding-top: 15px;
+             }
+     
+             header .h_flex>ul>li>a::before {
+                 content: '';
+                 left: 0;
+                 bottom: 0;
+                 width: 100%;
+                 height: 70%;
+                 border-top-right-radius: 100%;
+                 border-top-left-radius: 100%;
+                 transition: .3s ease-in-out;
+                 background: var(--header-text-hover-color);
+                 z-index: -1;
+                 opacity: 0;
+                 position: absolute;
+             }
+     
+             header .h_flex>ul>li:hover>a::before,
+             header .h_flex>ul>li>a.active::before {
+                 height: 100%;
+                 opacity: .1;
+                 border-radius: 0;
+             }
+     
+             header .h_flex>ul>li>a.drop_down_click::after {
+                 content: '';
+                 position: absolute;
+                 left: 50%;
+                 transform: translateX(-50%);
+                 clip-path: polygon(51% 100%, 0 0, 100% 0);
+                 bottom: -12px;
+                 height: 12px;
+                 width: 25px;
+                 background: transparent;
+                 transition: .3s ease-in-out;
+                 z-index: 99;
+             }
+     
+             header .mt-20 {
+                 margin-top: 20px;
+             }
+     
+             header .h_flex>ul>li:hover>a.drop_down_click::after {
+                 background: var(--header-text-hover-color);
+                 opacity: .1;
+             }
+     
+             header .drop_down .title {
+                 display: flex;
+                 border-bottom: 1px solid #e8e8e8;
+                 padding-bottom: 15px;
+                 font-size: 14px;
+                 margin-bottom: 20px;
+                 text-transform: uppercase;
+                 align-items: center;
+                 font-weight: 600;
+             }
+     
+             header .vw_all {
+                 grid-column: 1 / span 5;
+                 text-align: center;
+                 border-top: 1px solid #e8e8e8;
+                 padding-top: 10px;
+                 position: sticky;
+                 bottom: 0;
+                 background: #fff;
+                 padding-bottom: 10px;
+             }
+     
+             header .vw_all a {
+                 justify-content: center;
+                 text-transform: uppercase !important;
+             }
+     
+             header .drop_down .title a {
+                 color: #808080;
+                 text-transform: uppercase;
+             }
+     
+             header a:hover {
+                 color: var(--header-text-hover-color) !important;
+             }
+     
+             header .drop_down a p {
+                 margin-bottom: 0;
+                 margin-top: 5px;
+                 line-height: 16px;
+                 color: #707070;
+                 font-size: 12px;
+                 text-transform: initial;
+                 font-weight: 400;
+             }
+     
+             @media (min-width: 1199px) {
+                 header .drop_down {
+                     /* transition: .3s ease-in-out;
+                     opacity: 0;
+                     visibility: hidden;
+                     pointer-events: none; */
+                     -webkit-animation-name: fadeIn;
+                     animation-name: fadeIn;
+                     display: none !important;
+                     -webkit-animation-duration: 1s;
+                     animation-duration: 1s;
+                     -webkit-animation-fill-mode: both;
+                     animation-fill-mode: both;
+                 }
+                 @keyframes fadeIn {
+                     0% {
+                         opacity: 0;
+                     }
+     
+                     100% {
+                         opacity: 1;
+                     }
+                 }
+                 header .h_flex>ul>li:hover .drop_down {
+                     top: 75px;
+                     /* opacity: 1;
+                     visibility: visible;
+                     pointer-events: all; */
+                     display: block !important;
+                     animation: Movetop .4s;
+                 }
+                 header .h_flex>ul>li:hover .drop_down.mega_menu{
+                     display: grid !important;
+                 }
+                 @keyframes Movetop {
+                     0% {
+                         top: 110px;
+                     }
+     
+                     100% {
+                         top: 72px;
+                     }
+                 }
+                 header .h_flex>ul>li:hover .drop_down.mega_menu {
+                     top: 74;
+                 }
+     
+                 header .menu_collapse {
+                     display: none;
+                 }
+     
+                 header .drop_down .title .downArr {
+                     display: none;
+                 }
+             }
+     
+             /* width */
+             header .drop_down::-webkit-scrollbar {
+                 width: 5px;
+             }
+     
+             /* Track */
+             header .drop_down::-webkit-scrollbar-track {
+                 background: #f1f1f1;
+                 border-radius: 100px;
+             }
+     
+             /* Handle */
+             header .drop_down::-webkit-scrollbar-thumb {
+                 background: #1f1f1f;
+                 border-radius: 100px;
+             }
+     
+             /* Handle on hover */
+             header .drop_down::-webkit-scrollbar-thumb:hover {
+                 background: #555;
+             }
+     
+             header .h_flex>ul>li:last-child>.drop_down {
+                 left: initial;
+                 right: 0;
+             }
+     
+             @media screen and (max-width: 1199px) {
+                 header .drop_down {
+                     position: initial;
+                     width: 100%;
+                 }
+                 header .h_flex>ul>li.btn_li{
+                     padding: 15px;
+                 }
+                 header .h_flex>ul>li>a.drop_down_click::after {
+                     display: none;
+                 }
+     
+                 header ul.right_nav {
+                     position: absolute;
+                     top: 0;
+                     max-height: calc(100vh - 65px);
+                     left: -45px;
+                     width: calc(100% + 90px);
+                     text-align: left;
+                     background-color: var(--header-primary-color);
+                     transition: .3s ease-in-out;
+                     z-index: 9999;
+                     display: block;
+                     pointer-events: none;
+                     opacity: 0;
+                     border-top: 1px solid rgba(232, 232, 232, .1);
+                     padding: 0 45px;
+                 }
+     
+                 header .menu_collapse {
+                     padding: 12px 0 12px 15px;
+                     position: relative;
+                     cursor: pointer;
+                     display: block;
+                 }
+     
+                 header .menu_collapse span {
+                     height: 2px;
+                     position: relative;
+                     width: 30px;
+                     background: var(--header-text-color);
+                     border-radius: 5px;
+                     display: block;
+                 }
+     
+                 header .menu_collapse span::after,
+                 header .menu_collapse span::before {
+                     content: '';
+                     bottom: -8px;
+                     position: absolute;
+                     right: 0;
+                     width: 100%;
+                     height: 2px;
+                     border-radius: 5px;
+                     background: var(--header-text-color);
+                     transition: .3s ease-in-out;
+                 }
+     
+                 header .menu_collapse span::after {
+                     top: -8px;
+                 }
+     
+                 header ul.right_nav.slide {
+                     top: 70px;
+                     opacity: 1;
+                     overflow-y: auto;
+                     pointer-events: all;
+                     border-top: 2px solid #e8e8e8;
+                 }
+     
+                 header .drop_down,
+                 header .drop_down.mega_menu,
+                 header .mega_menu .m_col>ul {
+                     display: none;
+                 }
+     
+                 header .h_flex>ul>li+li {
+                     margin-left: 0;
+                 }
+     
+                 header .menu_collapse.active span {
+                     background: 0 0;
+                 }
+     
+                 header .h_flex>ul>li>a {
+                     padding: 15px;
+                 }
+     
+                 header .menu_collapse.active span::before {
+                     transform: rotate(45deg);
+                     bottom: 1px;
+                 }
+     
+                 header .menu_collapse.active span::after {
+                     transform: rotate(-45deg);
+                     top: -1px;
+                 }
+     
+                 header .h_flex>ul>li .downArr {
+                     right: 10px;
+                     top: 15px;
+                 }
+     
+                 header .drop_down.mega_menu {
+                     transform: initial;
+                     width: 100%;
+                 }
+     
+                 header .drop_down .m_col .title {
+                     border: 0;
+                     margin: 0;
+                     padding: 0;
+                     display: block;
+                 }
+     
+                 header .drop_down .m_col .title.mt-20 {
+                     border-top: 1px solid #e8e8e8;
+                     margin-top: 15px;
+                     padding-top: 15px;
+                 }
+     
+                 header .drop_down .title a {
+                     position: relative;
+                 }
+     
+                 header .drop_down .title a .downArr {
+                     top: 0;
+                 }
+     
+                 header .mega_menu .m_col+.m_col {
+                     border-top: 1px solid #e8e8e8;
+                     margin-top: 15px;
+                     padding-top: 15px;
+                 }
+     
+                 header .mega_menu .m_col>ul {
+                     border-top: 1px solid #e8e8e8;
+                     margin-top: 15px;
+                     padding-top: 15px;
+                 }
+     
+                 header .drop_down {
+                     max-height: initial;
+                     padding: 15px;
+                 }
+     
+                 header .vw_all {
+                     margin-top: 15px;
+                 }
+             }
+     
+             @media screen and (max-width: 991px) {
+                 header {
+                     padding: 0;
+                 }
+     
+                 header .h_logo {
+                     margin: auto;
+                 }
+     
+                 header ul.right_nav {
+                     left: 0;
+                     width: 100%;
+                     padding: 0;
+                     padding-bottom: 15px;
+                 }
+     
+             }
+             @media screen and (max-width:575px) {
+                 header .h_flex>ul>li.btn_li >a{
+                     width: 100%;
+                 }
+             }
+             header figure.edit_img{
+                 position:relative;
+                 margin-bottom: 0;
+             }
+             header:not(.edit_thm) .edit{
+                 display:none !important;
+             }
+             header.edit_thm .edit{
+                 display:flex !important;
+             }
+             header figure.edit_img .change_img {
+                 width: 28px;
+                 height: 28px;
+                 border-radius: 100px;
+                 background-color: #eaecef;
+                 color: #364a63;
+                 display: flex;
+                 align-items: center;
+                 position: absolute;
+                 top: 0;
+                 right: -20px;
+                 border: 0;
+                 justify-content: center;
+             }
+             header .edit svg {
+                 height: 16px;
+                 width: 16px;
+             }
+             header figure.edit_img .change_img:hover{
+                 background-color: #364a63;
+             }
+             header .edit:hover path{
+                 fill:#fff
+             }
+         </style>
+         <div class="container-fluid">
+             <div class="row">
+                 <div class="col-md-12 h_flex">
+                     <div class="edit_box logo h_logo">
+                         <figure class="edit_img">
+                             <a href="https://mevolife.com"> <img src="https://dy6o3vurind23.cloudfront.net/img/developerimg/choco_virtualcore_20211005101632_db/LIBRARY_IMAGES/6e0423b7-06d6-40e9-b6c8-f6c6c6fcee08/mevolife-fitness-software-platform-400-200.webp" alt="MEVOLIFE FITNESS SOFTWARE PLATFORM" title="MEVOLIFE FITNESS SOFTWARE PLATFORM" data-name="MEVOLIFE FITNESS SOFTWARE PLATFORM"> </a>
+                             <a href="#" class="change_img edit">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3H15L17 5H21C21.5523 5 22 5.44772 22 6V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V6C2 5.44772 2.44772 5 3 5H7L9 3ZM12 19C15.3137 19 18 16.3137 18 13C18 9.68629 15.3137 7 12 7C8.68629 7 6 9.68629 6 13C6 16.3137 8.68629 19 12 19ZM12 17C9.79086 17 8 15.2091 8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17Z"></path></svg>
+                             </a>
+                         </figure>
+                     </div>
+                     <ul class="right_nav not_login">
+                         
+                                                         <li class="no_dropdown">
+                                     <a target="" onclick="scrollToSection(42)" href="javascript:void(0)">
+                                         COACH BANNER SECTION                                </a>
+                                 </li>
+                                                     
+                                                         <li class="no_dropdown">
+                                     <a target="" onclick="scrollToSection(43)" href="javascript:void(0)">
+                                         ABOUT US                                 </a>
+                                 </li>
+                                                     
+                                                         <li class="no_dropdown">
+                                     <a target="" onclick="scrollToSection(44)" href="javascript:void(0)">
+                                         DOWNLOAD APP                                </a>
+                                 </li>
+                                                     
+                                                         <li class="no_dropdown">
+                                     <a target="" onclick="scrollToSection(45)" href="javascript:void(0)">
+                                         OUR TEAM                                </a>
+                                 </li>
+                                                     
+                                                     
+                                                     
+                                                                         
+                             <li class="position-relative">
+                                 <a target="" href="javascript:void(0)" class="drop_down_click"> More
+                                     <svg class="downArr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                         <path d="M11.9997 13.1714L16.9495 8.22168L18.3637 9.63589L11.9997 15.9999L5.63574 9.63589L7.04996 8.22168L11.9997 13.1714Z"> </path>
+                                     </svg>
+                                 </a>
+                                 <div class="drop_down">
+                                     <ul class="">
+                                         <li>
+                                              <a target="" onclick="scrollToSection(46)" href="javascript:void(0)">
+                                              
+                                                   <img src="https://dy6o3vurind23.cloudfront.net/img/developerimg/choco_virtualcore_20211005101632_db/LIBRARY_IMAGES/header-icons/oc1.webp" alt="">RATING</a> 
+                                   </li><li>
+                                              <a target="" onclick="scrollToSection(47)" href="javascript:void(0)">
+                                              
+                                                   <img src="https://dy6o3vurind23.cloudfront.net/img/developerimg/choco_virtualcore_20211005101632_db/LIBRARY_IMAGES/header-icons/oc1.webp" alt="">MAP</a> 
+                                   </li><li>
+                                              <a target="" onclick="scrollToSection(48)" href="javascript:void(0)">
+                                              
+                                                   <img src="https://dy6o3vurind23.cloudfront.net/img/developerimg/choco_virtualcore_20211005101632_db/LIBRARY_IMAGES/header-icons/oc1.webp" alt="">FOOTER</a> 
+                                   </li>                                 </ul>
+                                 </div>
+                             </li>
+                         
+     
+                     </ul>
+                     <a href="javascript:void(0)" class="edit edit_pen" data-toggle="modal" data-target="#ColorTheme">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.33409 4.54491C6.3494 3.63637 7.55145 2.9322 8.87555 2.49707C9.60856 3.4128 10.7358 3.99928 12 3.99928C13.2642 3.99928 14.3914 3.4128 15.1245 2.49707C16.4486 2.9322 17.6506 3.63637 18.6659 4.54491C18.2405 5.637 18.2966 6.90531 18.9282 7.99928C19.5602 9.09388 20.6314 9.77679 21.7906 9.95392C21.9279 10.6142 22 11.2983 22 11.9993C22 12.7002 21.9279 13.3844 21.7906 14.0446C20.6314 14.2218 19.5602 14.9047 18.9282 15.9993C18.2966 17.0932 18.2405 18.3616 18.6659 19.4536C17.6506 20.3622 16.4486 21.0664 15.1245 21.5015C14.3914 20.5858 13.2642 19.9993 12 19.9993C10.7358 19.9993 9.60856 20.5858 8.87555 21.5015C7.55145 21.0664 6.3494 20.3622 5.33409 19.4536C5.75952 18.3616 5.7034 17.0932 5.0718 15.9993C4.43983 14.9047 3.36862 14.2218 2.20935 14.0446C2.07212 13.3844 2 12.7002 2 11.9993C2 11.2983 2.07212 10.6142 2.20935 9.95392C3.36862 9.77679 4.43983 9.09388 5.0718 7.99928C5.7034 6.90531 5.75952 5.637 5.33409 4.54491ZM13.5 14.5974C14.9349 13.7689 15.4265 11.9342 14.5981 10.4993C13.7696 9.0644 11.9349 8.57277 10.5 9.4012C9.06512 10.2296 8.5735 12.0644 9.40192 13.4993C10.2304 14.9342 12.0651 15.4258 13.5 14.5974Z"></path></svg>
+                     </a>
+                     <div class="menu_collapse"><span></span></div>
+                 </div>
+             </div>
+         </div>
+     </header>
+    
+        <div class="web_banner">
+           <div class="container">
+              <div class="row align-items-center">
+                 <div class="col-md-6 text-left">
+                      <div class="edit_box">
+                        <div class="edittext">
+                          <h1 class="edit_input">Lorem ipsum dolor sit amet, consetetur sadipscing </h1>
+                          <div class="color-picker">
+                             <label for="colorPicker">
+                               <input type="color" value="#1f1f1f" id="colorPicker">
+                            </label>
+                           </div>
+                       </div>
+                       <div class="edittext">
+                          <h2 class="edit_input">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut </h2>
+                          <div class="color-picker">
+                             <label for="colorPicker">
+                               <input type="color" value="#1f1f1f" id="colorPicker">
+                            </label>
+                           </div>
+                       </div>
+                       <div class="edittext">
+                          <p class="edit_input">labore et dolore magna aliquyam erat, sed diam</p>
+                             <div class="color-picker">
+                                <label for="colorPicker">
+                                <input type="color" value="#1f1f1f" id="colorPicker">
+                             </label>
+                             </div>
+                          </div>
+                       <a href="javascript:void(0)" class="edit edit_pen">
+                          <em class="icon ni ni-pen2"></em>
+                       </a>
+                      </div>
+                 </div>
+                 <div class="col-md-6 text-center mt-3 mt-md-0">
+                  <div class="edit_box figure_box">
+                     <figure class="edit_img">
+                        <img src="./images/Top-img-2.png" class="img-responsive" alt="">
+                        <div class="dropdown change_img">
+                           <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <em class="icon ni ni-camera-fill"></em>
+                           </button>
+                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <label for="">Choose background Image</label>
+                             <a class="dropdown-item library" data-traget="#Lib_1" href="javascript:void(0)">
+                               Choose from library <span class="color"></span>
+                             </a>
+                             <a class="dropdown-item" href="javascript:void(0)">
+                              Custom Upload <span class="color"></span>
+                             </a>
+                           </div>
+                         </div>
+                     </figure>
+                     <a href="javascript:void(0)" class="edit edit_pen">
+                        <em class="icon ni ni-pen2"></em>
+                     </a>
+                  </div>
+                 </div>
+              </div> 
+           </div>
+           <div class="dropdown edit edit_btn">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Edit
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <a class="dropdown-item" href="javascript:void(0)">
+                  Change background Color 
+                  <div class="color-picker">
+                     <label for="colorPicker">
+                       <input type="color" value="#1f1f1f" id="colorPicker">
+                    </label>
+                    <span>
+                        #1f1f1f
+                    </span>
+                   </div>
+                 </a>
+              </div>
+            </div>
+        </div>
+        <div class="web_about web_sec">
+           <div class="container">
+              <div class="row align-items-center">
+                 
+                 <div class="col-lg-6 mb-3 mb-lg-0">
+                    <div class="edit_box figure_box">
+                       <figure class="edit_img">
+                          <img src="./images/about-img-3.png" alt="">
+                          <a href="#" class="change_img">
+                             <em class="icon ni ni-camera-fill"></em>
+                          </a>
+                       </figure>
+                       <a href="javascript:void(0)" class="edit edit_pen">
+                          <em class="icon ni ni-pen2"></em>
+                       </a>
+                    </div>
+                 </div>
+                 <div class="col-lg-6 mt-3 mt-md-0">
+                  <div class="edit_box">
+                     <div class="edittext">
+                        <h3 class="websec_title edit_input">Lorem ipsum dolor sit amet, 
+                           consetetur</h3>
+                        <div class="color-picker">
+                           <label for="colorPicker">
+                             <input type="color" value="#1f1f1f" id="colorPicker">
+                          </label>
+                         </div>
+                     </div>
+                     <div class="edittext">
+                        <p class="websec_desc edit_input">
+                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                        </p>
+                        <div class="color-picker">
+                           <label for="colorPicker">
+                             <input type="color" value="#1f1f1f" id="colorPicker">
+                          </label>
+                         </div>
+                     </div>
+                     <!-- <div class="edittext">
+                        <ul class="edit_input websec_ulli">
+                           <li>
+                              Lorem ipsum dolor sit amet
+                           </li>
+                           <li>
+                              Lorem ipsum dolor sit amet
+                           </li>
+                           <li>
+                              Lorem ipsum dolor sit amet
+                           </li>
+                           <li>
+                              Lorem ipsum dolor sit amet
+                           </li>
+                        </ul>
+                        <div class="color-picker">
+                           <label for="colorPicker">
+                             <input type="color" value="#1f1f1f" id="colorPicker">
+                          </label>
+                         </div>
+                     </div> -->
+                     
+                     <a href="javascript:void(0)" class="edit edit_pen">
+                        <em class="icon ni ni-pen2"></em>
+                     </a>
+                  </div>
+               </div>
+              </div>
+           </div>
+           <a href="javascript:void(0)" class="sec_sortbtn ui-sortable-handle">
+              <em class="icon ni ni-equal"></em>
+           </a>
+           <div class="dropdown edit edit_btn">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Edit
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               
+                <a class="dropdown-item" href="javascript:void(0)">
+                 Change background Color 
+                 <div class="color-picker">
+                    <label for="colorPicker">
+                      <input type="color" value="#1f1f1f" id="colorPicker">
+                   </label>
+                   <span>
+                       #1f1f1f
+                   </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+      
+        <div class="web_sec web_team text-center">
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <div class="edit_box text-center">
+                       <div class="edittext">
+                          <h2 class="websec_title edit_input">our team</h2>
+                          <div class="color-picker">
+                             <label for="colorPicker">
+                               <input type="color" value="#1f1f1f" id="colorPicker">
+                            </label>
+                           </div>
+                       </div>
+                       <div class="edittext">
+                          <p class="websec_desc edit_input">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <br>eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                          <div class="color-picker">
+                             <label for="colorPicker">
+                               <input type="color" value="#1f1f1f" id="colorPicker">
+                            </label>
+                           </div>
+                       </div>
+                       <a href="javascript:void(0)" class="edit edit_pen">
+                          <em class="icon ni ni-pen2"></em>
+                       </a>
+                    </div>
+                 </div>
+              </div>
+              <div class="row">
+                 <div class="col-md-12">
+                    <div class="team_carousel owl-carousel carusel_3">
+                       <div class="item">
+                          <div class="edit_box team_box">
+                             <figure class="edit_img">
+                                <img src="./images/author.png" alt="">
+                                <a href="#" class="change_img">
+                                   <em class="icon ni ni-camera-fill"></em>
+                                </a>
+                             </figure>
+                            <div class="edittext ">
+                             <h4 class="edit_input">
+                               Jogn Doe
+                             </h4>
+                            </div>
+                            <div class="edittext">
+                             <p class="websec_desc edit_input">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
+                             </p>
+                            </div>
+                             <a href="javascript:void(0)" class="edit edit_pen">
+                                <em class="icon ni ni-pen2"></em>
+                             </a>
+                             <a href="javascript:void(0)" class="edit edit_remove">
+                                <em class="icon ni ni-cross"></em>
+                             </a>
+                          </div>
+                       </div>
+                       <div class="item">
+                          <div class="edit_box team_box">
+                             <figure class="edit_img">
+                                <img src="./images/author.png" alt="">
+                                <a href="#" class="change_img">
+                                   <em class="icon ni ni-camera-fill"></em>
+                                </a>
+                             </figure>
+                            <div class="edittext ">
+                             <h4 class="edit_input">
+                               Jogn Doe
+                             </h4>
+                            </div>
+                            <div class="edittext">
+                             <p class="websec_desc edit_input">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
+                             </p>
+                            </div>
+                             <a href="javascript:void(0)" class="edit edit_pen">
+                                <em class="icon ni ni-pen2"></em>
+                             </a>
+                             <a href="javascript:void(0)" class="edit edit_remove">
+                                <em class="icon ni ni-cross"></em>
+                             </a>
+                          </div>
+                       </div>
+                       <div class="item">
+                          <div class="edit_box team_box">
+                             <figure class="edit_img">
+                                <img src="./images/author.png" alt="">
+                                <a href="#" class="change_img">
+                                   <em class="icon ni ni-camera-fill"></em>
+                                </a>
+                             </figure>
+                            <div class="edittext ">
+                             <h4 class="edit_input">
+                               Jogn Doe
+                             </h4>
+                            </div>
+                            <div class="edittext">
+                             <p class="websec_desc edit_input">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
+                             </p>
+                            </div>
+                             <a href="javascript:void(0)" class="edit edit_pen">
+                                <em class="icon ni ni-pen2"></em>
+                             </a>
+                             <a href="javascript:void(0)" class="edit edit_remove">
+                                <em class="icon ni ni-cross"></em>
+                             </a>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+
+           <a href="javascript:void(0)" class="sec_sortbtn ui-sortable-handle">
+              <em class="icon ni ni-equal"></em>
+           </a>
+           <div class="dropdown edit edit_btn">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Edit
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               
+                <a class="dropdown-item" href="javascript:void(0)">
+                 Change background Color 
+                 <div class="color-picker">
+                    <label for="colorPicker">
+                      <input type="color" value="#1f1f1f" id="colorPicker">
+                   </label>
+                   <span>
+                       #1f1f1f
+                   </span>
+                  </div>
+                </a>
+                <a href="javascript:void(0)" class="dropdown-item add_team_box">
+                 <em class="icon ni ni-plus-circle-fill"></em> Add Team Member
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <div class="web_sec web_appcta" style="background: url('./images/app-bg.jpg');">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="bg_card">
+                     <div class="row align-items-center">
+                        <div class="col-lg-6 order-2 order-lg-1">
+                           <div class="edit_box">
+                              <div class="edittext">
+                                 <h2 class="websec_title edit_input">Download Our app</h2>
+                                 <div class="color-picker">
+                                    <label for="colorPicker">
+                                      <input type="color" value="#1f1f1f" id="colorPicker">
+                                   </label>
+                                  </div>
+                              </div>
+                              <div class="edittext">
+                                 <p class="websec_desc edit_input">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, autem nisi? Asperiores adipisci architecto dolorem! Repellendus quam omnis facilis repudiandae modi dicta aperiam enim eius laboriosam, tenetur consequatur nemo voluptas!</p>
+                                 <div class="color-picker">
+                                    <label for="colorPicker">
+                                      <input type="color" value="#1f1f1f" id="colorPicker">
+                                   </label>
+                                  </div>
+                              </div>
+                              <ul class="do_btn ">
+                                 <li>
+                                    <a href="#">
+                                      <img src="./images/apple.png" alt="">
+                                       <span><small>Download on the</small>
+                                          App Store</span>
+                                    </a>
+                                    <input type="text" class="form-control hasvalue value-exists" value="www.applestore.com">
+                                 </li>
+                                 <li>
+                                    <a href="#">
+                                       <img src="./images/google-play.png" alt="">
+                                       <span>
+                                          <small>Get it on</small>
+                                    Google Play
+                                       </span>
+                                    </a>
+                                    <input type="text" class="form-control hasvalue value-exists" value="www.playstore.com">
+                                 </li>
+                              </ul>
+                              <a href="javascript:void(0)" class="edit edit_pen">
+                                 <em class="icon ni ni-pen2"></em>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 mb-3 mb-lg-0 order-1 order-lg-2">
+                           <div class="edit_box figure_box app_img">
+                              <figure class="edit_img">
+                                 <img src="./images/mob-2.png" alt="">
+                                 <a href="#" class="change_img">
+                                    <em class="icon ni ni-camera-fill"></em>
+                                 </a>
+                              </figure>
+                              <a href="javascript:void(0)" class="edit edit_pen">
+                                 <em class="icon ni ni-pen2"></em>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a href="javascript:void(0)" class="sec_sortbtn ui-sortable-handle">
+            <em class="icon ni ni-equal"></em>
+         </a>
+     </div>
+
+        <div class="web_sec web_testimonail text-center">
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <div class="edit_box text-center">
+                       <div class="edittext">
+                          <h2 class="websec_title edit_input">Rating & Reviews</h2>
+                          <div class="color-picker">
+                             <label for="colorPicker">
+                               <input type="color" value="#1f1f1f" id="colorPicker">
+                            </label>
+                           </div>
+                       </div>
+                       <div class="edittext">
+                          <p class="websec_desc edit_input">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <br>eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                          <div class="color-picker">
+                             <label for="colorPicker">
+                               <input type="color" value="#1f1f1f" id="colorPicker">
+                            </label>
+                           </div>
+                       </div>
+                       <a href="javascript:void(0)" class="edit edit_pen">
+                          <em class="icon ni ni-pen2"></em>
+                       </a>
+                    </div>
+                 </div>
+              </div>
+              <div class="row">
+                 <div class="col-md-12">
+                  <div class="testimonial_carousel owl-carousel carusel_3">
+                     <div class="item">
+                        <div class="edit_box testi_box">
+                           <figure class="edit_img">
+                              <img src="./images/author.png" alt="">
+                              <a href="#" class="change_img">
+                                 <em class="icon ni ni-camera-fill"></em>
+                              </a>
+                           </figure>
+                          
+                          <div class="edittext">
+                            <ul class="rating">
+                               <li>
+                                  <a href="javascript:void(0)" class="active">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)" class="active">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                            </ul>
+                           <p class="websec_desc edit_input">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
+                           </p>
+                          </div>
+                          <div class="edittext name">
+                           <h4 class="edit_input">
+                             Jogn Doe
+                           </h4>
+                          </div>
+                           <a href="javascript:void(0)" class="edit edit_pen">
+                              <em class="icon ni ni-pen2"></em>
+                           </a>
+                           <a href="javascript:void(0)" class="edit edit_remove">
+                              <em class="icon ni ni-cross"></em>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="edit_box testi_box">
+                           <figure class="edit_img">
+                              <img src="./images/author.png" alt="">
+                              <a href="#" class="change_img">
+                                 <em class="icon ni ni-camera-fill"></em>
+                              </a>
+                           </figure>
+                          
+                          <div class="edittext">
+                            <ul class="rating">
+                               <li>
+                                  <a href="javascript:void(0)" class="active">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)" class="active">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                            </ul>
+                           <p class="websec_desc edit_input">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
+                           </p>
+                          </div>
+                          <div class="edittext name">
+                           <h4 class="edit_input">
+                             Jogn Doe
+                           </h4>
+                          </div>
+                           <a href="javascript:void(0)" class="edit edit_pen">
+                              <em class="icon ni ni-pen2"></em>
+                           </a>
+                           <a href="javascript:void(0)" class="edit edit_remove">
+                              <em class="icon ni ni-cross"></em>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="item">
+                        <div class="edit_box testi_box">
+                           <figure class="edit_img">
+                              <img src="./images/author.png" alt="">
+                              <a href="#" class="change_img">
+                                 <em class="icon ni ni-camera-fill"></em>
+                              </a>
+                           </figure>
+                          
+                          <div class="edittext">
+                            <ul class="rating">
+                               <li>
+                                  <a href="javascript:void(0)" class="active">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)" class="active">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                               <li>
+                                  <a href="javascript:void(0)">
+                                     <i class="fa fa-star" aria-hidden="true"></i>
+                                  </a>
+                               </li>
+                            </ul>
+                           <p class="websec_desc edit_input">
+                              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eir
+                           </p>
+                          </div>
+                          <div class="edittext name">
+                           <h4 class="edit_input">
+                             Jogn Doe
+                           </h4>
+                          </div>
+                           <a href="javascript:void(0)" class="edit edit_pen">
+                              <em class="icon ni ni-pen2"></em>
+                           </a>
+                           <a href="javascript:void(0)" class="edit edit_remove">
+                              <em class="icon ni ni-cross"></em>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                 </div>
+              </div>
+           </div>
+
+           <a href="javascript:void(0)" class="sec_sortbtn ui-sortable-handle">
+              <em class="icon ni ni-equal"></em>
+           </a>
+           <div class="dropdown edit edit_btn">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Edit
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               
+                <a class="dropdown-item" href="javascript:void(0)">
+                 Change background Color 
+                 <div class="color-picker">
+                    <label for="colorPicker">
+                      <input type="color" value="#1f1f1f" id="colorPicker">
+                   </label>
+                   <span>
+                       #1f1f1f
+                   </span>
+                  </div>
+                </a>
+                <a href="javascript:void(0)" class="dropdown-item add_testimonail_box">
+                 <em class="icon ni ni-plus-circle-fill"></em> Add Review
+                </a>
+              </div>
+            </div>
+        </div>
+
+        <div class="web_sec web_subscribe">
+           <div class="container">
+              <div class="row align-items-center">
+                 <div class="col-md-12">
+                    <div class="web_nsubs">
+                     <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7">
+                           <div class="edit_box">
+                              <div class="edittext">
+                                 <h2 class="websec_title edit_input">Subscribe to our newsletter</h2>
+                                 <div class="color-picker">
+                                    <label for="colorPicker">
+                                      <input type="color" value="#1f1f1f" id="colorPicker">
+                                   </label>
+                                  </div>
+                              </div>
+                              <div class="edittext">
+                                 <p class="websec_desc edit_input">Signup for our weekly newsletter to get the latest news, updates, and amazing offers delivered directly in your inbox!</p>
+                                 <div class="color-picker">
+                                    <label for="colorPicker">
+                                      <input type="color" value="#1f1f1f" id="colorPicker">
+                                   </label>
+                                  </div>
+                              </div>
+                              <a href="javascript:void(0)" class="edit edit_pen">
+                                 <em class="icon ni ni-pen2"></em>
+                              </a>
+                           </div>
+                           <div class="sub_box">
+                              <div class="form-group mb-0">
+                                 <input type="text" class="form-control" placeholder="Email">
+                              </div>
+                              <button class="btn btn_blue">Subscribe</button>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5 text-center mt-3 mt-md-0">
+                           
+                           <img src="./images/newsletter-1.png" class="img-responsive" alt="">
+                        </div>
+                     </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <a href="javascript:void(0)" class="sec_sortbtn ui-sortable-handle">
+              <em class="icon ni ni-equal"></em>
+           </a>
+           
+        </div>
+
+        <div class="web_sec web_contact">
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-6">
+                    <div class="edit_box">
+                       <div class="edittext">
+                          <h2 class="websec_title edit_input">Get in touch</h2>
+                          <div class="color-picker">
+                             <label for="colorPicker">
+                               <input type="color" value="#1f1f1f" id="colorPicker">
+                            </label>
+                           </div>
+                       </div>
+                       <a href="javascript:void(0)" class="edit edit_pen">
+                          <em class="icon ni ni-pen2"></em>
+                       </a>
+                    </div>
+
+                    <form action="">
+                       <div class="row mt-4">
+                          <div class="col-md-12">
+                             <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                                <label for="">Name</label>
+                             </div>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email">
+                                <label for="">Email</label>
+                             </div>
+                          </div>
+                          <div class="col-md-6">
+                             <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone">
+                                <label for="">Phone</label>
+                             </div>
+                          </div>
+                          <div class="col-md-12">
+                             <div class="form-group">
+                                <textarea  rows="3" class="form-control" placeholder="Your Message"></textarea>
+                                <label for="">Your Message</label>
+                             </div>
+                          </div>
+                          <div class="col-md-12">
+                             <button class="btn btn_blue">Submit</button>
+                          </div>
+                       </div>
+                    </form>
+                 </div>
+                 <div class="col-md-6">
+                    <div class="edit_box add_bx">
+                       <div class="edittext">
+                          <h2 class="websec_title edit_input">Lorem ipsum dolor sit amet</h2>
+                          <div class="color-picker">
+                             <label for="colorPicker">
+                               <input type="color" value="#1f1f1f" id="colorPicker">
+                            </label>
+                           </div>
+                       </div>
+                       <div class="edittext">
+                          <p class="websec_desc edit_input">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna </p>
+                          <div class="color-picker">
+                             <label for="colorPicker">
+                               <input type="color" value="#1f1f1f" id="colorPicker">
+                            </label>
+                           </div>
+                       </div>
+                       <a href="javascript:void(0)" class="edit edit_pen">
+                          <em class="icon ni ni-pen2"></em>
+                       </a>
+                    </div>
+                    <ul class="cont_ul">
+                     <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="49.903" viewBox="0 0 50 49.903">
+                         <g id="Group_2648" data-name="Group 2648" transform="translate(-735 -3559)">
+                           <path id="Path_169" data-name="Path 169" d="M27.632,15.333a10.375,10.375,0,0,0-10.3,10.428c0,7.934,8.914,15.652,9.294,15.98a1.545,1.545,0,0,0,2.008,0c.38-.324,9.294-8.042,9.294-15.98A10.375,10.375,0,0,0,27.632,15.333Zm0,14.42a4.119,4.119,0,1,1,4.119-4.119A4.123,4.123,0,0,1,27.632,29.753Z" transform="translate(747.07 3566.792)" fill="#ee5a4e" opacity="0.5"/>
+                           <path id="Path_170" data-name="Path 170" d="M46,23.191l-2.985-2.92L38.9,16.243,31.068,8.587a2.061,2.061,0,0,0-2.88,0L8.921,27.421A3.134,3.134,0,0,0,8,29.627a3.1,3.1,0,0,0,3.09,3.09h3.09v11.33a5.155,5.155,0,0,0,5.15,5.15H30.66a2.061,2.061,0,1,0,0-4.122H19.327A1.029,1.029,0,0,1,18.3,44.047V30.659A2.06,2.06,0,0,0,16.237,28.6H13.611L29.628,12.94l13.493,13.2A2.06,2.06,0,1,0,46,23.191Z" transform="translate(727 3551)" fill="#ee5a4e"/>
+                         </g>
+                       </svg>                         
+                        <div class="edit_box">
+                           <div class="edittext">
+                              <h4 class="websec_title edit_input">Address </h4>
+                              <div class="color-picker">
+                                 <label for="colorPicker">
+                                   <input type="color" value="#1f1f1f" id="colorPicker">
+                                </label>
+                               </div>
+                           </div>
+                           <div class="edittext">
+                              <p class="websec_desc edit_input">Unit No RET-R5-074 Detached Retail R5 Plot No: JLT-PH2-RET-R5 JLT, Dubai UAE, 293857 </p>
+                              <div class="color-picker">
+                                 <label for="colorPicker">
+                                   <input type="color" value="#1f1f1f" id="colorPicker">
+                                </label>
+                               </div>
+                           </div>
+                           <a href="javascript:void(0)" class="edit edit_pen">
+                              <em class="icon ni ni-pen2"></em>
+                           </a>
+                        </div>
+                     </li>
+                     <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                         <g id="Group_2649" data-name="Group 2649" transform="translate(-735 -3670)">
+                           <g id="Group_715" data-name="Group 715" transform="translate(758.312 3670)" opacity="0.5">
+                             <path id="Path_161" data-name="Path 161" d="M40.482,34.688a1.54,1.54,0,0,1-1.54-1.54A22.036,22.036,0,0,0,16.873,11.079a1.54,1.54,0,1,1,0-3.079A25.116,25.116,0,0,1,42.021,33.149,1.54,1.54,0,0,1,40.482,34.688Z" transform="translate(-15.333 -8)" fill="#ee5a4e"/>
+                             <path id="Path_162" data-name="Path 162" d="M33.735,30.132a1.54,1.54,0,0,1-1.54-1.54A15.3,15.3,0,0,0,16.873,13.27a1.54,1.54,0,0,1,0-3.079,18.377,18.377,0,0,1,18.4,18.4A1.54,1.54,0,0,1,33.735,30.132Z" transform="translate(-15.333 -3.444)" fill="#ee5a4e"/>
+                             <path id="Path_163" data-name="Path 163" d="M26.989,25.577H26.98a1.54,1.54,0,0,1-1.53-1.549,8.558,8.558,0,0,0-8.567-8.567,1.482,1.482,0,0,1-1.549-1.53,1.538,1.538,0,0,1,1.53-1.549A11.638,11.638,0,0,1,28.532,24.046,1.545,1.545,0,0,1,26.989,25.577Z" transform="translate(-15.331 1.111)" fill="#ee5a4e"/>
+                           </g>
+                           <path id="Path_164" data-name="Path 164" d="M41.081,48.951c-.1,0-.2,0-.3-.012A35.742,35.742,0,0,1,8.01,16.191a3.911,3.911,0,0,1,1.013-2.919,3.754,3.754,0,0,1,2.762-1.219L18.867,12a3.808,3.808,0,0,1,3.714,2.876l1.478,5.872a3.786,3.786,0,0,1-1.416,3.969l-2.553,1.9A27.119,27.119,0,0,0,30.2,36.779l1.983-2.624a3.818,3.818,0,0,1,3.972-1.4l5.912,1.469A3.793,3.793,0,0,1,44.952,37.9v7.249a3.718,3.718,0,0,1-1.21,2.765,3.923,3.923,0,0,1-2.661,1.035Z" transform="translate(727 3671.049)" fill="#ee5a4e"/>
+                         </g>
+                       </svg>                         
+                        <div class="edit_box">
+                           <div class="edittext">
+                              <h4 class="websec_title edit_input">Phone number   </h4>
+                              <div class="color-picker">
+                                 <label for="colorPicker">
+                                   <input type="color" value="#1f1f1f" id="colorPicker">
+                                </label>
+                               </div>
+                           </div>
+                           <div class="edittext">
+                              <a href="#" class="edit_input">+971 55 2231780</a>
+                              <div class="color-picker">
+                                 <label for="colorPicker">
+                                   <input type="color" value="#1f1f1f" id="colorPicker">
+                                </label>
+                               </div>
+                           </div>
+                           <a href="javascript:void(0)" class="edit edit_pen">
+                              <em class="icon ni ni-pen2"></em>
+                           </a>
+                        </div>
+                     </li>
+                     <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="49.944" viewBox="0 0 50 49.944">
+                         <g id="Group_2214" data-name="Group 2214" transform="translate(-926.446 -4069.61)">
+                           <path id="Path_166" data-name="Path 166" d="M44.532,26.788a17.606,17.606,0,0,1,9.394,2.718V13.22A5.218,5.218,0,0,0,48.706,8H13.22A5.218,5.218,0,0,0,8,13.22V32.007a5.22,5.22,0,0,0,5.22,5.22H28.381A17.751,17.751,0,0,1,44.532,26.788ZM12.174,13.157l18.788,8.768,18.788-8.768v3.466L32.067,24.868a2.564,2.564,0,0,1-2.211,0L12.174,16.624Z" transform="translate(918.446 4061.61)" fill="#ee5a4e"/>
+                           <path id="Path_167" data-name="Path 167" d="M37.453,18.366a13.569,13.569,0,1,0-8.551,24.1,1.566,1.566,0,0,0,0-3.131,10.405,10.405,0,0,1-8.1-3.858,10.53,10.53,0,0,1-2.1-8.843A10.377,10.377,0,0,1,26.638,18.7a10.527,10.527,0,0,1,8.843,2.1,10.405,10.405,0,0,1,3.858,8.1v2.608a1.566,1.566,0,0,1-3.131,0V23.157a1.566,1.566,0,0,0-1.566-1.566,1.55,1.55,0,0,0-1.525,1.362,7.3,7.3,0,1,0,.8,11.229,4.69,4.69,0,0,0,8.548-2.674V28.9A13.517,13.517,0,0,0,37.453,18.366ZM28.9,33.074A4.174,4.174,0,1,1,33.076,28.9,4.179,4.179,0,0,1,28.9,33.074Z" transform="translate(933.976 4077.087)" fill="#ee5a4e" opacity="0.5"/>
+                         </g>
+                       </svg>                         
+                        <div class="edit_box">
+                           <div class="edittext">
+                              <h4 class="websec_title edit_input">Email Address   </h4>
+                              <div class="color-picker">
+                                 <label for="colorPicker">
+                                   <input type="color" value="#1f1f1f" id="colorPicker">
+                                </label>
+                               </div>
+                           </div>
+                           <div class="edittext">
+                              <a href="#" class="edit_input">hello@apexsyn.co</a>
+                              <div class="color-picker">
+                                 <label for="colorPicker">
+                                   <input type="color" value="#1f1f1f" id="colorPicker">
+                                </label>
+                               </div>
+                           </div>
+                           <a href="javascript:void(0)" class="edit edit_pen">
+                              <em class="icon ni ni-pen2"></em>
+                           </a>
+                        </div>
+                     </li>
+                  </ul>    
+                 </div>
+              </div>
+           </div>
+           <a href="javascript:void(0)" class="sec_sortbtn ui-sortable-handle">
+              <em class="icon ni ni-equal"></em>
+           </a>
+           <div class="dropdown edit edit_btn">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Edit
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               
+                <a class="dropdown-item" href="javascript:void(0)">
+                 Change background Color 
+                 <div class="color-picker">
+                    <label for="colorPicker">
+                      <input type="color" value="#1f1f1f" id="colorPicker">
+                   </label>
+                   <span>
+                       #1f1f1f
+                   </span>
+                  </div>
+                </a>
+                
+              </div>
+            </div>
+        </div>
+
+        <div class=" web_map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14011.999575003521!2d77.09098035!3d28.59978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b4906fe99db%3A0x16bd678cd1d4892d!2sDashrathpuri!5e0!3m2!1sen!2sin!4v1664256076017!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <div class="dropdown edit edit_btn">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Edit
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               
+                <a class="dropdown-item" href="javascript:void(0)">
+                 Change Map Location
+                 <div class="form-group">
+                    <input type="text" placeholder="" value="" class="form-control">
+                 </div>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="web_footer">
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <div class="ftr">
+                       <div class="edit_box logo">
+                          <figure class="edit_img">
+                             <img src="./images/d-logo-1.png" alt="">
+                             <a href="#" class="change_img">
+                                <em class="icon ni ni-camera-fill"></em>
+                             </a>
+                          </figure>
+                          <a href="javascript:void(0)" class="edit edit_pen">
+                             <em class="icon ni ni-pen2"></em>
+                          </a>
+                       </div>
+                       <div class="edit_box copyright">
+                          <div class="edittext">
+                             <p class="edit_input">
+                                Copyright @ yourname
+                             </p>
+                          </div>
+                          <a href="javascript:void(0)" class="edit edit_pen">
+                             <em class="icon ni ni-pen2"></em>
+                          </a>
+                       </div>
+                       <div class="edit_box social_box">
+                        <ul>
+                           <li>
+                              <a href="#">
+                                 <i class="fa fa-facebook-f"></i>
+                              </a>
+                              <input type="text" class="form-control" value="www.facebook.com">
+                              <span class="remove">
+                               <i class="fa fa-times"></i>
+                              </span>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa fa-twitter"></i></a>
+                              <input type="text" class="form-control" value="www.twitter.com">
+                              <span class="remove">
+                               <i class="fa fa-times"></i>
+                              </span>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa fa-linkedin"></i></a>
+                              <input type="text" class="form-control" value="www.linkedin.com">
+                              <span class="remove">
+                               <i class="fa fa-times"></i>
+                              </span>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa fa-instagram"></i></a>
+                              <input type="text" class="form-control" value="www.instagram.com">
+                              <span class="remove">
+                               <i class="fa fa-times"></i>
+                              </span>
+                           </li>
+                           <li>
+                               <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                               <input type="text" class="form-control" value="www.youtube.com">
+                               <span class="remove">
+                                  <i class="fa fa-times"></i>
+                                 </span>
+                            </li>
+                            <li>
+                               <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                               <input type="text" class="form-control" value="www.pinterest.com">
+                               <span class="remove">
+                                  <i class="fa fa-times"></i>
+                                 </span>
+                            </li>
+                            <li>
+                               <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i>                                 </a>
+                               <input type="text" class="form-control" value="www.whatsapp.com">
+                               <span class="remove">
+                                  <i class="fa fa-times"></i>
+                                 </span>
+                            </li>
+                        </ul>
+                      <div class="dropdown add_socail_item edit_btn">
+                         <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Add Channels
+                         </button>
+                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          
+                            <a href="javascript:void(0)" data-value="facebook" class="dropdown-item">Add Facebook</a>
+                            <a href="javascript:void(0)" data-value="twitter" class="dropdown-item">Add Twitter</a>
+                            <a href="javascript:void(0)" data-value="instagram" class="dropdown-item">Add Instagram</a>
+                            <a href="javascript:void(0)" data-value="linkedin" class="dropdown-item">Add Linkedin</a>
+                            <a href="javascript:void(0)" data-value="youtube" class="dropdown-item">Add Youtube</a>
+                            <a href="javascript:void(0)" data-value="pinterest" class="dropdown-item">Add Pinterest</a>
+                            <a href="javascript:void(0)" data-value="whatsapp" class="dropdown-item">Add Whatsapp</a>
+                         </div>
+                       </div>
+                        <a href="javascript:void(0)" class="edit edit_pen">
+                           <em class="icon ni ni-pen2"></em>
+                        </a>
+                       
+                     </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+
+       <!-- JavaScript -->
+   <script src="./assets/js/bundle.js?ver=1.8.0"></script>
+   <script src="./assets/js/scripts.js?ver=1.8.0"></script>
+   <script src="./assets/js/moment.js?ver=1.8.0"></script>
+   <script src="./assets/js/custom.js?ver=1.8.0"></script>
+
+
+   <script src="./assets/js/intlTelInput.js"></script>
+   <script src="./assets/js/utils.js"></script>
+   <script src="./assets/js/jquery-ui.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+      //  setTimeout(function() {
+         $('.web_boxc:not(.edit_thm) .carusel_3').owlCarousel({
+      loop:true,
+      margin:30,
+      nav:false,
+      center: true,
+      dots:false,
+      autoplay:true,
+autoplayTimeout:5000,
+autoplayHoverPause:false,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          576:{
+              items:2
+          },
+          992:{
+              items:3
+          }
+      }
+   });
+   $('.web_boxc:not(.edit_thm) .event_carousel').owlCarousel({
+      loop:true,
+      margin:30,
+      nav:false,
+      dots:false,
+      autoplay:true,
+autoplayTimeout:5000,
+autoplayHoverPause:false,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          576:{
+              items:2
+          },
+          992:{
+              items:4
+          }
+      }
+   });
+      //  }, 500);
+     
+   </script>
+   <script src="./assets/js/digital.js"></script>
+</body>
+</html>
