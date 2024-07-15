@@ -1,0 +1,7045 @@
+.multi_select .btn-group {
+    display: flex;
+}
+.tags_input_grp .bootstrap-tagsinput, .select_icon .multiselect {
+    color: var(--text-color-1) !important;
+    /* background-color: #f9f9f9; */
+    font-family: 'Inter', sans-serif !important;
+    z-index: 9;
+    box-shadow: none;
+    border-radius: 8px !important;
+    letter-spacing: 1px;
+    background-color: #F9F9FC;
+    border: 1px solid #EBECF0;
+    min-height: 40px;
+    padding: 8px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.multi_select .dropdown-toggle {
+    font-weight: 400;
+    font-size: 16px !important;
+}
+.multi_select .dropdown-toggle > span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.multi_select .multiselect-container {
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    white-space: normal;
+    background-clip: initial;
+}
+.multiselect-container>li + li {
+    border-top: 1px solid #efefef;
+}
+.multiselect-container>li>a {
+    display: block;
+    padding: 8px 15px !important;
+    position: relative;
+}
+.multiselect-container>li>a label {
+    position: initial !important;
+    padding: 0 !important;
+}
+.multiselect-container>li>a>label {
+    flex-wrap: wrap !important;
+    position: relative !important;
+    padding-left: 25px !important;
+}
+.multiselect-container>li>a>label.checkbox, .multiselect-container>li>a>label.radio {
+    margin-bottom: 0 !important;
+}
+.multiselect-container>li>a>label>input[type=checkbox], .multiselect-group-clickable>a>input[type=checkbox], .multiselect-container>li>a>label>input[type=radio] {
+    margin-right: 10px;
+    accent-color: var(--secondary-btn-color);
+    /* visibility: hidden; */
+}
+.multiselect-container>li>a>label>input[type=checkbox], .multiselect-group-clickable>a>input[type=checkbox], .multiselect-container>li>a>label>input[type=radio] {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+}
+.multiselect-container>li>a>label input[type="radio"]::before, .multiselect-container>li>a>label input[type="checkbox"]::before {
+    content: '';
+    visibility: visible;
+    border: 1px solid #EBECF0;
+    background-color: #F9F9FC;
+    height: 18px !important;
+    width: 18px !important;
+    border-radius: 100px;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+}
+.multiselect-container>li>a>label input[type="radio"]:checked::before {
+    border: 5px solid var(--secondary-btn-color);
+    background: #fff;
+}
+.multiselect-container>li>a>label input[type="checkbox"]::before {
+    border-radius: 4px;
+}
+.multiselect-container>li>a>label input[type="checkbox"]:checked::before {
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    background: var(--secondary-btn-color);
+    border-color: var(--secondary-btn-color);
+}
+.modal p{
+    font-size:15px ;
+    color:var(--text-color-2);
+}
+.list_all_highlight {
+    margin-bottom: 30px;
+}
+.list_highlight {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    gap: 0 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.list_highlight .btn_add_bx {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.btn_add_bx a {
+    background: var(--secondary-btn-bg);
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    color: var(--secondary-btn-color);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_add_bx a:hover {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+.tags_input_grp .bootstrap-tagsinput > input:is(:focus, :active), .tags_input_grp .bootstrap-tagsinput > input {
+    border: 0;
+    outline: 0;
+    font-family: 'Inter', sans-serif !important;
+    color: var(--text-color-1) !important;
+    font-size: 16px;
+    background: transparent;
+}
+.tags_input_grp .tag {
+    background: var(--secondary-btn-bg);
+    color: var(--secondary-btn-color)!important;
+    padding: 0px 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 14px;
+    /* margin-bottom: 5px; */
+    font-family: 'Inter', sans-serif;
+}
+.tags_input_grp .tag span[data-role="remove"]::after {
+    content: '\f00d';
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    font-size:9px;
+    position: relative;
+    top: -1px;
+    right: -1px;
+}
+.btn_grp {
+    display: flex;
+    justify-content: center;
+    gap: 10px 30px;
+    flex-wrap: wrap;
+}
+.setadd_plan_modal .subcat_chkbox{
+    justify-content:initial;
+    margin-top:0;
+}
+.recurring_multi {
+    margin-bottom: 30px;
+}
+.recurring_multi .grid_rec {
+    display: grid;
+    grid-template-columns: 1fr .6fr 30px;
+    gap: 20px;
+    align-items: center;
+}
+body .recurring_multi .form-group {
+    margin-bottom: 0 !important;
+}
+.recurring_multi .btn_add_bx {
+    margin-bottom: 0;
+}
+.recurring_multi .row + .row {
+    margin-top: 10px;
+}
+.recurring_multi li + li, .InApp-Option li + li {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #efefef;
+}
+label .custom_tooltip_box {
+    display: inline-block;
+}
+label .custom_tooltip_box .icon {
+    top: 2px;
+    position: relative;
+}
+.custom_tooltip_box>div > p{
+    color:#fff;
+}
+.tp_days {
+    margin-top: -12px;
+}
+.outline_card {
+    border: 1.5px solid #F3F3F3;
+    padding: 20px;
+}
+.outline_card + .outline_card {
+    margin-top: 25px;
+}
+.payment_option .custom-control-label span {
+    font-weight: 500;
+}
+.payment_option .outline_card .badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 2px 10px;
+}
+.payment_option .outline_card .badge-light {
+    background: var(--secondary-btn-bg);
+    color: var(--secondary-btn-color);
+}
+.badge-success {
+    background-color: rgba(40, 167, 70, 0.1);
+    color: #28a745;
+    border: 0;
+}
+
+.data_notfd_sect.style2{
+    padding-top: 30px;
+}
+.data_notfd_sect.style2 div.icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background: var(--secondary-btn-bg);
+    color: var(--secondary-btn-color);
+    position: relative;
+    margin: auto;
+    display: grid;
+    font-size: 40px;
+    place-items: center;
+    z-index: 1;
+}
+.data_notfd_sect.style2 div.icon svg{
+    height: 40px;
+    width: 40px;
+}
+.data_notfd_sect.style2 div.icon::before{
+    content: '';
+    position: absolute;
+    border-radius: 100px;
+    z-index: -1;
+    height: calc(100% + 30px);
+    width: calc(100% + 30px);
+    background: var(--secondary-btn-bg);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .3;
+}
+.data_notfd_sect.style2 .title_not_found{
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: initial;
+    text-transform: initial !important;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color-1);
+}
+.data_notfd_sect.style2 p{
+    color: var(--text-color-2);
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.data_notfd_sect.style2 div.icon ~ p{
+    margin-top: 30px;
+}
+.nk-content {
+    margin-top: 0 !important;
+    padding: 30px !important;
+}
+.role_stepcount li {
+    width: 106px;
+    text-align: center;
+}
+.role_stepcount li a {
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: initial;
+    cursor: initial;
+}
+.role_stepcount li a span {
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: #ccc;
+    color: var(--secondary-btn-color);
+    background: #fff;
+    border: 1px solid #dbdfea;
+    opacity: .5;
+    height: 35px;
+    width: 35px;
+    background: var(--secondary-btn-bg);
+}
+.role_stepcount li.active a span {
+    color: var(--secondary-btn-color);
+    border-color: var(--secondary-btn-color);
+    opacity: 1;
+    background: #fff;
+}
+.role_stepcount li+li {
+    margin-left: 20px;
+}
+.role_stepcount li+li::before {
+    left: -55px;
+    width: 85px;
+    top: 16px;
+    background: var(--secondary-btn-bg);
+    opacity: .5;
+    height: 1.5px;
+}
+.role_stepcount li.active + li::before {
+    opacity: 1;
+    background: var(--secondary-btn-color);
+}
+.role_stepcount li.active a span::before{
+    display: none;
+}
+.pagination{
+    flex-wrap:wrap;
+}
+.excercises_sect ul:not(.in_list) .list_excercises .notifyjs-container{
+    left: -165px !important;
+    top: 34px !important;
+    width: 175px;
+}
+.excercises_sect ul:not(.in_list) .list_excercises .notifyjs-bootstrap-base{
+    font-size:11px;
+    white-space:wrap;
+    font-weight:500;
+    padding-right: 10px;
+}
+.excercises_sect ul:not(.in_list) .list_excercises .notifyjs-arrow{transform: rotate(90deg);top: 27px !important;left: -13px !important;}
+.excercises_sect  .in_list .data_tooltip .icon{
+    display: none;
+}
+
+.icon-status:after {
+    content: unset;
+}
+.planner_toptab > ul{
+    border: 1px solid rgba(var(--primary-color-rgb), .5);
+    border-radius: 8px;
+    padding: 0px;
+    display: inline-flex;
+}
+.planner_toptab > .nav-tabs .nav-item{
+    padding: 0px;
+    border-right: 1px solid rgba(var(--primary-color-rgb), .5);
+    margin: 0;
+}
+.planner_toptab > .nav-tabs .nav-item:last-child{
+    border: 0;
+}
+.planner_toptab > .nav-tabs .nav-link{
+    border: 0;
+    border-radius: 0;
+    color: #030303 !important;
+    position: relative;
+    padding: 10px 20px;
+    z-index: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px !important;
+    letter-spacing: 0.03em;
+    line-height: 19.2px;
+    text-align: center;
+}
+.planner_toptab > .nav-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    font-weight: 500;
+}
+.planner_toptab > .nav-tabs li:first-child a.active {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.planner_toptab > .nav-tabs .nav-link::after,
+.planner_toptab > .nav-tabs .nav-link::before{
+    display: none;
+}
+.planner_toptab > .nav-tabs li:last-child a.active {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.user-avatar,[class^="user-avatar"]:not([class*="-group"]) {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+}
+
+.form-group select.form-control {
+    -moz-appearance: none;
+    text-transform: unset;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+}
+
+.planner_top_sect {
+    border: 1.5px solid #F3F3F3;
+    padding: 25px;
+    background: #fff;
+    position: sticky;
+    z-index: 99;
+    transition: 0.15s padding ease-out, 0.15s margin ease-out;
+    top: 65px;
+}
+
+.planner_top_sect h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--text-color-1);
+    display: inline-flex;
+    text-transform: uppercase;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-group.select_icon::after,
+.menu_select::after {
+    content: "\f078";
+    position: absolute;
+    right: 10px;
+    color: rgb(82, 82, 82);
+    top: 12px;
+    z-index: 9;
+    pointer-events: none;
+    font-size: 9px;
+    font-family: "FontAwesome" !important;
+}
+.menu_select{
+    position: relative;
+}
+.menu_select label.error{
+    font-size: 10px !important;
+    line-height: initial;
+    /* white-space: nowrap; */
+    position: relative;
+    top: -3px;
+}
+.menu_select .form-control{
+    padding: 8px;
+}
+.menu_select::after{
+    top: 10px;
+    right: 8px;
+    font-size: 9px;
+}
+.menu_select.active::after{
+    transform: rotate(180deg);
+}
+/*----------------tooltip--------------------------*/
+.Plan_tooltip {
+    position: relative;
+    margin-left: 10px;
+}
+
+.Plan_tooltip>div {
+    border-radius: 4px;
+    background: #1f1f1f;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 250px;
+    padding: 5px 10px;
+    z-index: 99;
+    opacity: 0;
+    -webkit-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    transition: opacity .6s;
+    visibility: hidden;
+    -webkit-box-shadow: 0px 0px 6px rgb(0 0 0 / 16%);
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 16%);
+}
+.Plan_tooltip>div p:last-child{
+    margin-bottom:0;
+}
+.Plan_tooltip>div p {
+    font-size: 12px;
+    color: #fff;
+    text-transform: initial;
+    text-align: left;
+    font-weight: 400 !important;
+    line-height: 140%;
+}
+
+.Plan_tooltip:hover>div {
+    visibility: visible;
+    opacity: .9;
+}
+
+.Plan_tooltip>div::before,.Plan_tooltip>div::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #1f1f1f transparent;
+    opacity: .9;
+}
+
+.Plan_tooltip>div::after {
+    z-index: 8;
+    border-color: transparent transparent rgba(0, 0, 0, 0.16) transparent;
+    top: -22px;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.Plan_tooltip em {
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-color-3);
+    opacity: .5;
+}
+
+.Plan_tooltip em:hover {
+    opacity:1;
+}
+
+/*--------------------------------------------------*/
+.planner_top_sect label {
+    text-transform: uppercase;
+}
+
+.planner_top_sect p {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--text-color-2);
+    margin-bottom: 10px;
+}
+
+.drag_gallary .upload-file1 {
+    border: 2px dashed rgba(var(--primary-color-rgb), .2) ;
+    background: #fff;
+    padding: 46px 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+.drag_gallary .upload-file1 p {
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: 400;
+    color: #474747;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.drag_gallary .upload-file1 p span {
+    color: var(--primary-color);
+}
+
+.drag_gallary .upload-file1 input[type="file"] {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.Create_list.row {
+    align-items: center;
+    /* margin: 0px; */
+    margin-bottom: 15px;
+}
+
+.list_tab_planner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #efefef;
+    padding: 0;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.list_tab_planner .nav-tabs {
+    padding: 0;
+    border: 0;
+    gap: 10px 40px;
+}
+
+.list_tab_planner .nav-tabs li a.active:before {
+    display: none;
+}
+
+.list_tab_planner .nav-tabs li a.active {
+    color: var(--text-color-1);
+    font-weight: 500;
+    border-color: var(--text-color-1) !important;
+}
+
+.list_tab_planner .nav-tabs li a:hover {
+    color: var(--primary-color)
+}
+
+.list_tab_planner .nav-tabs li a:active, .list_tab_planner .nav-tabs li a:focus {
+    color: #030303;
+}
+
+.list_tab_planner .nav-tabs>li a {
+    border: none;
+    color: var(--text-color-3);
+    font-weight: 400;
+    position: relative;
+    font-size: 15px !important;
+    font-family: "Inter", sans-serif !important;
+    text-transform: capitalize;
+    padding: 0px;
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    line-height: initial;
+    padding: 15px 0;
+    border-bottom: 3px solid transparent !important;
+    /* margin-bottom: -3px; */
+}
+
+.list_tab_planner .nav-tabs li a i {
+    padding-right: 0;
+    font-size: 18px !important;
+    position: relative;
+    top: 0px;
+    /* width: 20px; */
+}
+
+.list_tab_planner .nav-tabs li a i.fa.fa-th-list {
+    font-size: 18px;
+}
+
+
+
+.planner_btm_sect {
+    margin-top: 30px;
+    border: 1.5px solid #F3F3F3;
+    padding: 25px;
+    background: #fff;
+}
+
+.list_tab_planner .nav-tabs li .icon {
+    position: relative;
+}
+
+.list_tab_planner .nav-tabs li .icon::before {
+    cursor: pointer;
+    content: '';
+    width: 18px;
+    display: block;
+    height: 20px;
+    margin: 0 auto;
+    background-size: 75%;
+    position: relative;
+    top: 4%;
+    left: 1px;
+}
+
+.sort-amount-down {
+    position: relative;
+}
+
+.dumbbell::before {
+    background: url(../../plan/img/dumbbell1.png) no-repeat center center;
+}
+
+.active .dumbbell::before {
+    background: url(../../plan/img/dumbbell.png) no-repeat center center;
+}
+
+.running::before {
+    background: url(../../plan/img/running.png) no-repeat center center;
+}
+
+.active .running::before {
+    background: url(../../plan/img/running1.png) no-repeat center center;
+}
+
+.archive::before {
+    background: url(../../plan/img/archive.png) no-repeat center center;
+}
+
+.active .archive::before {
+    background: url(../../plan/img/archive1.png) no-repeat center center;
+}
+
+.sort-amount-down::before {
+    cursor: pointer;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 12px;
+    aspect-ratio: 1/1;
+}
+
+.sort-amount-down::before {
+    background: url(../../plan/img/sort-amount-down.png) no-repeat center center;
+    background-size: contain;
+}
+
+.planner_list_view li.active .sort-amount-down::before {
+    background: url(../../plan/img/sort-amount-down1.png) no-repeat center center;
+}
+
+.planner_list_view li:hover .sort-amount-down::before {
+    background: url(../../plan/img/sort-amount-down1.png) no-repeat center center;
+}
+.favourite-btn{
+    cursor: pointer;
+}
+/*---------------------------------------------------------*/
+.drag_drop_data {
+    background-color: #fbfbfb;
+    background-image: repeating-linear-gradient(0deg, #ebecf0, #ebecf0 5px, transparent 5px, transparent 13px, #ebecf0 13px), repeating-linear-gradient(90deg, #ebecf0, #ebecf0 5px, transparent 5px, transparent 13px, #ebecf0 13px), repeating-linear-gradient(180deg, #ebecf0, #ebecf0 5px, transparent 5px, transparent 13px, #ebecf0 13px), repeating-linear-gradient(270deg, #ebecf0, #ebecf0 5px, transparent 5px, transparent 13px, #ebecf0 13px);
+    background-size: 2px 100%, 100% 2px, 2px 100% , 100% 2px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    color: var(--primary-color);
+    margin: auto;
+}
+.drag_drop_data.ui-droppable-active{
+    background-color: rgba(var(--primary-color-rgb), .05);
+    background-image: repeating-linear-gradient(0deg, var(--primary-color), var(--primary-color) 5px, transparent 5px, transparent 13px, var(--primary-color) 13px), repeating-linear-gradient(90deg, var(--primary-color), var(--primary-color) 5px, transparent 5px, transparent 13px, var(--primary-color) 13px), repeating-linear-gradient(180deg, var(--primary-color), var(--primary-color) 5px, transparent 5px, transparent 13px, var(--primary-color) 13px), repeating-linear-gradient(270deg, var(--primary-color), var(--primary-color) 5px, transparent 5px, transparent 13px, var(--primary-color) 13px);
+}
+
+
+.drag_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.planner_top_sect .drag_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    grid-column: 2 / 3;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--text-color-1);
+}
+
+.form-icon {
+    z-index: 55;
+}
+
+.search_list .form-icon {
+    cursor: pointer;
+}
+
+.drag_drop_data li {
+    position: relative;
+    height: auto !important;
+    /* flex: 0 0 25%!important; */
+    /* padding: 10px; */
+    /* padding-bottom: 5px; */
+    width: 100% !important;
+}
+
+.drag_drop_data li.ui-sortable-helper {
+    width: auto !important
+}
+
+.form-icon .icon {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.drag_drop_data.drag_list_data {
+    height: 123px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag_drop_data {
+    height: 140px;
+    display: grid;
+    gap: 15px;
+    padding: 10px 15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (min-width: 1480px) {
+    .planner_top_sect .drag_text {
+        grid-column: 2 / 4;
+        /* position: absolute !important; */
+    }
+
+    .drag_drop_data {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.planner_list_view {
+    border: 0;
+}
+.planner_list_view{
+    gap: 5px 10px;
+    align-items: center;
+}
+.planner_list_view li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: var(--secondary-btn-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 10px; */
+}
+
+.planner_list_view > li > a {
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--secondary-btn-color);
+    cursor: pointer;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planner_list_view li a .ni-plus-sm {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+
+/* .sleect_sect .planner_btm_sect+.planner_btm_sect {
+    display: none;
+} */
+
+/*Check button*/
+.subcat_chkbox {
+    display: flex;
+    margin-top: 8px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.add_Client_list .subcat_chkbox {
+    justify-content: initial;
+}
+
+
+.video_box {
+    position: relative;
+}
+
+.video_box video {
+    width: 100%;
+    height: initial;
+    aspect-ratio: 1/.7;
+    border-radius: 5px;
+    background: #f7f8fa;
+    border: 1px solid #dbdfea;
+}
+
+
+.video_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 33px;
+    width: 33px;
+    background: var(--secondary-btn-color);
+    color: #fff;
+    border-radius: 100px;
+    z-index: 1;
+    font-size: 18px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.my_data {
+    border-radius: 100px;
+    background: #707070;
+    box-shadow: 0px -3px 6px rgb(0 0 0 / 16%);
+    text-align: center;
+    display: block;
+    width: 81px;
+    height: 19px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+.heart_m {
+    font-size: 20px;
+    text-align: right;
+    color: #ccc;
+}
+.heart_m .del_btn{
+    cursor:pointer;
+    font-size:21px;
+    margin-left: 5px;
+}
+.heart_m .icon{
+    transition:.3s ease-in-out;
+}
+.heart_m .icon:hover{
+    color: var(--secondary-btn-color);
+}
+.like {
+    color: #dc3545 !important;
+}
+
+.video_play::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 20px;
+    background: rgba(47, 106, 179, 0.2);
+    border-radius: 100px;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    z-index: -1;
+}
+
+.video_play:hover::after {
+    height: 50px;
+    width: 50px;
+}
+
+.excercises_sect ul.in_list .list_excercises {
+    display: grid;
+    grid-template-columns: 25px 137px 1fr auto;
+    gap: 20px;
+    align-items: center;
+}
+.excercises_sect > ul:not(.in_list){
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    @media (min-width: 1599px) {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    @media (max-width: 1299px) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    @media (min-width:992px) and (max-width: 1199px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @media (min-width: 768px) and (max-width: 991.5px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width:576px) and (max-width: 767px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 575.5px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top:15px;
+        gap: 15px;
+    }
+}
+
+.excercises_sect > ul:not(.in_list) li:not(.ui-draggable-dragging) .description_exc_text{
+    padding: 10px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr auto;
+    gap: 5px;
+}
+.excercises_sect ul li.dropped-disabled {
+    cursor: not-allowed !important;
+    opacity: .4;
+    position: relative;
+    pointer-events: none;
+}
+.excercises_sect ul:not(.in_list) li:not(.ui-draggable-dragging).dropped-disabled .list_excercises{
+    background: var(--secondary-btn-bg);
+}
+.in_list .dropped-disabled .description_exc_text h6{
+    color: var(--secondary-btn-color);
+}
+.excercises_sect > ul li:not(.ui-draggable-dragging):hover,
+.workouts_add_sect  .list_excercises{
+    cursor: move;
+}
+.dragging-helper.darglist_hide{
+    position: relative;
+}
+
+
+.excercises_sect > ul:not(.in_list) li:not(.ui-draggable-dragging) .description_exc_text h6,
+.dragging-helper .description_exc_text h6{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    font-size: 13px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0;
+    line-height: 140%;
+}
+.data_tooltip{
+    position: relative;
+    em {
+        font-size: 18px;
+        cursor: pointer;
+        color: var(--text-color-3);
+        opacity: .5;
+    }
+}
+.data_tooltip > .icon:hover{
+    opacity:1;
+}
+.data_tooltip > .icon:hover ~ p{
+    visibility: visible !important;
+    opacity: .9 !important;
+}
+.excercises_sect ul:not(.in_list) .list_excercises .subcat_chkbox{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+.excercises_sect ul:not(.in_list) .description_exc_text p:empty{
+    display:none;
+}
+.excercises_sect ul:not(.in_list) .description_exc_text p{
+    border-radius: 4px;
+    background: #1f1f1f;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 200px;
+    font-size: 10px;
+    line-height: 140%;
+    padding: 5px 10px;
+    z-index: 99;
+    opacity: 0;
+    -webkit-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    transition: opacity .6s;
+    visibility: hidden;
+    /* -webkit-box-shadow: 0px 0px 6px rgb(0 0 0 / 16%); */
+    /* box-shadow: 0px 0px 6px rgb(0 0 0 / 16%); */
+    color: #fff;
+}
+@media (min-width:1300px) and (max-width:1599px) {
+    .excercises_sect ul:not(.in_list) li:nth-child(7n) .description_exc_text p{
+        left: initial;
+        right: -10px;
+        transform: initial;
+    }
+}
+@media (min-width:1200px) and (max-width:1299px) {
+    .excercises_sect ul:not(.in_list) li:nth-child(6n) .description_exc_text p{
+        left: initial;
+        right: -10px;
+        transform: initial;
+    }
+}
+@media screen and (min-width:1599px) {
+    .excercises_sect ul:not(.in_list) li:nth-child(8n) .description_exc_text p{
+        left: initial;
+        right: -10px;
+        transform: initial;
+    }
+}
+@media (min-width:992px) and (max-width: 1199px) {
+    .excercises_sect ul:not(.in_list) li:nth-child(5n) .description_exc_text p{
+        left: initial;
+        right: -10px;
+        transform: initial;
+    }
+    .excercises_sect > ul > li:hover, .workouts_add_box > ul > li:hover {
+        background: rgba(var(--primary-color-rgb), .05);
+        box-shadow: 0 5px 10px rgb(30 32 37 / 12%);
+    }
+}
+@media (min-width:768px) and (max-width: 991.5px) {
+    .excercises_sect ul:not(.in_list) li:nth-child(4n) .description_exc_text p{
+        left: initial;
+        right: -10px;
+        transform: initial;
+    }
+}
+@media (min-width:578px) and (max-width: 767.5px) {
+    .excercises_sect ul:not(.in_list) li:nth-child(3n) .description_exc_text p{
+        left: initial;
+        right: -10px;
+        transform: initial;
+    }
+}
+@media (max-width: 575px) {
+    .share_box_list{
+        margin-left: auto;
+    }
+    .list_tab_planner .nav-tabs>li a{
+        padding: 10px 0;
+        font-size: 14px;
+    }
+     .recurring_multi .grid_rec{
+        grid-template-columns: 1fr .8fr 30px;
+    }
+     .outline_card{
+        padding: 15px;
+    }
+    .role_stepcount li+li {
+        margin-left: 0;
+    }
+    .role_stepcount li a span{
+        height: 30px;
+        width: 30px;
+    }
+    .role_stepcount li a{
+        font-size: 11px;
+    }
+    .role_stepcount li+li::before {
+        left: -24px;
+        width: 42px;
+        top: 15px;
+    }
+    .tp_days {
+    margin-top: 0;
+}
+    .excercises_sect ul:not(.in_list) li:nth-child(2n) .description_exc_text p{
+        left: initial;
+        right: -10px;
+        transform: initial;
+    }
+}
+.excercises_sect ul:not(.in_list) li:not(.ui-draggable-dragging) .list_excercises{
+    position: relative;
+    background: #f7f8fa;
+    border: 1px solid #dbdfea;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0;
+}
+.list_excercises .custom-control{
+    padding-top:5px
+}
+.list_excercises .custom-control-label{
+    margin-bottom:0 !important;
+}
+.excercises_sect ul:not(.in_list) li:not(.ui-draggable-dragging) .custom-control-label::before{
+    border-color: var(--secondary-btn-color);
+}
+.excercises_sect ul:not(.in_list) li:not(.ui-draggable-dragging) .video_box video,
+.excercises_sect ul:not(.in_list) li:not(.ui-draggable-dragging) .video_box img{
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1/.7;
+    border: 0;
+}
+.excercises_sect ul .video_box video{
+    margin-bottom: -5px !important;
+}
+
+.excercises_sect ul:not(.in_list) .data_like .my_data{
+    margin-bottom: 0;
+    font-size: 10px;
+    height: initial;
+    width: initial;
+    padding: 2px 10px;
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    left: 8px;
+}
+.excercises_sect ul:not(.in_list) .data_like .heart_m{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+}
+.excercises_sect ul:not(.in_list) .data_like .favourite-btn,
+.excercises_sect ul:not(.in_list) .data_like .del_btn{
+    background: #fff;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 15px;
+    color: #030303;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+}
+.excercises_sect ul:not(.in_list) .data_like .del_btn{
+    margin:0;
+    margin-left:5px;
+}
+
+.excercises_sect .list_excercises .subcat_chkbox,
+.workouts_add_box .list_excercises .subcat_chkbox{
+    margin-bottom:0 !important;
+    margin-top: 0;
+}
+
+.workouts_add_box .list_excercises {
+    display: grid;
+    grid-template-columns: 25px 80px 1fr 100px 200px;
+    gap: 0px 20px;
+    align-items: center;
+}
+
+.date_box p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    color: var(--text-color-2);
+}
+
+.list_excercises {
+    padding: 10px 0;
+}
+
+.excercises_sect ul li,.workouts_add_box li {
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+
+
+.excercises_sect ul.in_list li+li:not(.ui-draggable-dragging) {
+    border-top: 1.5px solid #efefef;
+}
+.excercises_sect ul.in_list .dragging-helper li{
+    border: 0 !important;
+}
+
+.description_exc_text h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--text-color-1);
+}
+
+.description_exc_text h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--text-color-1);
+}
+.workout_drag .description_exc_text h6 {
+    font-size:15px;
+    color: var(--text-color-2);
+}
+
+.description_exc_text p {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 0px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    line-height: 150%;
+    color: var(--text-color-2);
+}
+
+.description_exc_text p>a {
+    display: inline-block;
+    /* width: 90px; */
+    color: var(--primary-color);
+    margin-top: 2px;
+}
+
+.description_exc_text p>a:hover {
+    text-decoration: underline;
+}
+
+.h_videobox {
+    position: relative;
+    background: #f7f8fa;
+    border: 1px solid #dbdfea;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.h_videobox .description h5 {
+    text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 16px;
+    text-align: left;
+    color: #364a63;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    /* padding-right: 20px; */
+}
+
+.h_videobox .description h5 span {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.top_sect_ex {
+    position: relative;
+    padding: 20px 0;
+}
+.top_sect_ex > .row{
+    align-items:center;
+}
+.top_sect_ex .form-group.search_list{
+    margin-bottom: 0 !important;
+}
+
+.top_sect_ex::before {
+    height: 1px;
+    background-color: #efefef;
+    content: '';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100%;
+}
+
+.ex_check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    width: 100%;
+}
+
+
+.list_tab_planner .nav-tabs .nav-link:before,.list_tab_planner .nav-tabs .nav-link:after {
+    content: none;
+}
+
+.ex_check .subcat_chkbox {
+    display: block;
+    margin: 0;
+}
+
+.ex_check .my_data {
+    border-radius: 0px;
+    margin-top: -12px;
+}
+
+.h_videobox .description {
+    padding: 8px;
+    text-align: center;
+    min-height: 48px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex: 1;
+}
+
+.Add_btn {
+    margin-top: 30px;
+}
+
+.ex_like {
+    position: absolute;
+    top: 105px;
+    width: 100%;
+    right: 5px;
+}
+
+.ex_like .heart_m {
+    color: #e8effa;
+}
+
+.workouts_add,.plans_add {
+    min-height: 200px;
+    align-items: center;
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.workouts_add p,.plans_add p {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #030303;
+}
+
+.Add_btn a {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--secondary-btn-color);
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: var(--secondary-btn-bg);
+}
+
+.Add_btn .icon {
+    font-size: 36px;
+    margin-right: 5px;
+}
+
+@media (min-width: 576px) {
+    .modal_add_style .modal-dialog {
+        max-width: 606px;
+    }
+}
+
+
+
+.workout_add_list ul li .workout_list_box {
+    display: grid;
+    grid-template-columns: 71px 3fr 50px 3fr 3fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.workout_add_list label {
+    margin: 0;
+}
+
+.workout_add_list ul li .workout_list_box .video_add {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #364a63;
+}
+
+.workout_add_list ul li+li {
+    margin-top: 5px;
+}
+
+.form-group.select_icon.lab_top::after {
+    top: 21px;
+}
+
+.qaul_upload {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 0px !important;
+}
+
+.qaul_upload .upload-file1 input[type="file"] {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.workouts_modal .form-group {
+    margin-bottom: 0px !important;
+}
+
+.workout_add_list .row {
+    align-items: center;
+}
+
+.form-group.qaul_upload .btn {
+    background: var(--secondary-btn-bg);
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--secondary-btn-color);
+    margin-left: 15px;
+}
+
+.qaul_upload .upload-file1 {
+    cursor: pointer;
+    position: relative;
+}
+
+.scroll_worklist {
+    overflow: auto;
+    overflow-y: auto;
+    max-height: 300px;
+    margin-top: 20px;
+}
+
+.workouts_add_box .menu,.edit_add_list .menu,.medicine_menu .menu {
+    position: relative;
+}
+
+.plan_add_list .form-group {
+    margin-bottom: 0px !important;
+}
+
+.workouts_add_box .menu .drop_down,.edit_add_list .menu .drop_down,.medicine_menu .menu .drop_down {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 149px;
+    display: none;
+    z-index: 95;
+    background: #fff;
+    -webkit-box-shadow: 1px 1.73px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1.73px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.workouts_add_box .menu .drop_down h5,.edit_add_list .menu .drop_down h5,.medicine_menu .menu .drop_down h5 {
+    background: #f3f3f3;
+    margin-bottom: 0;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    color: #344050;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    display: none;
+}
+
+.workouts_add_box .menu .drop_down ul,.edit_add_list .menu .drop_down ul,.medicine_menu .menu .drop_down ul {
+    padding: 15px;
+    margin-bottom: 0;
+    list-style: none;
+    /* border-radius: 10px; */
+}
+
+.workouts_add_box .menu>a,.edit_add_list .menu>a,.medicine_menu .menu>a {
+    font-size: 17px;
+    color: var(--secondary-btn-color);
+}
+
+.workouts_add_box .menu .drop_down ul li+li,.edit_add_list .menu .drop_down ul li+li,.medicine_menu .menu .drop_down ul li+li {
+    border-top: 1.5px solid #f3f3f3;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.workouts_add_box li {
+    border-top: 1.5px solid #efefef;
+}
+
+.card.pagin_sect ul li {
+    border-top: none !important;
+}
+
+.workouts_add_box .menu .drop_down ul li a,.edit_add_list .menu .drop_down ul li a,.medicine_menu .menu .drop_down ul li a {
+    padding-left: 10px;
+    display: block;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    font-size: 14px !important;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    text-align: left;
+    color: #344050;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    font-family: 'Inter', sans-serif;
+}
+
+.workouts_add_box .menu .drop_down ul li a:hover,.edit_add_list .menu .drop_down ul li a:hover,.medicine_menu .menu .drop_down ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.share_box_list {
+    text-align: center;
+}
+
+.share_box_list ul li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: var(--secondary-btn-bg);
+    border-radius: 10px;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+.workouts_add_box li .share_box_list li {
+    border-top: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.workouts_add_box .menu ul li,.edit_add_list .menu ul li {
+    display: block;
+    width: initial;
+    border-radius: 0px !important;
+    height: initial;
+    background: #fff;
+    margin: 0;
+}
+
+.workouts_add_box .menu ul li,.edit_add_list .menu ul li {
+    background: transparent !important;
+    display: block;
+    box-shadow: none;
+}
+
+.share_box_list ul li a {
+    color: var(--secondary-btn-color);
+}
+
+.share_box_list ul li:hover {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+.share_box_list ul li:hover a {
+    color: #fff;
+}
+
+.share_box_list ul li ul li:hover {
+    background: #fff;
+}
+
+.bottom_sect {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    padding: 12px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--text-color-2);
+}
+
+
+.add_more {
+    margin: 20px 0px;
+}
+
+.add_more a {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+@media (min-width: 576px) {
+
+
+    .select_day_modal .modal-dialog {
+        max-width: 450px;
+    }
+
+    .copy_modal .modal-dialog {
+        max-width: 500px;
+    }
+
+    .course_modal .modal-dialog {
+        max-width: 500px;
+    }
+
+    .workouts_modal .modal-dialog {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .course_modal .modal-dialog,
+    .setadd_plan_modal .modal-dialog{
+        max-width: 600px;
+    }
+    .workouts_modal .modal-dialog {
+        max-width: 662px;
+    }
+}
+
+@media (min-width: 900px) {
+    .course_modal .modal-dialog {
+        max-width: 800px;
+    }
+}
+
+
+h5.modal-title {
+    display: inline-flex;
+}
+
+.plan_add_list label {
+    margin-bottom: 0px !important;
+}
+
+.plan_add_list .row:first-child {
+    align-items: center;
+}
+
+.plan_add_list .multiselect-container {
+    width: 100%;
+    transform: none !important;
+    position: initial !important;
+    float: initial;
+    margin: 0px;
+    padding: 0;
+    border: 0px;
+}
+
+.plan_add_list .bg1 .btn-group {
+    flex-wrap: wrap;
+}
+
+.plan_add_list .bg1 .btn-group button {
+    color: #474747 !important;
+    font-size: 17px !important;
+    background-color: #ffffff;
+    border: 1px solid #ccc !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500 !important;
+    z-index: 9;
+    box-shadow: none;
+    border-radius: 4px !important;
+    letter-spacing: 1px;
+    height: 50px !important;
+}
+
+.plan_add_list .bg1 .btn-group .dropdown-toggle::after {
+    content: "\f107";
+    position: absolute;
+    right: 10px;
+    color: #525252;
+    top: 0px;
+    font-family: 'FontAwesome';
+    z-index: 9;
+    pointer-events: none;
+    font-size: 32px;
+    border: 0px;
+}
+
+.plan_add_list .bg1 .btn-group .dropdown-menu {
+    padding: 15px;
+}
+
+.plan_add_list .bg1 .btn-group.show .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+    overflow-y: auto;
+    background: #fff;
+    border: 0px;
+}
+
+.plan_add_list .bg1 .btn-group.show .dropdown-menu::-webkit-scrollbar,
+.more_btn .tooltiip_data::--webkit-scrollbar{
+    width: 5px;
+}
+
+.plan_add_list .bg1 .btn-group.show .dropdown-menu::-webkit-scrollbar-track,
+.more_btn .tooltiip_data::--webkit-scrollbar-track{
+    background: #f1f1f1;
+    /* height: 100%; */
+}
+
+.plan_add_list .bg1 .btn-group.show .dropdown-menu::-webkit-scrollbar-thumb,
+.more_btn .tooltiip_data::--webkit-scrollbar-thumb{
+    background: #1f1f1f;
+}
+
+.plan_add_list input[type="checkbox"]::before {
+    background: #dde6ed;
+    border: #747d84 2px solid;
+    border-radius: 4px;
+    content: '';
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: -1px;
+    left: -3px;
+}
+
+.plan_add_list input[type="checkbox"]:checked::before {
+    background: var(--secondary-btn-color);
+    border-radius: 4px;
+    border: 2px solid var(--secondary-btn-color);
+    top: -1px;
+    left: -3px;
+}
+
+.plan_add_list .bg1 .btn-group .dropdown-menu.show {
+    width: 100%;
+}
+
+.plan_add_list .bg1 .btn-group .dropdown-menu.show li {
+    padding: 5px 0;
+}
+
+.plan_add_list input {
+    position: relative;
+}
+
+.plan_add_list input[type="checkbox"]:checked::after {
+    font-family: "Nioicon";
+    content: "";
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    color: #fff;
+    font-size: 12px;
+    left: -1px;
+    top: -2px;
+}
+
+.Plans_Selected {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+}
+
+.assign_program_modal .group-list-name {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.items_list .dataTable tr td,.day_items_list .dataTable tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+.assign_program_modal .scoll_list{
+    margin-top: 15px;
+    margin-right: -10px;
+    padding-right: 10px;
+}
+.add_Client_list {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    background: #f7f8fa;
+    border: 1px solid #dbdfea;
+    border-radius: 8px;
+    padding: 10px;
+}
+.assign_program_modal ul > li + li{
+    margin-top: 10px;
+}
+body .assign_program_modal .form-group{
+    margin-bottom: 0 !important;
+    margin-top: 0;
+}
+.assign_program_modal .custom-control-label::before{
+    background: #fff;
+    border-color: var(--secondary-btn-bg);
+}
+body .assign_program_modal .form-group label{
+    margin-bottom: 0 !important;
+}
+.assign_program_modal .group-list-name {
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    color: #555;
+    text-transform: uppercase;
+    background: transparent;
+    align-items: center;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.assign_program_modal .group-list-name .user-info .tb-lead {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+}
+
+.assign_program_modal .group-list-name .user-info .sub-tb-lead {
+    text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #526484;
+}
+
+.assign_program_modal .user-avatar,.assign_program_modal [class^="user-avatar"]:not([class*="-group"]) {
+    background: #fff;
+    color: #030303;
+    width: 51px;
+    height: 51px;
+    font-size: 23px;
+}
+
+.assign_program_modal .user-avatar img, .assign_program_modal [class^="user-avatar"]:not([class*="-group"]) img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.items_list table th:nth-child(2),.day_items_list table th:nth-child(2) {
+    text-align: left;
+}
+
+.items_list table td:nth-child(2),.day_items_list tr td:nth-child(2) {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+.items_list table th,.day_items_list table th {
+    border-top: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding: 15px;
+    color: #030303;
+}
+
+.dataTable tr td .subcat_chkbox {
+    display: block;
+    margin: 0;
+}
+
+
+.items_list td.text_blue {
+    color: var(--primary-color);
+}
+
+
+.items_list table {
+    padding-right: 15px;
+}
+
+.items_list table td,.day_items_list table td {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #030303;
+}
+
+.items_list table td .ni-heart-fill {
+    color: #ccc;
+    font-size: 16px
+}
+
+.items_list {
+    max-height: 600px;
+    overflow: auto;
+    overflow-x: auto;
+    margin-right: 15px;
+}
+
+.items_list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.items_list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.items_list::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+
+.items_list .table td:last-child,.items_list .table th:last-child {
+    border-right: 1px solid #dbdfea;
+}
+
+.items_list .table thead tr:last-child th,.day_items_list .table thead tr:last-child th {
+    border: 0px;
+}
+
+
+.kcal_style {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 100px;
+    gap: 8px;
+}
+
+.kcal_style span {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #474747;
+}
+
+.kcal_style span .icon {
+    font-size: 22px;
+    text-align: left;
+    color: var(--secondary-btn-color);
+    position: relative;
+    top: 5px;
+}
+
+
+.holiday_slots {
+    text-align: center;
+    margin: 30px 40px 0px;
+}
+
+.holiday_slots ul li {
+    background: #fff;
+    display: inline-block;
+    border: 2px solid #cdcdcd;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #030303;
+    padding: 6px 11px;
+}
+
+.holiday_slots ul li.active {
+    background: var(--secondary-btn-color);
+    color: #fff;
+    border: 2px solid var(--secondary-btn-color);
+}
+
+.holiday_slots ul li+li {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.select_day_modal .holiday_slots ul {
+    margin-top: 20px;
+}
+
+.select_day_modal .day_title p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #5e6d82;
+}
+
+
+
+.container-calendar {
+    /* border-right: 1.5px solid #f2f2f4; */
+    padding: 7px 10px;
+}
+
+.holidays_pick a,.slots_pick a {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #707070;
+}
+
+.holidays_pick .icon,.slots_pick .icon {
+    font-size: 34px;
+    text-align: left;
+    color: #707070;
+}
+
+.holidays_pick,.slots_pick {
+    text-align: center;
+}
+
+.holidays_pick span,.slots_pick span {
+    display: block;
+}
+
+.date_pick {
+    margin: 15px;
+    background: #fff;
+    border: 1.5px solid #f2f2f4;
+    align-items: center;
+}
+
+.day_slots_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+    text-transform: capitalize;
+}
+
+.edit_add_list ul li a {
+    background: #e8effa;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.edit_add_list ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.day_slots_list {
+    padding: 15px;
+}
+
+.edit_add_list ul li:first-child a {
+    width: 134px;
+    height: 40px;
+}
+
+.edit_add_list ul li a {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 42px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.edit_add_list ul li:nth-child(2) a {
+    width: 40px;
+    height: 40px;
+}
+
+.edit_add_list ul li:last-child a {
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+    color: #526484;
+}
+
+.edit_add_list ul li:last-child a {
+    font-size: 17px;
+    color: #526484;
+    line-height: 36px;
+}
+
+.edit_add_list ul li:nth-child(2) a {
+    font-size: 30px;
+}
+
+.edit_add_list ul li:nth-child(2) a .ni-plus-sm {
+    position: relative;
+    /* top:3px */
+}
+
+.edit_add_list ul li:first-child a .ni-edit-alt-fill {
+    margin-left: 10px;
+}
+
+.edit_add_list ul .menu ul {
+    display: block;
+}
+
+.edit_add_list ul li .menu li a {
+    width: initial;
+    height: initial;
+    background: transparent;
+}
+
+.day_slots_body .nav-tabs {
+    gap: 50px;
+    padding: 0px 15px 15px;
+    border: 0;
+}
+
+.day_slots_body .nav-tabs>li a {
+    border: none;
+    color: #526484;
+    font-weight: 700;
+    position: relative;
+    font-size: 15px !important;
+    font-family: 'Inter', sans-serif !important;
+    text-transform: uppercase;
+    padding: 0px;
+    display: inline-flex;
+    gap: 6px;
+}
+
+.day_slots_body .nav-tabs li a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.list_day_plan {
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(122, 139, 255, 0.19);
+    margin-bottom: 10px;
+}
+
+.day_slots_body {
+    border-top: 1.5px solid #ddd;
+}
+
+.day_items_list table tr:last-child td {
+    border-bottom: 1px solid rgb(219, 223, 234);
+}
+
+.day_slots_body .nav-tabs .nav-link::after {
+    height: 1.5px;
+}
+
+.Search_day_slots {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.data_search_list .form-group {
+    margin-bottom: 0px;
+}
+
+.Search_day_slots {
+    padding: 10px 15px 15px;
+}
+
+.data_search_list,.data_kcal_list {
+    border-radius: 5px;
+    border: 1.5px solid rgb(219, 223, 234);
+}
+
+.data_search_list .form-control {
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px !important;
+}
+
+.data_search_list .table thead tr:last-child th {
+    border: 0px;
+}
+
+.data_search_list table.dataTable {
+    margin-bottom: 0px;
+}
+
+.data_search_list .table tr th {
+    border: 0px;
+    vertical-align: middle;
+    padding: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #8094ae;
+}
+
+.data_search_list .table tr td {
+    border: 0px;
+    vertical-align: middle;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #030303;
+}
+
+.data_kcal_list .table tr th,.data_kcal_list .table tr td,.table thead tr:last-child th {
+    border: 0px;
+}
+
+.data_kcal_list .table tr th {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #030303;
+}
+
+.data_kcal_list .table tr td {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #5e6d82;
+}
+
+.data_kcal_select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.data_kcal_list .table thead tr th:first-child,.data_kcal_list .table tr td:first-child {
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 0;
+}
+
+.data_kcal_list {
+    padding: 15px;
+}
+
+.day_slots_list .day_slots_body {
+    display: none;
+}
+
+.data_kcal_list label {
+    margin-bottom: 0px;
+}
+
+.copy_list_fi ul li {
+    position: relative;
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #cdcdcd;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    width: 104px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #030303;
+    padding: 6px 11px;
+}
+
+.copy_list_fi ul li+li {
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+
+.copy_list_fi p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #5e6d82;
+    margin-bottom: 10px;
+}
+
+.copy_list_fi ul li.active .check_date {
+    display: block;
+}
+
+.copy_list_fi .check_date {
+    width: 18px;
+    height: 18px;
+    background: #28a745;
+    position: absolute;
+    border-radius: 50px;
+    right: -9px;
+    top: -13px;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    color: #fff;
+}
+
+.date_pick #myc-current-month-year-container {
+    position: relative;
+}
+
+.date_pick #myc-current-month-year-container:after {
+    position: absolute;
+    content: 'Day';
+    width: 100%;
+    left: 0;
+    top: 7px;
+    height: 100%;
+    text-decoration: underline;
+    background: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: #1f1f1f;
+}
+
+.date_pick div#myc-prev-week .icon {
+    position: relative;
+    left: -9px;
+    z-index: 99;
+    top: 3px;
+}
+
+.date_pick #myc-prev-week-container .icon {
+    position: relative;
+    right: 214px;
+    z-index: 99;
+    top: 3px;
+}
+
+.edit_add_list ul li a.active.tab_click {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+.slots_pick {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .slots_pick:before {
+        position: absolute;
+        content: '';
+        left: -12px;
+        height: calc(100% + 100%);
+        width: 1px;
+        background: #f2f2f4;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.holidays_pick a:hover,.slots_pick a:hover,.holidays_pick a:hover .icon,.slots_pick a:hover .icon {
+    color: var(--primary-color);
+}
+
+.copy_list_fi .copy_to li.active {
+    background: var(--secondary-btn-color);
+    color: #fff;
+    border-color: var(--secondary-btn-color);
+}
+
+.Nutritional_sect p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #5e6d82;
+    margin-bottom: 10px;
+}
+
+.Nutritional_sect p.kcal_data {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #474747;
+}
+
+.Nutritional_sect p.kcal_data span {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #707070;
+}
+
+
+.more_tab1 {
+    transition: .3s ease-in-out;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3px 14px;
+    background: var(--secondary-btn-color);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 14px !important;
+}
+
+.cstm_btn .more_tab1:not(.disabled) {
+    background: #42907B;
+    color: #fff;
+}
+
+.more_tab1.disabled {
+    cursor: not-allowed !important;
+}
+
+.file-prescription,.pills_icon {
+    position: relative;
+}
+
+.file-prescription::before {
+    background: url(../../plan/img/file-prescription.png) no-repeat center center;
+}
+
+.pills_icon::before {
+    background: url(../../plan/img/pills1.png) no-repeat center center;
+}
+
+.active .file-prescription::before {
+    background: url(../../plan/img/file-prescription1.png) no-repeat center center;
+}
+
+.active .pills_icon::before {
+    background: url(../../plan/img/pills.png) no-repeat center center;
+}
+
+
+.form-group.lab_mb-0 label {
+    margin-bottom: 5px;
+}
+
+.workouts_add_box li .course_list .share_box_list li:first-child {
+    background: unset;
+    color: var(--primary-color);
+    width: initial;
+    height: initial;
+}
+
+.workouts_add_box li .course_list .share_box_list li:first-child a {
+    font-size: 27px;
+    position: relative;
+    top: 5px;
+    color: var(--primary-color);
+}
+
+.workouts_add_box li .course_list .share_box_list li:first-child a:hover {
+    color: var(--primary-color-2);
+}
+
+.course_modal.modal_add_style .course_list_m .form-group {
+    margin-bottom: 0px !important;
+}
+
+.course_list_b {
+    border-radius: 10px;
+    margin: 20px 0px;
+    background: #f7f8fa;
+    border: 1px solid #dbdfea;
+    /* padding: 10px; */
+}
+
+.course_list_data,.workouts_list_data {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_course {
+    position: relative;
+}
+
+.course_list_data>div,.workouts_list_data>div {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    text-align: left;
+    color: #364a63;
+}
+
+.course_list_data .name_c,.workouts_list_data .name_c {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    text-align: left;
+    color: var(--text-color-1);
+}
+
+.menu_course .drop_down {
+    position: absolute;
+    top: 0px;
+    display: none;
+    left: 0;
+    z-index: 99;
+    width: 146px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 3px 35px rgb(0 0 0 / 16%);
+}
+
+.menu_course .drop_down.after_b {
+    width: 166px;
+    left: 17%;
+}
+
+.menu_course .drop_down ul {
+    padding: 8px;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.course_list_b .course_list_data {
+    padding: 10px;
+}
+
+.workouts_list_data {
+    padding: 10px 15px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+.workouts_list_data .form-control{
+    background:#fff;
+}
+.course_list_b .course_list_data+.course_list_data,.course_list_b .workouts_list_data+.workouts_list_data {
+    border-top: 1px solid #dbdfea;
+}
+
+.menu_course .drop_down.after_scoll {
+    left: 0%;
+    margin-left: -91px;
+    top: 22px;
+}
+
+.menu_course>a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    /*text-decoration: underline;*/
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #030303;
+}
+
+.menu_course .drop_down ul li+li {
+    margin-top: 5px;
+}
+
+.menu_course .drop_down ul li a {
+    padding-left: 10px;
+    display: block;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #707070;
+}
+
+.menu_course .drop_down ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.scroll_course::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll_course::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scroll_course::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+
+/* .scroll_course {
+    overflow: auto;
+    overflow-y: auto;
+    max-height: 350px;
+    margin-right: -5px;
+    padding-right: 5px;
+} */
+
+.workouts_list_data .video_box {
+    width: 55px;
+}
+
+.workouts_list_data .video_box .video_play {
+    height: 20px;
+    width: 20px;
+    line-height: 23px;
+    font-size: 14px;
+}
+
+.modal .workouts_list_data .video_box .video_play {
+    display: none;
+}
+
+.workouts_list_data .video_box .video_play:hover::after {
+    height: 30px;
+    width: 30px;
+}
+
+.disabled {
+    background: #efefef;
+    color: #707070;
+}
+
+.drag_drop_data.disabled {
+    border-color: #ccc;
+}
+
+.drag_drop_data.disabled .drag_text {
+    color: #999 !important;
+}
+ul.list_tab_viewmore{
+    gap: 5px;
+    justify-content: flex-end;
+}
+ul.list_tab_viewmore li a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: var(--secondary-btn-color);
+    text-transform: uppercase;
+    padding: 0px 15px;
+    display: block;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+ul.list_tab_viewmore li {
+    display: inline-block;
+    border-radius: 100px;
+    background: var(--secondary-btn-bg);
+    text-align: center;
+
+}
+
+ul.list_tab_viewmore li:last-child {
+    margin-right: 0;
+}
+
+.more_tab_b {
+    display: flex;
+    gap: 15px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+}
+
+.list_tab_viewmore {
+    border: 0;
+    /* margin: -5px; */
+}
+
+ul.list_tab_viewmore li.active,.planner_list_view li.active {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+ul.list_tab_viewmore li.active a,.planner_list_view li.active a {
+    color: #fff;
+    font-weight: 500;
+}
+
+ul.list_tab_viewmore li:hover,.planner_list_view li:hover {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+ul.list_tab_viewmore li:hover a,.planner_list_view li:hover a {
+    color: #fff;
+}
+
+.list_tab_viewmore li+li .ni-heart-fill {
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+.excercises_sect::-webkit-scrollbar {
+    width: 5px;
+}
+
+.excercises_sect::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.excercises_sect::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+
+.workouts_add_box li .list_excercises .share_box_list li:first-child {
+    background: unset;
+    color: var(--primary-color);
+    width: initial;
+    height: initial;
+}
+
+.workouts_add_box li .list_excercises .share_box_list li:first-child a {
+    font-size: 27px;
+    position: relative;
+    top: 5px;
+    color: var(--primary-color);
+}
+
+.data_search_list .table thead tr th:first-child,.data_search_list .table tr td:first-child,.data_search_list .table tr td:nth-child(2),.data_search_list .table tr th:nth-child(2) {
+    text-align: left;
+}
+
+.Search_list .form-group {
+    margin-bottom: 0px;
+}
+
+.data_search_list .table thead tr th:first-child,.data_search_list .table tr td:first-child {
+    width: 10px;
+    padding-left: 6px;
+}
+
+.data_search_list a {
+    font-family: Nioicon;
+    font-weight: normal;
+    font-size: 18px;
+    color:var(--primary-color);
+}
+
+.data_search_list {
+    display: none;
+}
+
+.Search_list {
+    position: relative;
+}
+
+.data_search_list {
+    position: absolute;
+    background: #fff;
+    left: 0;
+    z-index: 999;
+}
+
+.date_pick #myc-current-month-year-container {
+    text-align: left;
+}
+
+.add_day_cal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 17px;
+    border-radius: 10px;
+    background: #e8effa;
+    text-align: center;
+    left: 200px;
+}
+
+.add_day_cal a {
+    font-family: Nioicon;
+    font-weight: normal;
+    font-size: 23px;
+    color: var(--primary-color);
+    line-height: 30px;
+}
+
+.add_day_cal:hover {
+    background: var(--primary-color-2);
+}
+
+.add_day_cal:hover a {
+    color: #fff;
+}
+
+.btn_dark1 {
+    padding: 8px 15px;
+    min-width: 93px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: #e8effa;
+    font-weight: 600;
+    font-size: 14px;
+    justify-content: center;
+    letter-spacing: 0.01em;
+    color: var(--primary-color-2) !important;
+}
+
+.data_kcal_list .table td:last-child {
+    padding-right: 0px;
+}
+
+.data_kcal_list .more_cont_table {
+    padding-right: 0px !important;
+}
+
+.btn_dark1:hover {
+    color: #fff !important;
+    background: var(--primary-color);
+}
+
+td.more_cont_table table {
+    padding: 0px !important;
+    margin-bottom: 0px;
+}
+
+td.more_cont_table table td:last-child,.td.more_cont_table table th:last-child {
+    padding-right: 0px !important;
+}
+
+td.more_cont_table table td {
+    padding: 3px;
+}
+
+.grid_v,.list_v .tab-pane:not(.active),.grid_v .tab-pane:not(.active) {
+    display: none;
+}
+
+/*------------Drag & drop-----------------*/
+.drag_list_data .ui-draggable .list_excercises .subcat_chkbox,.drag_list_data .ui-draggable .description_exc_text p,.drag_list_data .ui-draggable .list_excercises .data_like,
+.drag_list_data .ui-draggable .list_excercises .ni-move {
+    display: none;
+}
+
+.drag_list_data .ui-draggable .list_excercises .video_box,.drag_list_data .ui-draggable.darglist_hide .video_box {
+
+    border-radius: 4px;
+}
+
+.drag_list_data .ui-draggable .list_excercises {
+    display: flex;
+    background: #F0F0F0;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+}
+
+.drag_list_data .ui-draggable .description_exc_text h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+}
+
+.drag_list_data .ui-draggable .list_excercises .video_play {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.drag_list_data .ui-draggable .description_exc_text {
+    margin-left: 10px;
+}
+
+.drag_list_data .ui-draggable .video_play:hover::after {
+    height: 20px;
+    width: 20px;
+}
+
+.drag_drop_data {
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.drag_drop_data::-webkit-scrollbar,.data_search_list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.drag_drop_data::-webkit-scrollbar-track,.data_search_list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.drag_drop_data::-webkit-scrollbar-thumb,.data_search_list::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+
+.drag_list_data .ui-draggable .list_excercises.workout_drag .description_exc_text h6,.drag_list_data .ui-draggable .list_excercises .date_box,.drag_list_data .ui-draggable .list_excercises .share_box_list {
+    display: none;
+}
+
+.drag_list_data .ui-draggable .list_excercises.workout_drag .video_box {
+    width: 43px;
+}
+
+.drag_list_data .ui-draggable .list_excercises.workout_drag .description_exc_text h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 115px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+}
+
+.drag_close {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background: var(--primary-color);
+    height: 18px;
+    color: #fff;
+    display: none;
+    text-align: center;
+    width: 18px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 17px;
+    border-radius: 10px;
+}
+
+.drag_drop_data .drag_close {
+    display: block;
+}
+
+.Create_list .Plan_tooltip>div {
+    /* left: 0; */
+    margin-left: 0;
+}
+
+.Create_list .Plan_tooltip>div::before,.Create_list .Plan_tooltip>div::after {
+    /* left: 37%; */
+}
+
+body .darglist_hide .list_excercises .subcat_chkbox,.darglist_hide .description_exc_text p,.darglist_hide .list_excercises .data_like {
+    display: none !important;
+}
+
+.darglist_hide .list_excercises.workout_drag .description_exc_text h6,.darglist_hide .list_excercises .date_box,.darglist_hide .list_excercises .share_box_list {
+    display: none !important;
+}
+
+.darglist_hide .list_excercises.workout_drag .video_box img {
+    width: 100%;
+    border-radius: 4px;
+    height: 43px;
+    object-fit: cover;
+}
+
+.ui-draggable.darglist_hide .list_excercises.workout_drag .description_exc_text h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+    margin-bottom: 0;
+}
+
+.ui-draggable.darglist_hide .description_exc_text h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+    margin-bottom: 0;
+}
+
+.ui-draggable.darglist_hide .list_excercises .video_play {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.ui-draggable.darglist_hide .description_exc_text,.ui-draggable.darglist_hide .description {
+    margin-left: 10px;
+    width: calc(100% - 50px);
+    padding: 0;
+}
+
+.ui-draggable.darglist_hide .video_play:hover::after {
+    height: 20px;
+    width: 20px;
+}
+
+.ui-draggable.darglist_hide .video_box ,
+.dragging-helper.darglist_hide .video_box{
+    border-radius: 4px;
+}
+
+.ui-draggable.darglist_hide .video_play:hover::after {
+    height: 20px;
+    width: 20px;
+}
+
+.ui-draggable.darglist_hide .video_play {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.ui-draggable.darglist_hide .video_play:hover::after {
+    height: 20px;
+    width: 20px;
+}
+
+.ui-draggable.darglist_hide .video_box video {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.plan_add_sect .workouts_add_box .share_box_list ul .menu ul {
+    float: initial;
+}
+
+.ui-draggable.darglist_hide .h_videobox .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    flex: initial;
+    min-height: initial;
+}
+
+.ui-draggable.darglist_hide .h_videobox {
+    display: flex;
+    background: #f7f8fa;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+    flex-direction: initial;
+    height: initial;
+}
+
+.ui-draggable.darglist_hide .h_videobox .ex_check,.ui-draggable.darglist_hide .h_videobox .ex_like,.ui-draggable.darglist_hide .h_videobox .description h5 .Plan_tooltip {
+    display: none;
+}
+
+.ui-draggable.darglist_hide .h_videobox .description h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #030303;
+    display: block;
+}
+
+.day_items_list {
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.datepicker .datepicker-days table tr td.day.focused,.datepicker table tr td.day:hover {
+    background: none;
+}
+
+.datepicker .datepicker-days table tr td.day.focused,.datepicker table tr td.day:hover {
+    background: none !important;
+}
+
+.collapse_box>.title::after {
+    content: '\f078';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 14px;
+    font-family: 'fontawesome';
+    font-weight: 100;
+    color: #526484;
+}
+
+.container-calendar {
+    padding: 15px 0;
+}
+
+.table-condensed thead tr:nth-child(3) {
+    background: #f9f9f9;
+    border: 0;
+}
+
+.table-condensed thead tr:nth-child(3) th {
+    background: #f9f9f9;
+    border: 0;
+}
+
+.date_pick input:focus-visible {
+    outline: none;
+}
+
+.container-calendar #calendar-body::-webkit-scrollbar {
+    height: 0;
+}
+
+.container-calendar #calendar-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.container-calendar #calendar-body::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+span.month_pic {
+    font-size: 24px;
+    text-align: left;
+    color: #707070;
+    position: relative;
+    left: -34px;
+    top: 4px;
+}
+
+.calen-name button {
+    border: 0px;
+    background: #fff;
+    padding: 0px;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+    color: #000;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.container-calendar #calendar-body>div>span:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.calen-name {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.calen-name button#previous {
+    left: 30px;
+}
+
+.container-calendar #monthAndYear:focus {
+    outline: none;
+    border: 0px;
+}
+
+.calen-name button:focus {
+    outline: none;
+}
+
+.calen-name button#next {
+    right: 30px;
+}
+
+.container-calendar #monthAndYear {
+    text-decoration: underline;
+    border: 0;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: #1f1f1f;
+}
+
+.container-calendar #calendar-body {
+    display: flex;
+    overflow: auto;
+    cursor: move;
+}
+
+.container-calendar #calendar-body>div {
+    display: flex;
+}
+
+.container-calendar #calendar-body>div>span {
+    width: 40px;
+    height: 40px;
+    background-color: #F4F4F4;
+    border-radius: 12px;
+    display: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #030303;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.container-calendar #calendar-body>div>span.selected {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.container-calendar #calendar-body>div>span[data-date] {
+    display: block;
+    display: flex;
+}
+
+/*---------Responsive--------------------*/
+@media (max-width: 1366.5px) {
+    #myc-dates-container .myc-date-header+.myc-date-header {
+        margin-left: 12px !important;
+    }
+
+    .date_pick #myc-prev-week-container .icon {
+        right: 203px;
+    }
+}
+
+@media (max-width: 991.5px) {
+    .nk-content, .planner_top_sect, .planner_btm_sect{
+        padding:20px !important;
+    }
+
+    .planner_btm_sect{
+        margin-top:20px;
+    }
+    .list_tab_planner{
+        /* padding-bottom: 10px; */
+    }
+    .drag_list_data>p {
+        margin-bottom: 10px;
+    }
+
+    .add_day_cal {
+        left: initial;
+        position: absolute;
+        top: 26px;
+        right: 200px;
+    }
+
+    .calen-name {
+        text-align: center;
+    }
+
+    #myc-dates-container .myc-date-header+.myc-date-header {
+        margin-bottom: 5px;
+    }
+
+    .Create_list.row {
+        margin-bottom: 5px;
+    }
+
+    .planner_top_sect h5 {
+        margin-bottom: 5px;
+        /* display: block; */
+    }
+
+
+
+    .list_tab_planner .nav-tabs {
+        gap: 0 30px;
+        /* margin-bottom: 10px; */
+    }
+
+    .more_tab1 {
+        display: inline-block;
+        margin-top: 5px;
+        width: max-content;
+    }
+
+    .list_tab_planner .nav-tabs li a.active:before {
+        bottom: -4px;
+    }
+
+    ul.list_tab_viewmore li {
+        padding: 2px 10px;
+    }
+    .excercises_sect .list_excercises .ni-move,
+    .workouts_add_box .list_excercises .ni-move{
+        display:none;
+    }
+    .excercises_sect ul.in_list .list_excercises {
+        grid-template-columns: 25px 137px 1fr 109px;
+    }
+
+    .description_exc_text p {
+        /* font-size: 12px; */
+    }
+
+    .drag_drop_data {
+        margin: 0px;
+    }
+
+    .workouts_add_box .list_excercises {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+
+    .workouts_add_box .bottom_sect {
+        display: none;
+    }
+
+    .workouts_add_sect .top_sect_ex::before, .plan_add_sect .top_sect_ex::before {
+        content: none;
+    }
+
+
+    .workouts_add_sect .top_sect_ex::before, .plan_add_sect .top_sect_ex::before, #programs .top_sect_ex::before {
+        content: none;
+    }
+
+    .plan_add_sect .workouts_add_box .video_box {
+        width: 125px;
+        order: 1;
+    }
+
+    .plan_add_sect .workouts_add_box .subcat_chkbox {
+        order: 1;
+    }
+
+    .plan_add_sect .workouts_add_box .description_exc_text {
+        order: 2;
+        margin-top: 10px;
+        /* width: 100%; */
+    }
+
+    .plan_add_sect .workouts_add_box .date_box {
+        order: 3;
+        margin-left: auto;
+    }
+
+    .plan_add_sect .workouts_add_box .plan_menu {
+        order: 4;
+    }
+
+    .plan_add_sect .workouts_add_box .share_box_list {
+        order: 5;
+        margin-top: 10px;
+    }
+
+    .workouts_add_box.program_add_box .video_box {
+        width: 125px;
+        order: 2;
+    }
+
+    .workouts_add_box.program_add_box .subcat_chkbox {
+        order: 1;
+    }
+
+    .workouts_add_box.program_add_box .description_exc_text {
+        order: 5;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .workouts_add_box.program_add_box .date_box {
+        order: 3;
+    }
+
+    .workouts_add_box.program_add_box .share_box_list {
+        order: 4;
+    }
+
+    .date_pick.row .col-sm-10 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .date_pick.row .col-sm-1 {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .date_pick.row .col-sm-1 {
+        width: 50%;
+        height: 100%;
+        padding: 10px 0px;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+
+    .date_pick.row .col-sm-10 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .date_pick.row .col-sm-1 {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .date_pick.row .col-sm-1 {
+        width: 50%;
+        height: 100%;
+        padding: 10px 0px;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+
+    .Calendar_box_pick {
+        border-right: 0px;
+        padding: 10px 0;
+    }
+
+    .slots_pick:before {
+        content: none;
+    }
+
+    .data_search_list {
+        overflow: auto;
+        overflow-x: auto;
+        overflow-y: auto;
+        max-height: 200px;
+    }
+
+    .data_search_list::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .data_search_list::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .data_search_list::-webkit-scrollbar-thumb {
+        background: #1f1f1f;
+    }
+
+}
+
+@media (max-width: 768.5px) {
+
+    .add_day_cal {
+        right: 100px;
+    }
+
+    .more_tab_b {
+        margin-top: 10px;
+    }
+
+    .description_exc_text p {
+        /* font-size: 14px; */
+    }
+
+    .excercises_sect > ul.in_list .list_excercises {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+
+    .excercises_sect ul.in_list .video_box {
+        width: 100%;
+        max-width: calc(100% - 50px);
+        order: 1;
+    }
+    .excercises_sect ul.in_list .video_box video,
+    .excercises_sect ul.in_list .video_box img{
+        max-width: 200px;
+    }
+
+
+    .excercises_sect ul.in_list .description_exc_text {
+        order: 2;
+        max-width: calc(100% - 40px);
+    }
+
+    .excercises_sect ul.in_list .data_like {
+        order: 3;
+        gap: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .excercises_sect .data_like .my_data {
+        margin-bottom: 0px;
+    }
+
+
+    .in_list .heart_m {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 575.5px) {
+    .workouts_add_box .list_excercises .video_box{
+        width: 100%;
+        margin: 0 !important;
+        text-align: center;
+    }
+    .workouts_add_box .video_box .image-placeholder,
+    .workouts_add_box .list_excercises .video_box img{
+        width: 80% !important;
+        max-width: 80% !important;
+        margin: auto;
+        aspect-ratio: 1/.8;
+    }
+    .workouts_add_box .list_excercises .date_box{
+        margin-left: 0 !important;
+    }
+    .cstm_btn{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        padding:10px 15px;
+        background: #fff;
+        margin: 0 !important;
+    }
+    .excercises_sect > ul.in_list .list_excercises{
+        position: relative;
+    }
+    .planner_top_sect.fixed{
+        padding: 10px !important;
+        top: 15px;
+    }
+    .excercises_sect ul.in_list .video_box{
+        max-width: 100%;
+        text-align: center;
+    }
+    .excercises_sect ul.in_list .video_box video, .excercises_sect ul.in_list .video_box img{
+        width: 80%;
+    }
+    .excercises_sect ul.in_list .list_excercises .subcat_chkbox,
+    .workouts_add_box .list_excercises .subcat_chkbox{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 9;
+    }
+    .planner_top_sect.fixed > .row > div:first-child{
+        display: none;
+    }
+    .drag_drop_data{
+        padding: 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .planner_top_sect .drag_text{
+        grid-column: 1 / span 2;
+    }
+    .Create_list .Plan_tooltip>div{
+        right: -20px;
+        left: initial !important;
+        transform: initial;
+    }
+    .Create_list .Plan_tooltip>div::before, .Create_list .Plan_tooltip>div::after{
+        transform: initial;
+        left: initial !important;
+        right: 19px;
+    }
+    .list_tab_planner{
+        display:block;
+    }
+    .cstm_btn{
+        margin-top:5px !important;
+        margin-bottom:10px;
+        width: 100%;
+    }
+    .more_tab1{
+        width: 100%;
+    }
+    .planner_top_sect h5{
+        font-size:16px;
+        /* flex-direction: column; */
+    }
+    .description_exc_text h6,
+    .description_exc_text h5{
+        font-size:14px;
+    }
+    .planner_top_sect p,
+    .description_exc_text p,
+    .workout_drag .description_exc_text h6,
+    .date_box p,
+    .plan_menu .dropdown-toggle{
+        font-size:13px;
+    }
+    .excercises_sect > ul:not(.in_list) li:not(.ui-draggable-dragging) .description_exc_text h6{
+        font-size:12px;
+    }
+    .nk-content, .planner_top_sect, .planner_btm_sect{
+        padding:15px !important;
+    }
+    .workouts_add_box .list_excercises .description_exc_text{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        padding-left: 0;
+        padding: 10px 0;
+        padding-left: 0 !important;
+    }
+  
+    .workouts_add_box .list_excercises{
+        position: relative;
+    }
+
+
+
+    .top_sect_ex {
+        padding: 15px 0;
+    }
+
+
+    .add_day_cal {
+        right: 50px;
+    }
+
+    .data_kcal_list {
+        overflow: auto;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    .day_slots_body .Search_list {
+        margin-bottom: 20px;
+    }
+
+    .day_slots_body .Search_day_slots {
+        display: block;
+    }
+
+    .data_search_list {
+        overflow: auto;
+        overflow-x: auto;
+        overflow-y: auto;
+        max-height: 180px;
+    }
+
+    .workouts_add, .plans_add {
+        padding: 80px 50px;
+    }
+
+
+    .qaul_upload {
+        margin-top: 10px;
+    }
+
+
+}
+
+@media (max-width: 460.5px) {
+   
+
+    .add_day_cal {
+        right: 20px;
+    }
+
+    div#myc-dates-container {
+        text-align: center !important;
+    }
+
+    .day_slots_body .nav-tabs {
+        gap: 10px 20px;
+        margin-top: 15px;
+    }
+
+    .edit_add_list {
+        margin-top: 5px;
+    }
+
+    .day_slots_box {
+        display: block;
+    }
+
+    div#myc-nav-container {
+        position: relative;
+    }
+
+    #myc-prev-week-container {
+        position: absolute !important;
+    }
+
+    .date_pick #myc-current-month-year-container {
+        text-align: center;
+    }
+
+    .date_pick #myc-prev-week-container .icon {
+        right: 30px;
+    }
+
+    div#myc-nav-container {
+        position: relative !important;
+    }
+
+
+    .modal .course_list_data .menu_course .drop_down.after_scoll {
+        left: 0%;
+        margin-left: -90px;
+    }
+
+    .Create_list .Plan_tooltip>div {
+        width: 260px;
+        left: 100%;
+        margin-left: 15px;
+    }
+
+    .Create_list .Plan_tooltip>div::before, .Create_list .Plan_tooltip>div::after {
+        left: 40%;
+    }
+
+    .modal .Plan_tooltip>div::before, .modal .Plan_tooltip>div::after {
+        left: 72%;
+    }
+
+    .modal .Plan_tooltip>div {
+        width: 300px;
+        left: 0%;
+        margin-left: -55px;
+    }
+
+    .workouts_add, .plans_add {
+        padding: 80px 20px;
+    }
+
+
+    .workouts_add_sect .workouts_add_box .share_box_list {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+
+    .workouts_add_sect .workouts_add_box .share_box_list ul {
+        float: right;
+    }
+
+    .workouts_add_sect .workouts_add_box .share_box_list .drop_down ul {
+        float: initial;
+    }
+
+    .menu_course .drop_down {
+        top: 19px;
+        left: 8%;
+    }
+
+    .menu_course .drop_down.after_b {
+        left: -80%;
+    }
+
+    .menu_course .drop_down.after_scoll {
+        left: -8%;
+        margin-left: -6px;
+    }
+
+    .plan_add_sect .workouts_add_box .share_box_list, .workouts_add_box.program_add_box .share_box_list {
+        order: 5;
+        margin-top: 10px;
+    }
+
+    .plan_add_sect .workouts_add_box .share_box_list ul, .workouts_add_box.program_add_box .share_box_list ul {
+        float: right;
+    }
+
+    .assign_program_tab ul>li>a.nav-link {
+        width: 100px;
+        padding: 7px 10px;
+    }
+
+    .Add_btn a {
+        font-size: 16px;
+    }
+
+    .add_day_cal {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 360.5px) {
+    .plan_add_sect .workouts_add_box .share_box_list, .workouts_add_box.program_add_box .share_box_list {
+        width: 100%;
+    }
+
+    .kcal_style {
+        grid-template-columns: 6fr 3fr 80px;
+    }
+
+    .add_day_cal {
+        right: 3px;
+    }
+
+    .calen-name {
+        position: relative;
+        margin: 0 -15px;
+        margin-bottom: 15px;
+    }
+
+    .calen-name button#previous {
+        position: absolute;
+        left: 0;
+        top: 2px;
+    }
+
+    .pend_btn_sect a {
+        padding: 5px 18px;
+    }
+
+    .pend_btn_sect a.pri_btn {
+        padding: 3px 18px;
+    }
+
+
+    .modal .course_list_data .menu_course .drop_down {
+        left: 0%;
+        margin-left: -8px;
+    }
+
+    .modal .course_list_data .menu_course .drop_down.after_b {
+        left: 0%;
+        margin-left: -55px;
+    }
+
+    .modal .course_list_data .menu_course .drop_down.after_scoll {
+        left: 0%;
+        margin-left: 0px;
+    }
+
+    .menu_course .drop_down, .menu_course .drop_down.after_scoll {
+        left: 0%;
+        margin-left: -95px;
+    }
+
+    .menu_course .drop_down.after_b {
+        left: 0%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 320.5px) {
+    .menu_course .drop_down {
+        left: 0%;
+        margin-left: 0;
+    }
+
+    .assign_program_tab ul>li>a.nav-link {
+        font-size: 12px;
+        width: 80px;
+    }
+
+}
+
+/*------------------------------------------*/
+.table_head_list ul,.table_body_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table_head_list ul li {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding: 12px;
+    color: #030303;
+}
+
+.box_ailm {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #030303
+}
+
+.table_head_list ul li:nth-child(2) {
+    text-align: left;
+    width: 200px;
+}
+
+.box_name,.sl_num {
+    text-align: left;
+    width: 200px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+.table_body_list {
+    text-align: center;
+}
+
+.table_head_list ul li:first-child {
+    width: 150px;
+}
+
+.table_body_list .box_check .subcat_chkbox {
+    display: block;
+    margin-top: 0px
+}
+
+.table_body_list .box_check {
+    width: 150px;
+}
+
+.table_body_list {
+    border-top: 1.5px solid #e6e6e6;
+}
+
+.table_head_list ul li:nth-child(3) {
+    width: 300px;
+}
+
+.table_body_list .box_ailm {
+    width: 300px;
+}
+
+.table_head_list ul li:last-child {
+    width: 100px;
+}
+
+.table_body_list .box_dropm {
+    width: 100px;
+}
+
+
+.drag_drop_data .table_body_list {
+    display: flex;
+    background: #F0F0F0;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+}
+
+.drag_drop_data .table_body_list .box_check,.ui-draggable.darglist_hide .table_body_list .box_check {
+    display: none;
+}
+
+.drag_drop_data .table_body_list .box_dropm,.ui-draggable.darglist_hide .table_body_list .box_dropm {
+    display: none;
+}
+
+.drag_drop_data .table_body_list .box_ailm,.ui-draggable.darglist_hide .table_body_list .box_ailm {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 115px;
+}
+
+.drag_drop_data .table_body_list .box_name,.ui-draggable.darglist_hide .table_body_list .box_name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 9px;
+    width: 80px;
+}
+
+.items_list_plan .table_head_list ul,.items_list_plan .table_body_list {
+    display: grid;
+    grid-template-columns: 80px 150px 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.items_list_plan .ni-heart-fill {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.items_list_plan .table_head_list ul li:first-child,.items_list_plan .table_body_list .box_check,.items_list_plan .table_head_list ul li:nth-child(2),.items_list_plan .table_head_list ul li:nth-child(3) {
+    width: initial;
+}
+
+.items_list_plan .Food_name,.items_list_plan .Calories_name,.items_list_plan .Proteins_name,.items_list_plan .Carbs_name,.items_list_plan .Fats_name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #030303;
+}
+
+.ui-draggable.darglist_hide .ni-heart-fill,.drag_drop_data .table_body_list .ni-heart-fill {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.drag_drop_data .table_body_list .sl_num,.ui-draggable.darglist_hide .table_body_list .sl_num {
+    width: 50px;
+    padding: 9px;
+}
+
+.drag_drop_data .table_body_list .Calories_name,.drag_drop_data .table_body_list .Proteins_name,.drag_drop_data .table_body_list .Carbs_name,.drag_drop_data .table_body_list .Fats_name {
+    display: none;
+}
+
+.ui-draggable.darglist_hide .Calories_name,.ui-draggable.darglist_hide .Proteins_name,.ui-draggable.darglist_hide .Carbs_name,.ui-draggable.darglist_hide .Fats_name {
+    display: none;
+}
+
+@media (max-width: 480.5px) {
+    .table_head_list {
+        display: none;
+    }
+}
+
+@media (max-width: 360.5px) {
+    .table_body_list {
+        margin-bottom: 5px;
+    }
+
+    .table_head_list ul, .table_body_list {
+        flex-wrap: wrap;
+    }
+
+    .table_body_list .box_check {
+        width: 30%;
+    }
+
+    .table_body_list .box_name {
+        width: 70%;
+    }
+
+    .table_body_list .box_ailm {
+        width: 60%;
+    }
+
+    .table_body_list .box_dropm {
+        width: 40%;
+    }
+}
+
+
+
+/*----------------------------------------------------------------------*/
+.calen-name-list {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.container-calendar #monthAndYear:focus {
+    outline: none;
+    border: 0px;
+}
+
+.calen-name-list button:focus {
+    outline: none;
+}
+
+.calen-name-list button#next {
+    right: 30px;
+}
+
+.calen-name-list button {
+    border: 0px;
+    background: transparent;
+    padding: 0px;
+    font-size: 26px;
+    font-weight: bold;
+    top: -6px;
+    color: #000;
+    line-height: 0;
+    cursor: pointer;
+    left: 0;
+}
+
+.month_name {
+    text-decoration: underline;
+    border: 0;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #1f1f1f;
+    position: relative;
+    top: -6px;
+    left: 0;
+}
+
+.container-calendar span.month_pic {
+    font-size: 24px;
+    text-align: left;
+    color: #707070;
+    position: relative;
+    left: -24px;
+    top: 4px;
+}
+
+.table-calendar-body ul li {
+    justify-content: center;
+    display: flex;
+}
+
+.table-calendar-body ul li a {
+    width: 40px;
+    background-color: var(--secondary-btn-bg);
+    border-radius: 12px;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 42px;
+    color: var(--secondary-btn-color);
+}
+
+.table-calendar-body ul {
+    gap: 0 10px;
+    display: flex;
+    overflow: auto;
+    cursor: move;
+}
+
+.table-calendar-body ul::-webkit-scrollbar {
+    width: 0px;
+    height: 0;
+}
+
+.table-calendar-body ul li:last-child {
+    margin-right: 10px;
+}
+
+.table-calendar-body ul li a:hover {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+.table-calendar-body ul li a span {
+    font-size: 12px;
+    display: block;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+
+.table-calendar-body ul li.c-active a {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+.table-calendar-body ul li.d-dactive a {
+    background:  var(--secondary-btn-bg);
+    color:  var(--secondary-btn-color);
+}
+
+
+.check_date .ni.ni-check-thick {
+    line-height: 24px;
+}
+
+
+.fav_color {
+    color: red !important;
+}
+
+.video_box img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: initial;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+    border-radius: 5px;
+}
+.video_box li:not(.ui-draggable-dragging) .image-placeholder{
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: initial;
+    min-width: 135px;
+    max-width: 135px;
+}
+
+@media (min-width: 576px) {
+    .modal_add_style .modal-dialog {
+        max-width: 606px;
+    }
+}
+
+
+
+/*------------------------------------Css -add------------------------------------------------------*/
+.share_box_list .ni-more-h:before {
+    content: "";
+}
+
+
+
+@media (max-width: 360.5px) {
+    .list_tab_planner .nav-tabs {
+        gap: 0px 10px
+    }
+
+    .more_tab1 {
+        margin-top: 10px;
+    }
+
+    .list_tab_planner .nav-tabs>li a {
+        font-size: 13px !important;
+    }
+}
+
+@media (min-width: 576px) {
+
+
+    .select_day_modal .modal-dialog {
+        max-width: 450px;
+    }
+
+    .copy_modal .modal-dialog {
+        max-width: 500px;
+    }
+
+    .course_modal .modal-dialog {
+        max-width: 500px;
+    }
+
+    .workouts_modal .modal-dialog {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .course_modal .modal-dialog {
+        max-width: 600px;
+    }
+
+    .workouts_modal .modal-dialog {
+        max-width: 662px;
+    }
+}
+
+@media (min-width: 900px) {
+    .course_modal .modal-dialog {
+        max-width: 800px;
+    }
+}
+
+/*------------------------------New css ----------------------------*/
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 180px;
+    padding: 0 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.8125rem;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 4px;
+}
+
+.btn:focus,.btn.focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.filter_menu .dropdown-toggle {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: #e8effa;
+    text-align: center;
+    padding: 0;
+    line-height: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: var(--secondary-btn-color);
+    background: var(--secondary-btn-bg);
+}
+
+.filter_menu .dropdown-toggle:hover {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+.filter_menu .dropdown.show .dropdown-toggle {
+    color: #fff;
+    background: var(--secondary-btn-color);
+}
+
+.filter_menu .dropdown-menu {
+    -webkit-box-shadow: 1px 1.73px 10px rgb(0 0 0 / 25%);
+    box-shadow: 1px 1.73px 10px rgb(0 0 0 / 25%);
+    padding: 10px 15px;
+    border-radius: 10px;
+    left: -128px !important;
+}
+
+.filter_menu .dropdown-menu label {
+    display:none;
+    background: #f3f3f3;
+    margin: 0 -15px;
+    padding: 15px;
+    font-weight: 500 !important;
+    text-transform: capitalize;
+    font-size: 14px !important;
+    letter-spacing: 0.02em !important;
+    line-height: 18px;
+    color: #344050 !important;
+}
+
+.filter_menu .dropdown-menu a {
+    padding: 10px;
+    text-transform: capitalize;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    text-align: left;
+    color: #344050 !important;
+}
+
+.filter_menu .dropdown-menu a:hover {
+    color: var(--primary-color) !important;
+}
+
+.filter_menu .dropdown-menu a.active-gender {
+    color: var(--primary-color) !important;
+    font-weight: normal;
+}
+
+.filter_menu .dropdown-item:hover,.filter_menu .dropdown-item:focus {
+    background: transparent;
+}
+
+.filter_menu .dropdown-menu a+a {
+    border-top: 1.5px solid #f3f3f3;
+}
+
+.filter_menu .btn .icon {
+    font-size: 18px;
+}
+
+
+
+.workouts_add_box .menu .drop_down ul li a {
+    color: #344050 !important;
+    position: initial !important;
+}
+
+.bottom_sect {
+    text-transform: capitalize;
+}
+
+.workouts_add_box .menu .drop_down ul li a:hover {
+    color: var(--primary-color) !important;
+}
+
+.share_box_list {
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.share_box_list .heart_m {
+    margin-right: 5px;
+}
+
+.share_box_list ul li+li,.edit_add_list ul li+li {
+    margin-left: 5px;
+}
+
+.Add_btn a:hover {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+.Add_btn .icon {
+    font-size: 28px;
+}
+
+
+@media (min-width: 575px) {
+    .modal_add_style.create_plan_modal .modal-dialog {
+        max-width: 500px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .modal_add_style.create_plan_modal .modal-dialog {
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .modal_add_style.create_plan_modal .modal-dialog {
+        max-width: 1000px;
+    }
+}
+
+.create_plan_modal .date_pick {
+    margin: 15px 0px;
+}
+
+.create_plan_modal .drag_drop_data {
+    height: 145px;
+    margin: 0;
+}
+
+.modal_add_style.create_plan_modal .modal-body {
+    padding: 30px;
+}
+
+.create_plan_modal .add_day_btn:hover a {
+    color: #fff;
+    background: var(--primary-color-2);
+}
+
+.create_plan_modal .calen-name-list {
+    text-align: center;
+}
+
+.create_plan_modal .add_day_btn a {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--primary-color);
+    text-align: center;
+    font-family: Nioicon;
+    font-weight: normal;
+    display: block;
+    font-size: 22px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.create_plan_modal .table-calendar-body {
+    display: flex;
+    align-items: center;
+}
+
+.create_plan_modal .container-calendar {
+    border: 0px;
+}
+
+.pl_menu .dropdown {
+    align-items: center;
+    margin: 0px !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #364a63;
+}
+
+.pl_menu .dropdown button {
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #030303;
+    padding-right: 5px;
+}
+
+.bg_sty_plan {
+    background: #fff;
+}
+
+.plan_head_list ul,.plan_list_data {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.bg_sty_plan .plan_list_data+.plan_list_data {
+    border-top: 1px solid #dbdfea;
+}
+
+.plan_list_data .video_box .video_play {
+    height: 20px;
+    width: 20px;
+    line-height: 23px;
+    font-size: 14px;
+}
+
+.plan_list_data .video_box {
+    width: 55px;
+}
+
+.plan_head_list ul li {
+    padding: 0px 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 38px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #6B7280;
+}
+.plan_head_list ul li:first-child{
+    display: none;
+}
+
+.plan_list_data .name_c {
+    padding: 0px 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    text-align: left;
+    color: #364a63;
+}
+
+.plan_list_data .sl_name {
+    padding: 0px 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    display: none;
+    color: #030303;
+}
+
+.plan_list_data .video_box {
+    display: none;
+}
+
+.plan_list_data {
+    padding: 10px;
+    border-top: 1.5px solid #efefef;
+}
+
+.pl_menu {
+    padding: 0px 15px;
+}
+
+.darglist_hide .video_box {
+    display: block;
+    flex: 0 0 40px ;
+    max-width: 40px;
+}
+
+.darglist_hide .plan_list_data {
+    display: flex;
+    background: #f7f8fa;
+    border: 1px solid #dbdfea;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+}
+
+.darglist_hide .plan_list_data .sl_name,.darglist_hide .plan_list_data .pl_menu {
+    display: none;
+}
+
+.darglist_hide .video_box img {
+    width: 100% !important;
+    border-radius: 4px !important;
+    height: 43px !important;
+    object-fit: cover !important;
+    min-width: 43px !important;
+}
+
+.darglist_hide .plan_list_data .name_c {
+    text-transform: capitalize;
+}
+
+.top_head_pln {
+    padding: 19px 15px;
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+}
+
+.plan_list_data .name_c {
+    padding-left: 0px;
+}
+
+.darglist_hide .plan_list_data .name_c {
+    padding-left: 10px;
+}
+
+.bg_sty_plan {
+    background: #fff;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.bg_sty_plan::-webkit-scrollbar {
+    width: 5px;
+}
+
+.bg_sty_plan::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.bg_sty_plan::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+
+@media (max-width: 575px) {
+    .plan_list_data .name_c {
+        white-space: nowrap;
+    }
+    
+    .crd_list_plan .plan_head_list {
+        display: none;
+    }
+}
+
+.items_list_plan .table_head_list ul,.items_list_plan .table_body_list {
+    display: grid;
+    grid-template-columns: 80px 150px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.items_list_plan .table_head_list ul li {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.items_list_plan .Food_name,.items_list_plan .Calories_name,.items_list_plan .Proteins_name,.items_list_plan .Carbs_name,.items_list_plan .Fats_name {
+    text-align: left;
+    padding: 0 12px;
+}
+
+.items_list_plan .Servings_name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+    padding: 0 12px;
+}
+
+.darglist_hide .Servings_name {
+    color: #030303
+}
+
+.drag_list_data>p {
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    text-align: left;
+    color: var(--text-color-3);
+    text-transform: uppercase;
+}
+
+
+.edit_add_sect a {
+    width: 35px;
+    height: 35px;
+    font-family: Nioicon;
+    font-weight: normal;
+    display: block;
+    font-size: 24px;
+    background: #e8effa;
+    text-align: center;
+    line-height: 35px;
+    color: #306dd0;
+    border-radius: 10px;
+}
+
+.edit_add_sect li {
+    margin-left: 10px;
+}
+
+.edit_add_sect li {
+    display: inline-block;
+}
+
+
+.edit_add_sect a .icon.ni.ni-pen2 {
+    font-size: 18px;
+}
+
+.collapse_arrow .arrw_icon {
+    position: relative;
+}
+
+
+.collapse_arrow.active .arrw_icon::before {
+    content: "";
+}
+
+.darglist_hide .calories_name,.darglist_hide .protiens_name,.darglist_hide .carb_name,.darglist_hide .fats_name {
+    display: none;
+}
+
+
+.btn_new {
+    padding: 12px 15px;
+    min-width: 122px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-right: 10px;
+    font-size: 16px;
+    justify-content: center;
+    letter-spacing: 0.01em;
+    color: var(--secondary-btn-color);
+    background: var(--secondary-btn-bg);
+    font-family: 'Inter', sans-serif;
+}
+
+.btn_new:hover {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+.collapse_arrow .arrw_icon {
+    position: relative;
+    font-size: 34px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.collapse_arrow {
+    text-align: right;
+}
+
+.fd_item_frm {
+    display: grid;
+    grid-template-columns: 100px 120px 60px 80px 100px 60px 40px;
+    gap: 0 10px;
+    align-items: center;
+}
+
+.fd_item_frm .form-control {
+    height: 40px !important;
+    padding: 10px 12px;
+}
+
+
+.slt_btn a {
+    width: 30px;
+    height: 30px;
+    font-family: Nioicon;
+    font-weight: normal;
+    display: block;
+    font-size: 18px;
+    background: #e8effa;
+    text-align: center;
+    line-height: 30px;
+    color: #306dd0;
+    border-radius: 10px;
+}
+
+.slt_btn a:hover,.diet_tab_plan.nav-tabs>li.add_btn_tab a:hover,.add_fd_item:hover,.edit_add_sect a:hover,.list_delete_btn a:hover {
+    background: #306dd0;
+    color: #fff;
+}
+
+.fd_item_frm .form-group {
+    margin-bottom: 0;
+}
+
+.fd_item_frm_sect {
+    display: none;
+}
+
+.darglist_hide .list_delete_btn a {
+    display: none;
+}
+
+
+.list_delete_btn a {
+    width: 30px;
+    height: 30px;
+    font-weight: normal;
+    display: block;
+    font-size: 18px;
+    background: #e8effa;
+    text-align: center;
+    line-height: 35px;
+    color: #306dd0;
+    border-radius: 10px;
+}
+
+.dt_plan {
+    background: #fff;
+}
+
+
+.collapse_box>.title {
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+}
+
+.collapse_box>.title.active::after {
+    transform: rotate(180deg);
+}
+
+.collapse_box+.collapse_box .cont_hide {
+    display: none;
+}
+
+
+.c-active {
+    text-decoration: underline;
+}
+
+.ui-draggable-dragging {
+    z-index: 99999;
+}
+
+.planner_top_sect .darglist_hide {
+    z-index: 1 !important;
+}
+
+.modal-body .darglist_hide {
+    z-index: 9999 !important;
+}
+
+
+
+
+.active-gender {
+    color: #e8effa !important;
+}
+
+li.ui-draggable-dragging {
+    list-style: none;
+}
+
+.role_steps .step+.step {
+    display: none;
+}
+
+.role_steps .inv_title {
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #030303;
+}
+
+.add-records-modal .role_stepcount li a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #010103;
+}
+
+.scoll_list {
+    overflow-y: auto;
+    height: 350px;
+}
+
+.scoll_list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scoll_list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.scoll_list::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+
+ul.date-slts-bx {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+ul.date-slts-bx li {
+    cursor: pointer;
+    width: 31.666%;
+    text-transform: uppercase;
+    /* height: 40px; */
+    border-radius: 4px;
+    background: #f9f9f9;
+    border: 0;
+    line-height: initial;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #030303;
+    padding: 10px;
+}
+
+ul.date-slts-bx li:hover {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+
+ul.date-slts-bx li.active {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+@media (max-width: 575.5px) {
+    ul.date-slts-bx li {
+        width: 30.666%;
+    }
+    .planner_list_view .filter_menu .dropdown-menu{
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 480.5px) {
+    ul.date-slts-bx li {
+        width: 47.666%;
+    }
+
+    .role_stepcount li+li {
+        margin-left: 65px;
+    }
+
+    .role_stepcount li+li::before {
+        width: 112px;
+        left: -84px;
+    }
+}
+
+@media (max-width: 420.5px) {
+    .role_stepcount li+li::before {
+        width: 90px;
+        left: -69px;
+    }
+
+
+
+    .role_stepcount li+li {
+        margin-left: 47px;
+    }
+
+    .add-records-modal ul.rd_list_bx li {
+        width: 124px;
+    }
+
+    ul.date-slts-bx li {
+        width: 100%;
+    }
+}
+
+@media (min-width: 575px) {
+    .modal_add_style.assign_program_modal .modal-dialog {
+        max-width: 550px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal_add_style.assign_program_modal .modal-dialog {
+        max-width: 700px
+    }
+}
+
+.calender-icon .input-group-addon {
+    padding: 17px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-left: 0px;
+    height: 45px !important;
+    border-radius: 0px 4px 4px 0px !important;
+}
+
+.calender-icon .input-group-addon .icon {
+    font-size: 22px;
+    color: #707070;
+    line-height: 9px;
+}
+
+.calender-icon .form-control {
+    border-radius: 4px 0px 0px 4px !important;
+    border-right: 0px !important;
+}
+
+.workouts_list_head {
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    grid-template-columns: 4.1fr 1.2fr 1fr 1fr 2.8fr;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--text-color-2);
+    border-bottom: 1px solid #ccc;
+}
+
+.workouts_list_head>div:nth-child(4) {
+    margin-left: 8px;
+}
+
+.workouts_list_head>div:nth-child(5) {
+    margin-left: 14px;
+}
+
+.workouts_list_data .name_c {
+    width: 33%;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.workouts_list_data .menu_course .drop_down{
+    top:100%;
+}
+.workouts_list_data .menu-data {
+    width: 11%;
+    /* padding-bottom: 10px; */
+}
+
+@media (max-width: 360.5px) {
+    .workouts_list_head>div:nth-child(3) {
+        margin-left: 0px;
+    }
+}
+
+#selected_workouts {
+    border: 1px dashed gray;
+    padding-bottom: 20px;
+}
+
+div#plans ul#plans-list .subcat_chkbox {
+    display: none;
+}
+
+div#plans .workouts_add_box ul#plans-list .list_excercises {
+    display: grid;
+    grid-template-columns: 137px 1fr 20% 20%;
+}
+
+/*-------------------------25-01-22-----------------------------------*/
+.form-group.check_boxgrp {
+    display: flex;
+}
+
+
+label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.tooltip_custom em {
+    font-size: 18px;
+    text-align: left;
+    color: #ccc;
+    margin-left: 5px;
+}
+
+.tooltip_box_costom.ui-tooltip {
+    border-radius: 2px;
+    background: #fff;
+    padding: 6px;
+    font-size: 14px;
+    margin: 0;
+    line-height: 16px;
+    color: #1f1f1f;
+    text-transform: initial;
+    text-align: left;
+    font-weight: normal;
+    box-shadow: 0 0px 20px #00000029;
+    border: 0;
+    max-width: inherit !important;
+}
+
+.ui-tooltip-content {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px !important;
+    text-align: left;
+    color: #707070;
+    padding: 5px;
+}
+
+.tooltip_box_costom.ui-tooltip .tooltiip_data {
+    width: 600px;
+}
+
+.tooltip_box_costom.ui-tooltip .table_thead p {
+    letter-spacing: .03em;
+    margin: 9px 0 10px !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px !important;
+    text-align: left;
+    color: #030303;
+}
+
+.tooltip_box_costom.ui-tooltip {
+    border-radius: 2px;
+    background: #fff;
+    padding: 6px;
+    font-size: 14px;
+    margin: 0;
+    line-height: 16px;
+    color: #1f1f1f;
+    text-transform: initial;
+    text-align: left;
+    font-weight: normal;
+    box-shadow: 0 0px 20px #00000029;
+    border: 0 !important;
+    max-width: inherit !important;
+}
+
+.tooltip_box_costom.ui-tooltip::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    -webkit-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    transform: translatey(-50%);
+    z-index: 9;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #fcfcfc transparent transparent;
+}
+
+.tooltip_box_costom.ui-tooltip .tooltiip_data_text {
+    width: 350px;
+    padding: 5px;
+}
+
+.modal textarea.form-control {
+    min-height: 122px !important;
+}
+
+
+@media (max-width: 1280.5px) {
+
+
+    div#plans .workouts_add_box ul#plans-list .list_excercises {
+        grid-template-columns: 137px 1fr 20% 30%;
+    }
+}
+
+
+
+@media (max-width: 460.5px) {
+
+
+    .h_videobox .Plan_tooltip:hover>div, .h_videobox .Plan_tooltip>div {
+        width: 276px;
+        margin-left: 5px !important;
+    }
+
+    .h_videobox .description h5 {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+
+    .h_videobox .Plan_tooltip>div::before, .h_videobox .Plan_tooltip>div::after {
+        left: 48% !important;
+    }
+
+    .pagin_sect .page-link, .pagin_sect .pagination-goto {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .list_tab_viewmore {
+        gap: 10px;
+    }
+}
+
+.course_modal .video_box video {
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+
+.image-placeholder {
+    display: flex;
+    width: 152px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0.02em;
+    height: 88px;
+    text-align: center;
+    color: #030303;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    max-width: 100%;
+    border-radius: 8px;
+}
+.video_box .image-placeholder{
+    aspect-ratio: 1/1;
+    width: 100%;
+    height:auto;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.darglist_hide .image-placeholder {
+    width: 100%;
+    border-radius: 4px;
+    height: 43px;
+    object-fit: cover;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div#exercises .description_exc_text h6 {
+    font-weight: 500;
+}
+
+div#workouts .bottom_sect div:first-child {
+    padding-left: 47px;
+}
+
+
+
+@media (max-width: 1199px) {
+    .workouts_add_box .list_excercises .video_box img{
+        max-width: 80px;
+    }
+
+    .workouts_add_box .video_box .image-placeholder{
+        width:80px;
+    }
+    .workouts_add_sect .bottom_sect,
+    .plan_add_sect .bottom_sect{
+        display: none;
+    }
+    .workouts_add_box .list_excercises{
+        display: flex !important;
+        gap: 0;
+        flex-wrap: wrap !important;
+    }
+    .workouts_add_box .plan_menu{
+        padding: 0 10px;
+    }
+    .workouts_add_box .list_excercises .video_box{
+        margin-left: 10px
+    }
+    .workouts_add_box .list_excercises .date_box{
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .workouts_add_box .list_excercises .description_exc_text{
+        flex: 0 0 100%;
+        max-width: calc(100% - 120px);
+        padding-left: 10px;
+    }
+
+}
+
+
+
+.LeftTooltip .ui-tooltip-content {
+    color: #fff;
+}
+
+.darglist_hide .list_excercises .wk_fav_menu {
+    display: none;
+}
+
+div#plans-list-container ul#plans-list {
+    min-height: 400px !important;
+}
+
+.drag_drop_data .drag_text,.drag_drop_data .darglist_hide {
+    position: initial !important;
+}
+
+.drag_list_data .ui-draggable .list_excercises {
+    position: relative;
+}
+
+ul#selected_workouts:empty {
+    content: 'sdfasdfasdf';
+}
+
+.drag_drop_data p.drag_text {
+    position: absolute !important;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+
+
+.data_notfd_sect {
+    border: 0px !important;
+}
+
+.bg_sty_plan.collapse_box .top_head_pln {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: #030303;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bg_sty_plan.collapse_box>.title::after {
+    right: 70px;
+    top: 18px;
+}
+
+.bg_sty_plan.collapse_box .top_head_pln .remove-workout {
+    width: 32px;
+    height: 32px;
+    color: var(--secondary-btn-color);
+    background: var(--secondary-btn-bg);
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 34px
+}
+
+.bg_sty_plan.collapse_box .top_head_pln .remove-workout:hover {
+    background: var(--secondary-btn-color);
+    color: #fff
+}
+
+.upload-file:before {
+    position: absolute;
+    top: 50%;
+    background: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    font-family: 'FontAwesome' !important;
+    text-align: center;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    color: #ccc;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    content: "\f03e";
+    font-size: 70px;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.upload-file {
+    position: relative;
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 15px !important;
+    /* background: #f2f2f2; */
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+    -o-object-fit: contain;
+    object-fit: contain;
+    z-index: 0;
+}
+
+.Profile_imgs .form-group {
+    display: flex !important;
+    align-items: center;
+    gap: 0 30px;
+}
+
+.Profile_imgs .btn.btn_blue_light {
+    padding: 12px 15px;
+    min-width: 130px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: rgba(var(--primary-color-rgb), .1);
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    letter-spacing: 0.01em;
+    color: var(--primary-color);
+}
+
+.Profile_imgs .btn.btn_blue_light:hover {
+    background: var(--primary-color);
+    color: #fff
+}
+
+.Profile_imgs {
+    margin-bottom: 30px !important;
+}
+
+.upload-file:not(.croppie-container) img {
+    z-index: 999999;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 575px) {
+    .Profile_imgs .form-group {
+        display: block !important;
+    }
+
+    .Profile_imgs .upload-file~.text-center {
+        text-align: left !important;
+        margin-top: 20px;
+    }
+
+    .Profile_imgs .upload-file.croppie-container~.text-center {
+        margin-top: 45px;
+    }
+
+}
+
+
+.assign_program_modal button+button {
+    margin-left: 0px !important
+}
+
+.assign_program_modal .button-row.text-center {
+    display: flex;
+    justify-content: center;
+}
+
+.assign_program_modal button {
+    margin: 0px !important
+}
+
+.assign_program_modal .btn_blue {
+    justify-content: center;
+}
+
+.assign_program_modal button+button {
+    margin-left: 25px !important
+}
+
+.drag_drop_data .darglist_hide {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.swal2-container .swal2-icon {
+    border: 0 !important;
+    width: 100%;
+    height: initial;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+    .swal2-container .swal2-popup {
+        max-width: 570px;
+        width: 570px;
+        border-radius: 15px;
+        box-shadow: 1px 1.73px 10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (max-width: 460.5px) {
+
+
+
+    div#plans .plan_add_sect .workouts_add_box .video_box {
+        width: 100%;
+    }
+
+    div#plans .plan_add_sect .workouts_add_box .description_exc_text {
+        width: 100%;
+    }
+
+
+    .workouts_list_head {
+        display: table;
+    }
+
+    .course_list_data {
+        display: block;
+    }
+
+    .workouts_list_head>div {
+        padding: 10px;
+    }
+
+    .workouts_list_head>div:nth-child(4) {
+        margin: 0px;
+    }
+
+    .workouts_list_data .menu-data, .workouts_list_data .name_c {
+        width: 100%;
+        white-space: nowrap;
+    }
+
+
+
+    .workouts_list_head>div:first-child {
+        height: 80px;
+    }
+
+
+    ul.list_tab_viewmore li {
+        padding: 0px 4px;
+    }
+}
+
+.note_sect {
+    width: 29%;
+}
+
+.plan_menu .dropdown-menu {
+    -webkit-box-shadow: 1px 1.73px 10px rgb(0 0 0 / 25%);
+    box-shadow: 1px 1.73px 10px rgb(0 0 0 / 25%);
+    padding: 0 15px;
+    left: -65px !important;
+}
+
+.plan_menu .dropdown-menu label {
+    background: #f3f3f3;
+    margin: 0 -15px;
+    padding: 15px !important;
+    display: block;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 15px !important;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    color: #344050 !important;
+    display: none;
+}
+
+.plan_menu .dropdown-menu a {
+    padding: 10px;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px !important;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    line-height: 18px;
+    text-align: left;
+    color: #344050 !important;
+}
+
+.plan_menu .dropdown-menu a:hover {
+    color: var(--primary-color) !important;
+    /* font-weight: bold; */
+}
+
+.plan_menu .dropdown-item:hover,.crt_habit_btn .dropdown-item:focus {
+    background: transparent;
+}
+
+.plan_menu .dropdown-menu a+a {
+    border-top: 1.5px solid #f3f3f3;
+}
+
+
+div#plans .workouts_add_box ul#plans-list .list_excercises {
+    display: grid;
+    grid-template-columns: 80px 1fr 20% 20% 20%;
+}
+
+.plan_add_sect .bottom_sect {
+    grid-template-columns: 1.7fr 1fr 2fr;
+}
+
+.plan_menu {
+    text-align: center;
+}
+
+.plan_add_sect .bottom_sect>div:nth-child(2) {
+    text-align: center;
+}
+
+.plan_add_sect .bottom_sect>div:nth-child(3) {
+    padding-left: 21%;
+}
+
+
+.cstm_btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    align-items: center;
+    margin-top: -12px;
+}
+
+.Advanced_Plans {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    border-radius: 5px;
+    background: #e6ae07;
+    padding: 3px 14px;
+    box-shadow: 0px 3px 20px rgba(230, 174, 7, 0.5);
+}
+
+.calendar_day_view .card-inner-cal {
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(122 139 255 / 19%);
+}
+
+.heading_calender {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #1f1f1f;
+    border-bottom: 1.5px solid #efefef;
+    padding: 20px 0px;
+}
+
+.calendar_day_view .table th,.calendar_day_view .table td {
+    border: 1.5px solid #efefef;
+}
+
+.calendar_day_view .fc-day-header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #6B7280;
+}
+
+.calendar_day_view .table td,.calendar_day_view .table th {
+    padding: 10px;
+}
+
+.calendar_day_view .fc-day {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+}
+
+.day-highlight {
+    background: rgba(var(--primary-color-rgb), .1);
+    border-left: 4px solid var(--primary-color) !important;
+}
+
+.day-highlight ul li {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+    line-height: initial;
+}
+
+.day-highlight ul li span {
+    font-family: 'Inter', sans-serif;
+    display: block;
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #707070;
+    margin-top: 5px;
+}
+.day-highlight ul li a,.day-highlight ul li em {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #306dd0;
+}
+
+.day-highlight ul li+li {
+    margin-top: 5px;
+}
+
+.workouts_add_box li .day-highlight ul li {
+    border: 0px;
+}
+.title_med {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #5e6d82;
+}
+.medicine_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.medicine_list li a {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    display: block;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: var(--secondary-btn-color);
+    padding: 8px 30px;
+    background: var(--secondary-btn-bg);
+    border-radius: 100px;
+}
+.medicine_list li.active a {
+    background: var(--secondary-btn-color);
+    color: #fff;
+}
+.add_med {
+    text-align: right;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+.calendar_day_view .fc-day-content {
+    min-height: 86px;
+    margin-top: 5px;
+    min-width: 88px;
+}
+
+
+
+.more_option {
+    width: 203px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+    padding: 12px 15px;
+}
+
+.more_option ul li {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+    line-height: 22px;
+}
+
+.heading_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #efefef;
+    padding: 0px 15px;
+    padding-bottom: 5px;
+    margin: 0 -15px;
+}
+
+.heading_title .icon {
+    font-size: 30px;
+    text-align: right;
+    color: #306dd0;
+}
+
+
+.heading_title .fc-day-number {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+}
+
+.more_option ul li a {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #030303;
+    line-height: 22px;
+}
+
+.drag_list_data .ui-draggable .collapse_box {
+    display: none;
+}
+
+.darglist_hide .collapse_box {
+    display: none;
+}
+
+.workouts_add_box .darglist_hide {
+    border: 0;
+}
+
+.bottom_sect {
+    grid-template-columns: 4fr 1fr 2fr;
+}
+
+
+
+.share_box_list ul li:last-child:hover {
+    background: initial;
+}
+
+
+.workouts_add_box .date_box p {
+    text-align: left;
+}
+.plan_menu .dropdown-menu {
+    -webkit-box-shadow: 1px 1.73px 10px rgb(0 0 0 / 25%);
+    box-shadow: 1px 1.73px 10px rgb(0 0 0 / 25%);
+    padding: 10px 15px;
+    left: -65px !important;
+    border-radius: 10px;
+}
+
+.plan_menu .dropdown-item:hover,.crt_habit_btn .dropdown-item:focus {
+    background: transparent;
+}
+
+.plan_menu .dropdown-toggle {
+    padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+@media (min-width: 576px) {
+    .new_modal_style .modal-dialog {
+        max-width: 570px;
+    }
+
+    .new_modal_style .modal-body {
+        padding: 40px;
+    }
+}
+
+
+
+.new_modal_style .modal-content {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 1px 1.73px 10px rgba(0, 0, 0, 0.25);
+}
+
+.modal_sect {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.multi_modal .modal_sect {
+    padding: 0px;
+}
+
+.modal_sect img {
+    margin-bottom: 40px;
+}
+
+.title_new_modal {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color: #030303;
+    margin-bottom: 20px;
+}
+
+.sub_title_modal {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #030303;
+}
+
+.new_modal_style .modal-content>.close {
+    right: -3px;
+    top: -3px;
+}
+
+.wk_exer {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.workout_modal .workouts_list_data {
+    display: grid;
+    padding: 0;
+}
+
+.workout_modal .plan_head_list ul li {
+    padding: 0;
+}
+
+.workout_modal .plan_head_list {
+    border-bottom: 1.5px solid #efefef;
+}
+
+.workout_modal .course_list_b {
+    margin-top: 20px;
+}
+
+.workout_modal .workouts_list_data .name_c {
+    width: initial;
+}
+
+.workout_modal .plan_head_list ul,.workout_modal .workouts_list_data {
+    grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
+}
+
+.workout_modal .pl_menu {
+    padding: 0;
+}
+
+@media (min-width: 576px) {
+    .Calendar_modal.modal_add_style .modal-dialog {
+        max-width: 100%;
+    }
+
+    .workout_modal .modal-dialog {
+        max-width: 575px;
+    }
+
+    .Workout-list-modal .modal-dialog {
+        max-width: 575px;
+    }
+}
+
+@media (min-width: 990px) {
+    .Calendar_modal.modal_add_style .modal-dialog {
+        max-width: 900px;
+    }
+
+    .workout_modal .modal-dialog {
+        max-width: 900px;
+    }
+
+    .Workout-list-modal .modal-dialog {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 990px) {
+    .workout_modal .course_list_b {
+        display: flex;
+    }
+
+    .workout_modal .plan_head_list ul {
+        display: table;
+    }
+
+    .workout_modal .plan_head_list ul li, .workout_modal .pl_menu {
+        padding: 10px 15px;
+    }
+
+    .workout_modal .plan_head_list ul li+li, .workout_modal .pl_menu {
+        border-top: 1px solid #ccc;
+    }
+
+    .workout_modal .workouts_list_data {
+        display: block;
+        border: 0;
+    }
+
+    .workout_modal .scroll_course {
+        display: flex;
+    }
+
+    .workout_modal .workouts_list_data .wk_exer {
+        padding: 10px 5px;
+    }
+
+    .workout_modal .course_list_b .workouts_list_data+.workouts_list_data {
+        border: 0;
+    }
+
+    .workout_modal .workouts_list_data .name_c {
+        white-space: nowrap;
+    }
+
+    .workout_modal .wk_exer .video_box video {
+        height: initial;
+    }
+
+    .workout_modal .plan_head_list ul li {
+        line-height: 22px;
+    }
+
+    .workout_modal .plan_head_list ul li:first-child {
+        height: 56px;
+    }
+
+    .workout_modal .note_sect {
+        padding: 10px 15px;
+        border-top: 1px solid #ccc;
+    }
+}
+
+.wkout_list_table {
+    background: #f9f9f9;
+    border: 1.5px solid #ddd;
+}
+
+.wkout_list_table .table_hd_list>ul,.wkout_list_table .table_body_list>ul {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 1fr 1fr minmax(82px, 1fr) 2.2fr;
+    width: 100%;
+}
+
+.wkout_list_table .items-card_bdy {
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 15px;
+}
+
+.wkout_list_table ul li {
+    width: initial !important;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #526484;
+    padding: 10px;
+}
+
+.wkout_list_table .table_body_list {
+    border-top: 1.5px solid #efefef;
+}
+
+.wkout_list_table .table_body_list ul li {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    text-align: left;
+    color: #364a63;
+}
+
+.wkout_list_table::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.wkout_list_table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.wkout_list_table::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+
+.wkout_list_sect .heading_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 0;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #030303;
+}
+
+.wkout_list_sect .name_exer {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #030303;
+}
+
+.wkout_list_sect .wkout_no {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #6B7280;
+}
+
+.wkout_list_sect .wkout_note {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #6B7280;
+}
+
+.wkout_list_sect+.wkout_list_sect {
+    margin-top: 30px;
+}
+
+.wk_note_sect {
+    background: #fff;
+    border: 1.5px solid #efefef;
+    margin: 25px 0;
+    padding:10px 15px;
+}
+
+.wk_note_desp {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 25px;
+    text-align: left;
+    color: #030303;
+}
+
+.wk_note_heading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #526484;
+}
+
+@media(max-width: 900.5px) {
+    .wkout_list_sect .name_exer, .wkout_list_sect .wkout_note {
+        white-space: nowrap;
+    }
+
+    .wkout_list_table>ul>li {
+        padding: 8px 15px;
+    }
+
+    .wkout_list_table .table_body_list {
+        border: 0px;
+    }
+
+    .wkout_list_table ul>li {
+        border-top: 1.5px solid #efefef;
+        text-align: left;
+    }
+
+    .wkout_list_table .table_hd_list ul>li {
+        white-space: nowrap;
+        line-height: 20px;
+    }
+
+    .wkout_list_table {
+        display: flex;
+        overflow: auto;
+    }
+
+    .wkout_list_table .table_hd_list {
+        position: sticky;
+        left: 0;
+        top: 0;
+        background: #fff;
+    }
+
+    .wkout_list_table .table_hd_list>ul {
+        display: table-row !important;
+    }
+
+    .wkout_list_table .table_body_list>ul {
+        display: table-cell !important;
+    }
+
+    .wkout_list_table .table_hd_list.Stickyleft {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        box-shadow: 4px 3px 20px 0 #50505047;
+        background: #fff;
+    }
+
+    .calendar_day_view .card-inner-cal {
+        overflow-y: auto;
+    }
+
+    .calendar_day_view .card-inner-cal::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .calendar_day_view .card-inner-cal::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .calendar_day_view .card-inner-cal::-webkit-scrollbar-thumb {
+        background: #1f1f1f;
+    }
+}
+
+@media(max-width: 768.5px) {
+    .workouts_list_head{
+        display: none;
+    }
+    .workouts_list_data{
+        flex-wrap: wrap;
+        justify-content: initial;
+    }
+    .workouts_list_data .name_c{
+        flex: 0 0 100%;
+        max-width: calc(100% - 65px);
+    }
+    .ex_like {
+        top: 108px;
+    }
+    .workouts_list_data .menu-data{
+        flex: 0 0 33.33%;
+        max-width: calc(33.33% - 7px);
+    }
+
+    .Advanced_Plans {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .more_tab1 {
+        font-size: 14px !important;
+    }
+
+    .wkout_list_table ul>li.list_icon_bx ul>li {
+        padding: 0 11px;
+        border: 0;
+    }
+}
+
+
+
+.more_btn .Plan_tooltip {
+    position: relative;
+    margin-left: -6px;
+    text-align: center;
+}
+.more_btn .tooltiip_data{
+    max-height:200px;
+    overflow:auto
+}
+.more_btn .Plan_tooltip>div {
+    border-radius: 5px;
+    background: #1f1f1f;
+    opacity: .9;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 367px;
+    padding: 8px;
+    z-index: 999;
+    opacity: 0;
+    -webkit-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    transition: opacity .6s;
+    visibility: hidden;
+    -webkit-box-shadow: 0px 0px 6px rgb(0 0 0 / 16%);
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 16%);
+}
+
+.more_btn .Plan_tooltip>div p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    text-align: left;
+    color: #030303 !important;
+    line-height: 150%;
+}
+
+.more_btn .Plan_tooltip:hover>div {
+    visibility: visible;
+    opacity: 1;
+}
+
+.more_btn .Plan_tooltip>div::before,.more_btn .Plan_tooltip>div::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fcfcfc transparent;
+}
+
+.more_btn .Plan_tooltip>div::after {
+    z-index: 8;
+    border-color: transparent transparent rgba(0, 0, 0, 0.16) transparent;
+    top: -22px;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.tooltiip_data {
+    border: 1px solid #dbdbdb;
+}
+
+.more_btn .table_thead p {
+    white-space: normal;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    line-height: 19px;
+    text-align: left;
+    color: #1f1f1f;
+    margin: 9px 0 10px;
+}
+
+.more_btn .Plan_tooltip .table_tbody {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.more_btn .Plan_tooltip .table_tbody div {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 9px 8px;
+    text-align: left;
+    color: #3b3b3b;
+}
+
+.table_tbody_list .table_tbody:first-child div {
+    padding: 7px 6px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    text-align: left;
+    color: #3b3b3b;
+}
+
+.table_tbody_list .table_tbody:first-child {
+    background: rgba(204, 204, 204, 0.7);
+}
+
+.table_tbody_list .table_tbody:nth-child(odd) {
+    background: rgba(204, 204, 204, 0.4);
+}
+
+@media(max-width: 575.5px) {
+    .more_btn .tooltiip_data .table_tbody_list::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .more_btn .tooltiip_data .table_tbody_list::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .more_btn .tooltiip_data .table_tbody_list::-webkit-scrollbar-thumb {
+        background: #1f1f1f;
+    }
+
+    .more_btn .tooltiip_data {
+        width: 240px;
+    }
+
+    .more_btn .tooltiip_data.tool-new3 .table_tbody:first-child {
+        display: block;
+        width: 100px;
+    }
+
+    .more_btn .tooltiip_data .table_tbody:first-child {
+        display: block;
+        width: 100px;
+    }
+
+    .more_btn .tooltiip_data .table_tbody {
+        display: block;
+    }
+
+    .more_btn .tooltiip_data .table_tbody div {
+        display: block;
+        white-space: nowrap;
+    }
+
+    .more_btn .tooltiip_data .table_tbody_list {
+        display: flex;
+        overflow: auto;
+    }
+
+    .more_btn .tooltiip_data.tool-new3 .table_tbody {
+        display: block;
+        white-space: nowrap;
+    }
+
+    .more_btn .Plan_tooltip>div {
+        width: 256px;
+    }
+}
+
+@media(max-width: 360.5px) {
+    .more_btn .table_thead p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .more_btn {
+        width: 150px;
+    }
+
+    .more_btn .tooltiip_data_text {
+        width: 135px;
+    }
+}
+
+.workouts_add_sect .share_box_list ul li:last-child:hover {
+    background: var(--secondary-btn-color);
+}
+
+.plan_add_sect .share_box_list ul li:last-child:hover {
+    background: var(--secondary-btn-color);
+}
+
+.more_btn .Plan_tooltip a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 0;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--primary-color-2);
+}
+
+.more_btn .Plan_tooltip a em {
+    font-size: 12px;
+    padding: 0;
+    font-weight: 100;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+@media (max-width: 460.5px) {
+    div#plans .workouts_add_box ul#plans-list .list_excercises {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    div#plans .workouts_add_box .plan_menu {
+        order: 4;
+    }
+}
+
+.plan_add_sect .date_box p {
+    text-align: center;
+}
+
+.workouts_add_sect .bottom_sect {
+    grid-template-columns: 4.5fr 100px 200px;
+}
+
+@media (max-width: 991.5px) {
+    div#plans .workouts_add_box ul#plans-list .list_excercises {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+}
+
+@media (min-width: 1280px) {
+    .sidebar-open .plan_add_sect .bottom_sect>div:nth-child(3) {
+        padding-left: 95px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width:1366px) {
+    .plan_add_sect .bottom_sect>div:nth-child(3) {
+        padding-left: 98px;
+    }
+}
+
+#available-time-slots li.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.planner_list_view .add_exer_video a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    background: #FFA306;
+    padding: 12px 15px;
+    line-height: initial;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 40px;
+}
+.planner_list_view .add_exer_video a:hover{
+    background: var(--primary-color-2);
+}
+.exer_tabnav .nav-tabs {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.exer_tabnav .nav-tabs,.WorkSLots_tab .nav-tabs {
+    border: 1px solid rgba(var(--primary-color-rgb), .5);
+    border-radius: 8px;
+    padding: 0px;
+}
+
+.exer_tabnav {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+}
+
+.exer_tabnav .nav-tabs li,.WorkSLots_tab .nav-tabs li {
+    padding: 0px;
+    border-right: 1px solid rgba(var(--primary-color-rgb), .5);
+}
+
+.exer_tabnav .nav-tabs li:first-child a,.WorkSLots_tab .nav-tabs li:first-child a {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.exer_tabnav .nav-tabs li:last-child a,.WorkSLots_tab .nav-tabs li:last-child a {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.exer_tabnav .nav-tabs li:last-child {
+    border: 0px;
+}
+
+.exer_tabnav ul>li>a.nav-link {
+    border: 0;
+    border-radius: 0;
+    color: #030303;
+    font-family: 'Inter', sans-serif !important;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    display: block;
+    z-index: 1;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px !important;
+    letter-spacing: 0.03em;
+    line-height: 19.2px;
+    text-align: center;
+}
+
+.exer_tabnav ul>li>a.nav-link:not(.active):hover {
+    color: #030303 !important;
+}
+
+.exer_tabnav .nav-tabs .nav-link:before,.exer_tabnav .nav-tabs .nav-link:after {
+    content: none;
+}
+
+.exer_tabnav .nav-tabs li a.active {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.modal_exer_video.modal textarea.form-control {
+    min-height: 80px !important;
+}
+
+
+.exer_upload {
+    display: grid;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 0px !important;
+    grid-template-columns: 1fr 140px;
+}
+
+.exer_upload .upload-file1 input[type="file"] {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.upload-file1 .btn {
+    background: var(--secondary-btn-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    height: 40px;
+    color: #fff;
+    border-radius: 0px 4px 4px 0px !important;
+}
+
+.modal .form-control2 {
+    border-radius: 4px 0px 0px 4px !important;
+}
+
+.form-group.exer_upload {
+    margin-bottom: 20px !important;
+}
+
+.planner_list_view .add_exer_video,.planner_list_viewli.add_exer_video.active {
+    background: transparent;
+    width: initial;
+    height: initial;
+}
+
+.planner_list_view .add_exer_video:hover {
+    background: transparent;
+}
+
+
+
+/*RADIO BUTTON CSS*/
+.check_boxgrp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.check_boxgrp .custom-control {
+    align-items: center;
+}
+
+/*workout exercise header */
+
+@media (min-width: 1365px) {
+
+    div#exercises .top_sect_ex .row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    div#exercises .top_sect_ex .col-sm-4, div#exercises .top_sect_ex .col-sm-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .sidebar-open div#exercises .top_sect_ex .row {
+        display: grid;
+        grid-template-columns: 1.9fr 5fr;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1366.5px) {
+    div#exercises .top_sect_ex .row {
+        display: grid;
+        grid-template-columns: .8fr 1fr;
+        align-items: center;
+    }
+
+    div#exercises .top_sect_ex .col-sm-4, div#exercises .top_sect_ex .col-sm-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 1280.5px) {
+    div#exercises .top_sect_ex .row {
+        display: grid;
+        /* grid-template-columns: 2.5fr 5fr; */
+        align-items: center;
+    }
+}
+
+@media(max-width: 1199.5px) {
+    div#exercises .top_sect_ex .row {
+        display: grid;
+        /* grid-template-columns: 2fr 5fr; */
+        align-items: center;
+    }
+}
+
+@media(max-width: 768.5px) {
+    .note_sect {
+        width: 100%;
+    }
+
+    .workouts_list_data .name_c {
+        margin-left: 0px;
+    }
+
+    div#exercises .top_sect_ex .row {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+}
+
+@media(max-width: 575.5px) {
+.modal p{
+    font-size:13px;
+}
+
+    div#exercises .top_sect_ex .list_tab_viewmore {
+        gap: 10px
+    }
+}
+
+@media(max-width: 420.5px) {
+    .plan_menu .dropdown-menu {
+        left: 0px !important;
+    }
+}
+
+/*workout exercise header */
+
+.ui-draggable-dragging{
+    transition:initial !important;
+}
+.excercises_sect .ui-draggable-dragging{
+    border:0;
+
+}
+.excercises_sect .dragging-helper.ui-draggable-dragging{
+    width: 300px;
+}
+.excercises_sect .ui-draggable-dragging .description_exc_text,
+.workouts_add_box li.ui-draggable-dragging .description_exc_text,
+.excercises_sect .dragging-helper .ui-draggable .description_exc_text{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    padding:0 10px;
+}
+.excercises_sect .ui-draggable-dragging .description_exc_text h6,
+.excercises_sect .dragging-helper .ui-draggable .description_exc_text h6
+{
+    display: block !important;
+
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+}
+.excercises_sect .ui-draggable-dragging .ni-move,
+.workouts_add_box li.ui-draggable-dragging .ni-move{
+    display:none !important;
+}
+
+.excercises_sect > ul .ui-draggable-dragging .list_excercises,
+.excercises_sect .dragging-helper .ui-draggable .list_excercises,
+.workouts_add_box .ui-draggable-dragging .list_excercises{
+    display:flex;
+    align-items: center;
+    gap:0;
+    padding: 10px;
+    transform: rotate(-5deg);
+}
+.excercises_sect .dragging-helper .ui-draggable .list_excercises{
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 10px !important;
+}
+.excercises_sect .ui-draggable-dragging .list_excercises,
+.workouts_add_box li.ui-draggable-dragging .list_excercises {
+    background: #f7f8fa !important;
+    border: 1px solid #dbdfea;
+    border-radius:5px;
+    max-width:200px;
+}
+.dragging-helper.ui-draggable-dragging .exercises-row-entity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-5deg);
+}
+
+
+.excercises_sect .ui-draggable-dragging .data_tooltip .icon,
+.darglist_hide  .data_tooltip .icon{
+    display:none;
+}
+/* 
+.dragging-helper{
+    background: #f7f8fa !important;
+    border: 1px solid #dbdfea !important;
+    border-radius: 5px;
+    max-width: 200px;
+    transform: rotate(-5deg);
+    padding:10px;
+    font-size:13px;
+    color:var(--text-color-1);
+    text-overflow:ellipsis;
+} */
