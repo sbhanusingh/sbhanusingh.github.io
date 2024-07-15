@@ -780,7 +780,8 @@ label .custom_tooltip_box .icon {
     color: var(--primary-color);
     margin: auto;
 }
-.drag_drop_data.ui-droppable-active{
+.drag_drop_data.ui-droppable-active,
+#selected_workouts.ui-state-highlight{
     background-color: rgba(var(--primary-color-rgb), .05);
     background-image: repeating-linear-gradient(0deg, var(--primary-color), var(--primary-color) 5px, transparent 5px, transparent 13px, var(--primary-color) 13px), repeating-linear-gradient(90deg, var(--primary-color), var(--primary-color) 5px, transparent 5px, transparent 13px, var(--primary-color) 13px), repeating-linear-gradient(180deg, var(--primary-color), var(--primary-color) 5px, transparent 5px, transparent 13px, var(--primary-color) 13px), repeating-linear-gradient(270deg, var(--primary-color), var(--primary-color) 5px, transparent 5px, transparent 13px, var(--primary-color) 13px);
 }
@@ -1167,6 +1168,7 @@ label .custom_tooltip_box .icon {
     }
 }
 @media (max-width: 575px) {
+    
     .share_box_list{
         margin-left: auto;
     }
@@ -1589,9 +1591,6 @@ label .custom_tooltip_box .icon {
     position: relative;
 }
 
-.plan_add_list .form-group {
-    margin-bottom: 0px !important;
-}
 
 .workouts_add_box .menu .drop_down,.edit_add_list .menu .drop_down,.medicine_menu .menu .drop_down {
     position: absolute;
@@ -1749,13 +1748,7 @@ label .custom_tooltip_box .icon {
 @media (min-width: 576px) {
 
 
-    .select_day_modal .modal-dialog {
-        max-width: 450px;
-    }
 
-    .copy_modal .modal-dialog {
-        max-width: 500px;
-    }
 
     .course_modal .modal-dialog {
         max-width: 500px;
@@ -1787,126 +1780,19 @@ h5.modal-title {
     display: inline-flex;
 }
 
-.plan_add_list label {
-    margin-bottom: 0px !important;
-}
-
-.plan_add_list .row:first-child {
-    align-items: center;
-}
-
-.plan_add_list .multiselect-container {
-    width: 100%;
-    transform: none !important;
-    position: initial !important;
-    float: initial;
-    margin: 0px;
-    padding: 0;
-    border: 0px;
-}
-
-.plan_add_list .bg1 .btn-group {
-    flex-wrap: wrap;
-}
-
-.plan_add_list .bg1 .btn-group button {
-    color: #474747 !important;
-    font-size: 17px !important;
-    background-color: #ffffff;
-    border: 1px solid #ccc !important;
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 500 !important;
-    z-index: 9;
-    box-shadow: none;
-    border-radius: 4px !important;
-    letter-spacing: 1px;
-    height: 50px !important;
-}
-
-.plan_add_list .bg1 .btn-group .dropdown-toggle::after {
-    content: "\f107";
-    position: absolute;
-    right: 10px;
-    color: #525252;
-    top: 0px;
-    font-family: 'FontAwesome';
-    z-index: 9;
-    pointer-events: none;
-    font-size: 32px;
-    border: 0px;
-}
-
-.plan_add_list .bg1 .btn-group .dropdown-menu {
-    padding: 15px;
-}
-
-.plan_add_list .bg1 .btn-group.show .dropdown-menu {
-    max-height: 300px;
-    opacity: 1;
-    overflow-y: auto;
-    background: #fff;
-    border: 0px;
-}
-
-.plan_add_list .bg1 .btn-group.show .dropdown-menu::-webkit-scrollbar,
 .more_btn .tooltiip_data::--webkit-scrollbar{
     width: 5px;
 }
 
-.plan_add_list .bg1 .btn-group.show .dropdown-menu::-webkit-scrollbar-track,
 .more_btn .tooltiip_data::--webkit-scrollbar-track{
     background: #f1f1f1;
     /* height: 100%; */
 }
 
-.plan_add_list .bg1 .btn-group.show .dropdown-menu::-webkit-scrollbar-thumb,
 .more_btn .tooltiip_data::--webkit-scrollbar-thumb{
     background: #1f1f1f;
 }
 
-.plan_add_list input[type="checkbox"]::before {
-    background: #dde6ed;
-    border: #747d84 2px solid;
-    border-radius: 4px;
-    content: '';
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    top: -1px;
-    left: -3px;
-}
-
-.plan_add_list input[type="checkbox"]:checked::before {
-    background: var(--secondary-btn-color);
-    border-radius: 4px;
-    border: 2px solid var(--secondary-btn-color);
-    top: -1px;
-    left: -3px;
-}
-
-.plan_add_list .bg1 .btn-group .dropdown-menu.show {
-    width: 100%;
-}
-
-.plan_add_list .bg1 .btn-group .dropdown-menu.show li {
-    padding: 5px 0;
-}
-
-.plan_add_list input {
-    position: relative;
-}
-
-.plan_add_list input[type="checkbox"]:checked::after {
-    font-family: "Nioicon";
-    content: "";
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    color: #fff;
-    font-size: 12px;
-    left: -1px;
-    top: -2px;
-}
 
 .Plans_Selected {
     font-family: 'Inter', sans-serif;
@@ -2081,62 +1967,6 @@ body .assign_program_modal .form-group label{
 }
 
 
-.kcal_style {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 2fr 1fr 100px;
-    gap: 8px;
-}
-
-.kcal_style span {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: #474747;
-}
-
-.kcal_style span .icon {
-    font-size: 22px;
-    text-align: left;
-    color: var(--secondary-btn-color);
-    position: relative;
-    top: 5px;
-}
-
-
-.holiday_slots {
-    text-align: center;
-    margin: 30px 40px 0px;
-}
-
-.holiday_slots ul li {
-    background: #fff;
-    display: inline-block;
-    border: 2px solid #cdcdcd;
-    text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: #030303;
-    padding: 6px 11px;
-}
-
-.holiday_slots ul li.active {
-    background: var(--secondary-btn-color);
-    color: #fff;
-    border: 2px solid var(--secondary-btn-color);
-}
-
-.holiday_slots ul li+li {
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
-
-.select_day_modal .holiday_slots ul {
-    margin-top: 20px;
-}
 
 .select_day_modal .day_title p {
     font-family: 'Inter', sans-serif;
@@ -2154,29 +1984,6 @@ body .assign_program_modal .form-group label{
     padding: 7px 10px;
 }
 
-.holidays_pick a,.slots_pick a {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #707070;
-}
-
-.holidays_pick .icon,.slots_pick .icon {
-    font-size: 34px;
-    text-align: left;
-    color: #707070;
-}
-
-.holidays_pick,.slots_pick {
-    text-align: center;
-}
-
-.holidays_pick span,.slots_pick span {
-    display: block;
-}
 
 .date_pick {
     margin: 15px;
@@ -2370,100 +2177,11 @@ body .assign_program_modal .form-group label{
     color: #030303;
 }
 
-.data_kcal_list .table tr th,.data_kcal_list .table tr td,.table thead tr:last-child th {
-    border: 0px;
-}
-
-.data_kcal_list .table tr th {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #030303;
-}
-
-.data_kcal_list .table tr td {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #5e6d82;
-}
-
-.data_kcal_select {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.data_kcal_list .table thead tr th:first-child,.data_kcal_list .table tr td:first-child {
-    vertical-align: middle;
-    text-align: left;
-    padding-left: 0;
-}
-
-.data_kcal_list {
-    padding: 15px;
-}
-
 .day_slots_list .day_slots_body {
     display: none;
 }
 
-.data_kcal_list label {
-    margin-bottom: 0px;
-}
 
-.copy_list_fi ul li {
-    position: relative;
-    background: #fff;
-    text-align: center;
-    display: inline-block;
-    border: 2px solid #cdcdcd;
-    text-transform: uppercase;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    width: 104px;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: #030303;
-    padding: 6px 11px;
-}
-
-.copy_list_fi ul li+li {
-    margin-left: 8px;
-    margin-bottom: 20px;
-}
-
-.copy_list_fi p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: #5e6d82;
-    margin-bottom: 10px;
-}
-
-.copy_list_fi ul li.active .check_date {
-    display: block;
-}
-
-.copy_list_fi .check_date {
-    width: 18px;
-    height: 18px;
-    background: #28a745;
-    position: absolute;
-    border-radius: 50px;
-    right: -9px;
-    top: -13px;
-    font-weight: normal;
-    font-size: 14px;
-    text-align: center;
-    display: none;
-    color: #fff;
-}
 
 .date_pick #myc-current-month-year-container {
     position: relative;
@@ -2526,37 +2244,6 @@ body .assign_program_modal .form-group label{
     color: var(--primary-color);
 }
 
-.copy_list_fi .copy_to li.active {
-    background: var(--secondary-btn-color);
-    color: #fff;
-    border-color: var(--secondary-btn-color);
-}
-
-.Nutritional_sect p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: #5e6d82;
-    margin-bottom: 10px;
-}
-
-.Nutritional_sect p.kcal_data {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #474747;
-}
-
-.Nutritional_sect p.kcal_data span {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
-    font-size: 12px;
-    letter-spacing: 0.02em;
-    color: #707070;
-}
 
 
 .more_tab1 {
@@ -2583,25 +2270,6 @@ body .assign_program_modal .form-group label{
     cursor: not-allowed !important;
 }
 
-.file-prescription,.pills_icon {
-    position: relative;
-}
-
-.file-prescription::before {
-    background: url(../../plan/img/file-prescription.png) no-repeat center center;
-}
-
-.pills_icon::before {
-    background: url(../../plan/img/pills1.png) no-repeat center center;
-}
-
-.active .file-prescription::before {
-    background: url(../../plan/img/file-prescription1.png) no-repeat center center;
-}
-
-.active .pills_icon::before {
-    background: url(../../plan/img/pills.png) no-repeat center center;
-}
 
 
 .form-group.lab_mb-0 label {
@@ -2632,7 +2300,7 @@ body .assign_program_modal .form-group label{
 
 .course_list_b {
     border-radius: 10px;
-    margin: 20px 0px;
+    margin-bottom: 30px;
     background: #f7f8fa;
     border: 1px solid #dbdfea;
     /* padding: 10px; */
@@ -2644,11 +2312,9 @@ body .assign_program_modal .form-group label{
     justify-content: space-between;
     align-items: center;
 }
-
 .menu_course {
     position: relative;
 }
-
 .course_list_data>div,.workouts_list_data>div {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
@@ -2692,9 +2358,6 @@ body .assign_program_modal .form-group label{
     list-style: none;
 }
 
-.course_list_b .course_list_data {
-    padding: 10px;
-}
 
 .workouts_list_data {
     padding: 10px 15px;
@@ -3120,7 +2783,8 @@ body .darglist_hide .list_excercises .subcat_chkbox,.darglist_hide .description_
     display: none !important;
 }
 
-.darglist_hide .list_excercises.workout_drag .description_exc_text h6,.darglist_hide .list_excercises .date_box,.darglist_hide .list_excercises .share_box_list {
+.darglist_hide .list_excercises.workout_drag .description_exc_text h6,.darglist_hide .list_excercises .date_box,.darglist_hide .list_excercises .share_box_list,
+.dragging-helper .description_exc_text h6 {
     display: none !important;
 }
 
@@ -3131,7 +2795,8 @@ body .darglist_hide .list_excercises .subcat_chkbox,.darglist_hide .description_
     object-fit: cover;
 }
 
-.ui-draggable.darglist_hide .list_excercises.workout_drag .description_exc_text h5 {
+.ui-draggable.darglist_hide .list_excercises.workout_drag .description_exc_text h5,
+.dragging-helper .list_excercises.workout_drag .description_exc_text h5{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 12px;
@@ -3496,7 +3161,6 @@ span.month_pic {
     }
 
     .plan_add_sect .workouts_add_box .video_box {
-        width: 125px;
         order: 1;
     }
 
@@ -3623,10 +3287,7 @@ span.month_pic {
         margin-top: 10px;
     }
 
-    .description_exc_text p {
-        /* font-size: 14px; */
-    }
-
+   
     .excercises_sect > ul.in_list .list_excercises {
         display: flex;
         flex-wrap: wrap;
@@ -3673,6 +3334,18 @@ span.month_pic {
 }
 
 @media (max-width: 575.5px) {
+    body{
+        padding-bottom: 50px;
+    }
+    .more_tab1{
+        margin-top: 0;
+    }
+    .menu_course .drop_down{
+        width: 125px;
+    }
+    .menu_course .drop_down ul{
+        padding: 5px 0;
+    }
     .workouts_add_box .list_excercises .video_box{
         width: 100%;
         margin: 0 !important;
@@ -3873,10 +3546,6 @@ span.month_pic {
     }
 
 
-    .modal .course_list_data .menu_course .drop_down.after_scoll {
-        left: 0%;
-        margin-left: -90px;
-    }
 
     .Create_list .Plan_tooltip>div {
         width: 260px;
@@ -3918,10 +3587,6 @@ span.month_pic {
         float: initial;
     }
 
-    .menu_course .drop_down {
-        top: 19px;
-        left: 8%;
-    }
 
     .menu_course .drop_down.after_b {
         left: -80%;
@@ -3960,13 +3625,6 @@ span.month_pic {
         width: 100%;
     }
 
-    .kcal_style {
-        grid-template-columns: 6fr 3fr 80px;
-    }
-
-    .add_day_cal {
-        right: 3px;
-    }
 
     .calen-name {
         position: relative;
@@ -3988,21 +3646,6 @@ span.month_pic {
         padding: 3px 18px;
     }
 
-
-    .modal .course_list_data .menu_course .drop_down {
-        left: 0%;
-        margin-left: -8px;
-    }
-
-    .modal .course_list_data .menu_course .drop_down.after_b {
-        left: 0%;
-        margin-left: -55px;
-    }
-
-    .modal .course_list_data .menu_course .drop_down.after_scoll {
-        left: 0%;
-        margin-left: 0px;
-    }
 
     .menu_course .drop_down, .menu_course .drop_down.after_scoll {
         left: 0%;
@@ -4276,16 +3919,16 @@ span.month_pic {
 }
 
 .table-calendar-body ul li a {
-    width: 40px;
+    width: 30px;
     background-color: var(--secondary-btn-bg);
-    border-radius: 12px;
-    height: 40px;
+    border-radius: 10px;
+    height: 30px;
     cursor: pointer;
     align-items: center;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 30px;
     color: var(--secondary-btn-color);
 }
 
@@ -4387,13 +4030,7 @@ span.month_pic {
 @media (min-width: 576px) {
 
 
-    .select_day_modal .modal-dialog {
-        max-width: 450px;
-    }
-
-    .copy_modal .modal-dialog {
-        max-width: 500px;
-    }
+  
 
     .course_modal .modal-dialog {
         max-width: 500px;
@@ -4605,17 +4242,17 @@ span.month_pic {
 }
 
 .create_plan_modal .add_day_btn a {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 10px;
     background: var(--primary-color);
     text-align: center;
     font-family: Nioicon;
     font-weight: normal;
     display: block;
-    font-size: 22px;
+    font-size: 18px;
     color: #fff;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .create_plan_modal .table-calendar-body {
@@ -4692,12 +4329,12 @@ span.month_pic {
 .plan_list_data .name_c {
     padding: 0px 15px;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 13px;
     letter-spacing: 0.02em;
     line-height: 20px;
     text-align: left;
-    color: #364a63;
+    color: var(--text-color-1);
 }
 
 .plan_list_data .sl_name {
@@ -4743,7 +4380,8 @@ span.month_pic {
     display: none;
 }
 
-.darglist_hide .video_box img {
+.darglist_hide .video_box img,
+.darglist_hide .video_box .image-placeholder {
     width: 100% !important;
     border-radius: 4px !important;
     height: 43px !important;
@@ -4780,6 +4418,7 @@ span.month_pic {
     background: #fff;
     overflow-y: auto;
     max-height: 300px;
+    border-radius: 10px;
 }
 
 .bg_sty_plan::-webkit-scrollbar {
@@ -4795,6 +4434,16 @@ span.month_pic {
 }
 
 @media (max-width: 575px) {
+    .drag_drop_data::-webkit-scrollbar{
+        width: 10px;
+        border-radius: 100px;
+    }
+    .plan_list_data{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .plan_list_data .name_c{
+        grid-column:1 / span 3
+    }
     .plan_list_data .name_c {
         white-space: nowrap;
     }
@@ -4918,18 +4567,6 @@ span.month_pic {
     text-align: right;
 }
 
-.fd_item_frm {
-    display: grid;
-    grid-template-columns: 100px 120px 60px 80px 100px 60px 40px;
-    gap: 0 10px;
-    align-items: center;
-}
-
-.fd_item_frm .form-control {
-    height: 40px !important;
-    padding: 10px 12px;
-}
-
 
 .slt_btn a {
     width: 30px;
@@ -4945,36 +4582,7 @@ span.month_pic {
     border-radius: 10px;
 }
 
-.slt_btn a:hover,.diet_tab_plan.nav-tabs>li.add_btn_tab a:hover,.add_fd_item:hover,.edit_add_sect a:hover,.list_delete_btn a:hover {
-    background: #306dd0;
-    color: #fff;
-}
 
-.fd_item_frm .form-group {
-    margin-bottom: 0;
-}
-
-.fd_item_frm_sect {
-    display: none;
-}
-
-.darglist_hide .list_delete_btn a {
-    display: none;
-}
-
-
-.list_delete_btn a {
-    width: 30px;
-    height: 30px;
-    font-weight: normal;
-    display: block;
-    font-size: 18px;
-    background: #e8effa;
-    text-align: center;
-    line-height: 35px;
-    color: #306dd0;
-    border-radius: 10px;
-}
 
 .dt_plan {
     background: #fff;
@@ -5223,10 +4831,18 @@ ul.date-slts-bx li.active {
         margin-left: 0px;
     }
 }
-
+.ex-workouts > li + li{
+    margin-top:10px;
+}
 #selected_workouts {
-    border: 1px dashed gray;
+    background-color: #fbfbfb;
+    background-image: repeating-linear-gradient(0deg, #ebecf0, #ebecf0 5px, transparent 5px, transparent 13px, #ebecf0 13px), repeating-linear-gradient(90deg, #ebecf0, #ebecf0 5px, transparent 5px, transparent 13px, #ebecf0 13px), repeating-linear-gradient(180deg, #ebecf0, #ebecf0 5px, transparent 5px, transparent 13px, #ebecf0 13px), repeating-linear-gradient(270deg, #ebecf0, #ebecf0 5px, transparent 5px, transparent 13px, #ebecf0 13px);
+    background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+    padding: 10px;
     padding-bottom: 20px;
+    border-radius: 8px;
 }
 
 div#plans ul#plans-list .subcat_chkbox {
@@ -5408,7 +5024,7 @@ label {
     text-overflow: ellipsis;
 }
 
-body .workouts_add_box  .darglist_hide .image-placeholder {
+body .workouts_add_box .darglist_hide .image-placeholder {
     width: 100% !important;
     max-width: 100% !important;
     border-radius: 4px;
@@ -5416,6 +5032,8 @@ body .workouts_add_box  .darglist_hide .image-placeholder {
     object-fit: cover;
     font-size: 14px;
     font-weight: bold;
+    aspect-ratio: 1/1;
+    min-width: 43px;
 }
 
 div#exercises .description_exc_text h6 {
@@ -5448,14 +5066,14 @@ div#workouts .bottom_sect div:first-child {
     .workouts_add_box .plan_menu{
         padding: 0 10px;
     }
-    .workouts_add_box .list_excercises .video_box{
+    .workouts_add_box li:not(.ui-draggable-dragging) .list_excercises .video_box{
         margin-left: 10px
     }
     .workouts_add_box .list_excercises .date_box{
         margin-left: auto;
         margin-right: 10px;
     }
-    .workouts_add_box .list_excercises .description_exc_text{
+    .workouts_add_box li:not(.ui-draggable-dragging) .list_excercises .description_exc_text{
         flex: 0 0 100%;
         max-width: calc(100% - 120px);
         padding-left: 10px;
@@ -5506,9 +5124,12 @@ ul#selected_workouts:empty {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    color: #030303;
-    font-size: 14px;
+    color: var(--text-color-1);
+    font-size: 15px;
     font-weight: 500;
+    border-bottom: 1px solid #efefef;
+    box-shadow: none;
+    border-radius: 10px;
 }
 
 .bg_sty_plan.collapse_box>.title::after {
@@ -5517,15 +5138,15 @@ ul#selected_workouts:empty {
 }
 
 .bg_sty_plan.collapse_box .top_head_pln .remove-workout {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     color: var(--secondary-btn-color);
     background: var(--secondary-btn-bg);
     display: inline-block;
     border-radius: 8px;
     text-align: center;
     font-size: 18px;
-    line-height: 34px
+    line-height: 30px
 }
 
 .bg_sty_plan.collapse_box .top_head_pln .remove-workout:hover {
@@ -5695,6 +5316,11 @@ ul#selected_workouts:empty {
     .workouts_list_data .menu-data, .workouts_list_data .name_c {
         width: 100%;
         white-space: nowrap;
+        
+    }
+    .workouts_list_data .name_c{
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
 
@@ -6226,8 +5852,9 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
 }
 
 .wkout_list_table {
-    background: #f9f9f9;
-    border: 1.5px solid #ddd;
+    background: #f7f8fa;
+    border: 1px solid #dbdfea;
+    border-radius: 10px;
 }
 
 .wkout_list_table .table_hd_list>ul,.wkout_list_table .table_body_list>ul {
@@ -6464,6 +6091,12 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
     max-height:200px;
     overflow:auto
 }
+.more_btn .tooltiip_data::-webkit-scrollbar-thumb{
+    background: #fff;
+}
+.more_btn .tooltiip_data::-webkit-scrollbar-track{
+    background: #ffffff21;
+}
 .more_btn .Plan_tooltip>div {
     border-radius: 5px;
     background: #1f1f1f;
@@ -6491,7 +6124,7 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
     font-weight: 500 !important;
     font-size: 12px !important;
     text-align: left;
-    color: #030303 !important;
+    color: #ccc!important;
     line-height: 150%;
 }
 
@@ -6522,9 +6155,6 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
     filter: blur(2px);
 }
 
-.tooltiip_data {
-    border: 1px solid #dbdbdb;
-}
 
 .more_btn .table_thead p {
     white-space: normal;
@@ -6542,7 +6172,9 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
 }
-
+.more_btn .Plan_tooltip .table_tbody:not(:first-child){
+    border-top:1px solid #fff;
+}
 .more_btn .Plan_tooltip .table_tbody div {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -6559,16 +6191,10 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
     font-weight: 500;
     font-size: 10px;
     text-align: left;
-    color: #3b3b3b;
+    color: #fff;
 }
 
-.table_tbody_list .table_tbody:first-child {
-    background: rgba(204, 204, 204, 0.7);
-}
 
-.table_tbody_list .table_tbody:nth-child(odd) {
-    background: rgba(204, 204, 204, 0.4);
-}
 
 @media(max-width: 575.5px) {
     .more_btn .tooltiip_data .table_tbody_list::-webkit-scrollbar {
@@ -6950,6 +6576,10 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
 }
 
 @media(max-width: 575.5px) {
+    .excercises_sect,
+    .workouts_add_box{
+        padding: 0 15px;
+    }
 .modal p{
     font-size:13px;
 }
@@ -6957,13 +6587,9 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
     div#exercises .top_sect_ex .list_tab_viewmore {
         gap: 10px
     }
+ 
 }
 
-@media(max-width: 420.5px) {
-    .plan_menu .dropdown-menu {
-        left: 0px !important;
-    }
-}
 
 /*workout exercise header */
 
@@ -6974,19 +6600,22 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
     border:0;
 
 }
-.excercises_sect .dragging-helper.ui-draggable-dragging{
-    width: 300px;
+.excercises_sect .dragging-helper.ui-draggable-dragging,
+.workouts_add_box  .dragging-helper.ui-draggable-dragging{
+    width: 200px;
 }
 .excercises_sect .ui-draggable-dragging .description_exc_text,
 .workouts_add_box li.ui-draggable-dragging .description_exc_text,
-.excercises_sect .dragging-helper .ui-draggable .description_exc_text{
+.excercises_sect .dragging-helper .ui-draggable .description_exc_text,
+.workouts_add_box .dragging-helper .description_exc_text{
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
     padding:0 10px;
 }
 .excercises_sect .ui-draggable-dragging .description_exc_text h6,
-.excercises_sect .dragging-helper .ui-draggable .description_exc_text h6
+.excercises_sect .dragging-helper .ui-draggable .description_exc_text h6,
+.workouts_add_box .dragging-helper .description_exc_text h6
 {
     display: block !important;
 
@@ -7001,20 +6630,22 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
 
 .excercises_sect > ul .ui-draggable-dragging .list_excercises,
 .excercises_sect .dragging-helper .ui-draggable .list_excercises,
-.workouts_add_box .ui-draggable-dragging .list_excercises{
+.workouts_add_box .ui-draggable-dragging .list_excercises,
+.workouts_add_box .dragging-helper .list_excercises{
     display:flex;
     align-items: center;
     gap:0;
     padding: 10px;
     transform: rotate(-5deg);
 }
-.excercises_sect .dragging-helper .ui-draggable .list_excercises{
+.excercises_sect .dragging-helper .ui-draggable .list_excercises,
+.workouts_add_box .dragging-helper .ui-draggable .list_excercises{
     display: flex !important;
     flex-direction: row !important;
     padding: 10px !important;
 }
 .excercises_sect .ui-draggable-dragging .list_excercises,
-.workouts_add_box li.ui-draggable-dragging .list_excercises {
+.workouts_add_box .ui-draggable-dragging .list_excercises {
     background: #f7f8fa !important;
     border: 1px solid #dbdfea;
     border-radius:5px;
@@ -7022,7 +6653,8 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
     min-width: 150px;
     flex-wrap: nowrap !important;
 }
-.dragging-helper.ui-draggable-dragging .exercises-row-entity {
+.dragging-helper.ui-draggable-dragging .exercises-row-entity,
+.dragging-helper.ui-draggable-dragging .workouts-row-entity  {
     position: absolute;
     top: 0;
     left: 0;
@@ -7033,6 +6665,12 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
 .excercises_sect .ui-draggable-dragging .data_tooltip .icon,
 .darglist_hide  .data_tooltip .icon{
     display:none;
+}
+.workouts_add_box .dragging-helper li{
+    border-top: 0;
+}
+.workouts_add_box .dragging-helper .list_excercises .video_box{
+    margin-left: 0 !important;
 }
 /* 
 .dragging-helper{
