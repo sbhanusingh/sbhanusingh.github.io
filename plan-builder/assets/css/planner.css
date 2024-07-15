@@ -3375,8 +3375,24 @@ span.month_pic {
         position: relative;
     }
     .planner_top_sect.fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation: translateX .4s;
         padding: 10px !important;
         top: 15px;
+    }
+    @keyframes translateX {
+        0% {
+            t-webkit-transform: translate3d(0, -80px, 0);
+            transform: translate3d(0, -80px, 0);
+        }
+
+        100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
     }
     .excercises_sect ul.in_list .video_box{
         max-width: 100%;
@@ -6611,7 +6627,7 @@ div#plans .workouts_add_box ul#plans-list .list_excercises {
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
-    padding:0 10px;
+    padding:0 10px !important;
 }
 .excercises_sect .ui-draggable-dragging .description_exc_text h6,
 .excercises_sect .dragging-helper .ui-draggable .description_exc_text h6,
