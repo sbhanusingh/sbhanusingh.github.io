@@ -3422,6 +3422,7 @@ span.month_pic {
     .Create_list .Plan_tooltip>div{
         right: -20px;
         left: initial !important;
+        width: 200px;
         transform: initial;
     }
     .Create_list .Plan_tooltip>div::before, .Create_list .Plan_tooltip>div::after{
@@ -3443,6 +3444,10 @@ span.month_pic {
     .planner_top_sect h5{
         font-size:16px;
         /* flex-direction: column; */
+    }
+    .planner_top_sect h5 > span{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     .description_exc_text h6,
     .description_exc_text h5{
@@ -3562,12 +3567,6 @@ span.month_pic {
     }
 
 
-
-    .Create_list .Plan_tooltip>div {
-        width: 260px;
-        left: 100%;
-        margin-left: 15px;
-    }
 
     .Create_list .Plan_tooltip>div::before, .Create_list .Plan_tooltip>div::after {
         left: 40%;
